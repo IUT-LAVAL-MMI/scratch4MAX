@@ -1,0 +1,42 @@
+{
+	"author" : "Fabien Guntz",
+	"authors" : [  ],
+	"categories" : [  ],
+	"description" : "Une bibliothèque d'objets max/msp/jitter pour réaliser facilement des applications interactives et sonores.",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "scratch4MAX-Object Guide.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "none",
+	"name" : "s4M",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"readme" : "",
+	"tags" : [ "msp", "jitter", "interactivité", "externals" ],
+	"version" : "1.0.0",
+	"versions" : null,
+	"website" : "",
+	"filelist" : 	{
+		"externals" : [  ],
+		"patchers" : [ "s4M.audio.lecteurAudio.maxpat", "s4M.audio.panoramique.maxpat", "s4M.audio.sonPur.maxpat", "s4M.divers.bool2bang.maxpat", "s4M.interface.clavier.maxpat" ],
+		"help" : [ "s4M.audio.lecteurAudio.maxhelp", "s4M.audio.panoramique.maxhelp", "s4M.audio.sonPur.maxhelp", "s4M.divers.bool2bang.maxhelp", "s4M.interface.clavier.maxhelp" ],
+		"misc" : [  ],
+		"extras" : [ "scratch4MAX-Object Guide.maxpat" ]
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3556620318
+}
+

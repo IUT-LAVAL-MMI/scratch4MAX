@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="motifCoucheAlpha2.svg"
+   inkscape:export-filename="/Users/fguntz/Documents/Max 7/Packages/scratch4MAX_Video/media/motifCoucheAlpha2.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.4784375"
+     inkscape:cx="117.8561"
+     inkscape:cy="602.00596"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="781"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:1;fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 98.027344 412.36133 C 93.580131 412.36133 90 415.94146 90 420.38867 L 90 464.33398 C 90 468.7812 93.580131 472.36133 98.027344 472.36133 L 141.9707 472.36133 C 146.41792 472.36133 150 468.7812 150 464.33398 L 150 420.38867 C 150 415.94146 146.41792 412.36133 141.9707 412.36133 L 98.027344 412.36133 z M 105.64648 420.5332 A 6.3775511 6.5051022 0 0 1 112.02344 427.03906 A 6.3775511 6.5051022 0 0 1 105.64648 433.54492 A 6.3775511 6.5051022 0 0 1 99.269531 427.03906 A 6.3775511 6.5051022 0 0 1 105.64648 420.5332 z M 118.90234 423.14453 L 121.96094 423.14453 L 121.96094 440.3418 L 140.21289 440.3418 L 140.21289 443.40039 L 122.06641 443.40039 L 122.06641 460.28125 L 118.90234 460.28125 L 118.90234 443.40039 L 101.17773 443.40039 L 101.17773 440.44727 L 118.90234 440.44727 L 118.90234 423.14453 z "
+       id="rect4136" />
+  </g>
+</svg>

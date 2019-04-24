@@ -1,0 +1,49 @@
+gain_peakmetre.maxpat, Audio "Applique un gain à un flux audio et affiche le peakmètre du flux audio sortant";
+noiseGate_compDynamique.maxpat, Audio "Mise en oeuvre du plugin AUDynamicsProcessor";
+s4M.audio.analyseSpectrale_1b.maxpat, Audio "Applique un filtre passe-bande dont on peut régler fréquence de coupure, gain et Q à un signal audio";
+s4M.audio.analyseSpectrale_10b.maxpat, Audio "Permet d'analyser le spectre d'un signal audio sur 10 bandes de fréquence prédéterminées";
+s4M.audio.detectionPic.maxpat, Audio "Detecte un pic dans un flux audio";
+s4M.audio.envoiReseauTCP.maxpat, Audio "Envoie un flux audio sur le réseau sur le protocole TCP";
+s4M.audio.exportAudio.maxpat, Audio "Exporte un flux audio sétéro dans un fichier au format Wave";
+s4M.audio.filtrage_2nd_ordre.maxpat, Audio "Applique un filtre dont on peut régler le type, fréquence de coupure, gain et Q à un signal audio";
+s4M.audio.gainEnveloppe.maxpat, Audio "Applique un profil d'enveloppe à un flux audio";
+s4M.audio.generationEnveloppe.maxpat, Audio "Génère l'enveloppe d'un signal audio";
+s4M.audio.lecteurAudio.maxpat, Audio "Lit un fichier audio mono ou stéréo";
+s4M.audio.oscillateur.maxpat, Audio "Génère un signal périodique élémentaire (sinus, triangle, dent de scie, carré) dont on peut régler la forme d'onde et la fréquence";
+s4M.audio.panoramique.maxpat, Audio "Spatialise un flux audio mono";
+s4M.audio.receptionReseauTCP.maxpat, Audio "Réceptionne un flux audio par le réseau sur le protocole TCP";
+s4M.audio.somme.maxpat, Audio "Additionne n flux audio mono";
+s4M.audio.sonPur.maxpat, Audio "Génère un son pur";
+s4M.audio.switch.maxpat, Audio "Choisit un signal audio parmis deux possibles";
+s4M.audio.transposeur.maxpat, Audio "Transpose un flux audio";
+s4M.audio.tremolo.maxpat, Audio "Applique un tremolo à un flux audio";
+s4M.audio.vibrato.maxpat, Audio "Applique un vibrato à un flux audio";
+s4M.divers.bool2bang.maxpat, Divers "Convertit un booléen en bang";
+s4M.divers.convNoteFrequence.maxpat, Divers "Convertit une note de musique en fréquence";
+s4M.interface.clavier.maxpat, Interface "Écoute les touches du clavier A,Z,E,R,T et Y";
+s4M.video.agregationComposantes.maxpat, Video "Agrège quatre composantes dans un seul flux vidéo";
+s4M.video.assemblage_1_2.maxpat, Video "Assemble sur 1 ligne et 2 colonnes deux vidéos dans un seul flux vidéo";
+s4M.video.assemblage_2_1.maxpat, Video "Assemble sur 2 lignes et 1 colonne deux vidéos dans un seul flux vidéo";
+s4M.video.assemblage_2_2.maxpat, Video "Assemble sur 2 lignes et 2 colonnes quatre vidéos dans un seul flux vidéo";
+s4M.video.colorimetrie.maxpat, Video "Modifie la colorimétrie d'un flux vidéo";
+s4M.video.contraste.maxpat, Video "Modifie le contraste d'un flux vidéo";
+s4M.video.lecteurVideo.maxpat, Video "Lit une image ou une vidéo";
+s4M.video.ligneRetard.maxpat, Video "Applique un retard à un flux vidéo";
+s4M.video.luminosite.maxpat, Video "Modifie la luminosité d'un flux vidéo";
+s4M.video.miroir.maxpat, Video "Applique un effet miroir vertical à un flux vidéo";
+s4M.video.negatif.maxpat, Video "Applique un effet négatif à un flux vidéo";
+s4M.video.niveauDeGris.maxpat, Video "Applique un effet niveau de gris à un flux vidéo";
+s4M.video.pip.maxpat, Video "Applique du compositing Picture in Picture à partir de deux flux vidéo";
+s4M.video.recadrage.maxpat, Video "Recadrer un flux vidéo";
+s4M.video.redim.maxpat, Video "Redimensionne un flux vidéo";
+s4M.video.rotation.maxpat, Video "Applique une rotation à un flux vidéo";
+s4M.video.saturation.maxpat, Video "Modifie la saturation d'une vidéo";
+s4M.video.selectionZone.maxpat, Video "Sélectionne une zone d'un flux vidéo";
+s4M.video.separationComposantes.maxpat, Video "Sépare les quatre composantes d'un flux vidéo";
+s4M.video.stromboscope.maxpat, Video "Applique un effet stromboscopique à un flux vidéo";
+s4M.video.superposition.maxpat, Video "Superpose deux flux vidéo";
+s4M.video.translation.maxpat, Video "Applique une translation à une vidéo";
+
+
+
+
