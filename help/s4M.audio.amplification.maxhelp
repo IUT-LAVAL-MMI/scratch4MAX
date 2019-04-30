@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 173.0, 116.0, 1009.0, 668.0 ],
+		"rect" : [ 298.0, 190.0, 797.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 135.5, 264.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 373.600006, 360.5, 108.0, 20.0 ],
+					"patching_rect" : [ 373.600006, 396.0, 108.0, 20.0 ],
 					"style" : "",
 					"text" : "Faire varier le gain"
 				}
@@ -55,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.300003, 347.0, 108.0, 47.0 ],
+					"patching_rect" : [ 220.300003, 369.0, 108.0, 47.0 ],
 					"style" : "",
 					"text" : "Faire varier le facteur d'amplification"
 				}
@@ -70,7 +82,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 356.600006, 402.0, 50.0, 22.0 ],
+					"patching_rect" : [ 356.600006, 424.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -84,33 +96,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 230.5, 402.0, 50.0, 22.0 ],
+					"patching_rect" : [ 230.5, 424.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 230.5, 108.0, 33.0 ],
-					"style" : "",
-					"text" : "Lancer le flux audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 235.0, 593.5, 108.0, 20.0 ],
-					"style" : "",
-					"text" : "Activer l'audio"
 				}
 
 			}
@@ -118,13 +105,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-7",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 53.0, 648.0, 132.0 ],
+					"patching_rect" : [ 10.0, 53.0, 648.0, 147.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'amplifier ou d'atténuer un flux audio. Il est possible de commander l'amplification soit en indiquant le facteur d'amplification soit le gain de l'amplification. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (float) : facteur d'amplification\nEntrée 3 (float) : gain(dB)\nSortie 1 (audio) : flux audio wet\nParamètre 1 (facultatif) : valeur du gain par défaut (en dB)"
+					"text" : "Cet objet permet d'amplifier ou d'atténuer un flux audio. Il est possible de commander l'amplification soit en indiquant le facteur d'amplification soit le gain de l'amplification. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (float) : facteur d'amplification\nEntrée 3 (float) : gain(dB)\nSortie 1 (audio) : flux audio wet\n\nArgument 1 (facultatif) : valeur du gain par défaut (en dB)"
 				}
 
 			}
@@ -149,7 +136,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 165.0, 486.0, 150.0, 22.0 ],
+					"patching_rect" : [ 165.0, 508.0, 150.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.amplification -3"
 				}
@@ -161,7 +148,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.0, 581.0, 45.0, 45.0 ],
+					"patching_rect" : [ 154.0, 603.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -172,22 +159,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.5, 205.0, 192.0, 20.0 ],
+					"patching_rect" : [ 80.5, 239.0, 192.0, 20.0 ],
 					"style" : "",
 					"text" : "Lancement lecture fichier audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 110.5, 236.0, 24.0, 24.0 ],
-					"style" : ""
 				}
 
 			}
@@ -198,7 +172,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 204.0, 156.0, 33.0 ],
+					"patching_rect" : [ 280.600006, 232.5, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -212,7 +186,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 313.600006, 242.0, 24.0, 24.0 ],
+					"patching_rect" : [ 313.600006, 264.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -224,7 +198,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 165.0, 316.0, 200.0, 22.0 ],
+					"patching_rect" : [ 165.0, 329.0, 200.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio Kick01.wav"
 				}
@@ -239,30 +213,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.0, 476.25, 184.600006, 45.5 ],
+					"patching_rect" : [ 153.0, 498.25, 184.600006, 45.5 ],
 					"proportion" : 0.39,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 210.0, 593.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -279,10 +232,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 348.600006, 360.5, 20.0, 20.0 ],
+					"patching_rect" : [ 348.600006, 396.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "4",
+					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -300,10 +253,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 195.300003, 353.5, 20.0, 20.0 ],
+					"patching_rect" : [ 195.300003, 375.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "3",
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -321,10 +274,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 428.0, 237.0, 20.0, 20.0 ],
+					"patching_rect" : [ 58.5, 239.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "2",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -333,8 +286,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -342,8 +293,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -351,8 +300,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -360,26 +307,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
@@ -388,23 +322,30 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Audio/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.amplification.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Audio/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -512,8 +453,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -567,8 +508,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

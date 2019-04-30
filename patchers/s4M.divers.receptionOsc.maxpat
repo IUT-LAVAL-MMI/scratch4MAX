@@ -45,7 +45,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 335.0, 278.0, 92.0, 22.0 ],
 					"style" : "",
-					"text" : "port 7500"
+					"text" : "port 7400"
 				}
 
 			}
@@ -68,9 +68,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 276.0, 428.0, 63.0, 22.0 ],
+					"patching_rect" : [ 276.0, 428.0, 131.0, 22.0 ],
 					"style" : "",
-					"text" : "print OSC"
+					"text" : "print receptionMsgOsc"
 				}
 
 			}
@@ -298,8 +298,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

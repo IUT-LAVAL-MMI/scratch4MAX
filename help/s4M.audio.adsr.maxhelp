@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 178.0, 149.0, 1231.0, 678.0 ],
+		"rect" : [ 178.0, 149.0, 1034.0, 765.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -85,11 +85,35 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 652.5, 176.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 514.25, 176.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 627.0, 102.0, 150.0, 20.0 ],
+									"patching_rect" : [ 607.0, 154.0, 150.0, 20.0 ],
 									"style" : "",
 									"text" : "déclenche le profil R"
 								}
@@ -101,7 +125,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 456.0, 102.0, 150.0, 20.0 ],
+									"patching_rect" : [ 449.0, 154.0, 150.0, 20.0 ],
 									"style" : "",
 									"text" : "déclenche le profil ADS"
 								}
@@ -114,7 +138,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 654.5, 126.5, 29.5, 22.0 ],
+									"patching_rect" : [ 652.5, 226.5, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "2"
 								}
@@ -127,7 +151,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 498.75, 126.5, 29.5, 22.0 ],
+									"patching_rect" : [ 514.25, 226.5, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "1"
 								}
@@ -139,9 +163,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 622.0, 213.0, 230.0, 20.0 ],
+									"patching_rect" : [ 619.0, 313.0, 322.0, 20.0 ],
 									"style" : "",
-									"text" : "Modifier les paramètres de l'enveloppe"
+									"text" : "Modifier graphiquement les paramètres de l'enveloppe"
 								}
 
 							}
@@ -152,7 +176,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 271.5, 196.0, 24.0, 24.0 ],
+									"patching_rect" : [ 275.666656, 298.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -172,7 +196,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 143.5, 262.0, 824.0, 176.0 ],
+									"patching_rect" : [ 141.5, 362.0, 824.0, 176.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -184,7 +208,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 332.0, 191.5, 150.0, 33.0 ],
+									"patching_rect" : [ 330.0, 291.5, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Déclencher l'application de l'enveloppe"
 								}
@@ -194,12 +218,13 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-8",
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 53.0, 565.0, 22.0 ],
+									"patching_rect" : [ 7.0, 53.0, 590.0, 85.0 ],
 									"style" : "",
-									"text" : "Cet objet permet d'appliquer une enveloppe sur un flux audio mono ou stéréo."
+									"text" : "Lorsqu'on clique sur le 1 (ou si on envoie un bang sur ce message) on charge le profil ADS puis ce profil est déclenché dans la foulée. \nLorsqu'on clique sur le 2 (ou si on envoie un bang sur ce message) on charge le profil R puis ce profil est déclenché dans la foulée. \nCela permet de piloter le déclenchement d'un son puis de piloter son arrêt.  "
 								}
 
 							}
@@ -219,24 +244,11 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-12",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 607.0, 522.0, 150.0, 33.0 ],
-									"style" : "",
-									"text" : "Activer le son en cliquant sur cet objet"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 528.0, 515.0, 45.0, 45.0 ],
+									"patching_rect" : [ 526.0, 615.0, 45.0, 45.0 ],
 									"style" : ""
 								}
 
@@ -248,30 +260,9 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 107.0, 145.5, 141.0, 22.0 ],
+									"patching_rect" : [ 105.0, 245.5, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.audio.sonPur 440 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"background" : 1,
-									"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-									"hint" : "",
-									"id" : "obj-17",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 582.0, 527.5, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"style" : "",
-									"text" : "1",
-									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
 
 							}
@@ -288,10 +279,10 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 597.0, 213.0, 20.0, 20.0 ],
+									"patching_rect" : [ 595.0, 313.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
-									"text" : "3",
+									"text" : "2",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
 
@@ -309,10 +300,10 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 307.0, 198.0, 20.0, 20.0 ],
+									"patching_rect" : [ 305.0, 298.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
-									"text" : "2",
+									"text" : "1",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
 
@@ -331,6 +322,20 @@
 									"destination" : [ "obj-3", 0 ],
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-14", 0 ]
 								}
 
 							}
@@ -358,7 +363,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 4 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -366,7 +371,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"order" : 1,
+									"order" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -374,7 +379,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 4 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -382,7 +387,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"order" : 1,
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -557,7 +562,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 178.0, 175.0, 1231.0, 652.0 ],
+						"rect" : [ 178.0, 175.0, 1034.0, 739.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -587,14 +592,34 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-3",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "s4M.audio.adsr.maxpat",
+									"numinlets" : 13,
+									"numoutlets" : 2,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 49.0, 383.5, 754.0, 191.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
 									"numinlets" : 13,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 892.0, 452.0, 244.0, 22.0 ],
+									"patching_rect" : [ 822.0, 491.0, 257.0, 22.0 ],
 									"style" : "",
-									"text" : "s4M.audio.gainEnveloppe"
+									"text" : "s4M.audio.adsr"
 								}
 
 							}
@@ -605,7 +630,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 879.0, 383.0, 270.0, 60.0 ],
+									"patching_rect" : [ 822.0, 416.0, 270.0, 60.0 ],
 									"style" : "",
 									"text" : "Si vous voulez avoir l'affichage du graphique Gain en fonction de la fréquence , il faut faire un copier-coller de l'objet envadré en orange dans votre code, sinon cela apparaîtra comme ça : "
 								}
@@ -618,28 +643,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 180.5, 300.0, 24.0, 24.0 ],
+									"patching_rect" : [ 174.5, 318.0, 24.0, 24.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-3",
-									"lockeddragscroll" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "s4M.audio.gainEnveloppe.maxpat",
-									"numinlets" : 13,
-									"numoutlets" : 2,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 52.5, 366.0, 817.0, 174.0 ],
-									"viewvisibility" : 1
 								}
 
 							}
@@ -649,9 +654,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 516.0, 302.0, 230.0, 20.0 ],
+									"patching_rect" : [ 512.0, 320.0, 310.0, 20.0 ],
 									"style" : "",
-									"text" : "Modifier les paramètres de l'enveloppe"
+									"text" : "Modifier graphiquement les paramètres de l'enveloppe"
 								}
 
 							}
@@ -662,7 +667,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 241.0, 295.5, 150.0, 33.0 ],
+									"patching_rect" : [ 235.0, 313.5, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Déclencher l'application de l'enveloppe"
 								}
@@ -672,13 +677,13 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-8",
-									"linecount" : 6,
+									"linecount" : 11,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 58.0, 565.0, 100.0 ],
+									"patching_rect" : [ 7.0, 58.0, 809.0, 194.0 ],
 									"style" : "",
-									"text" : "Cet objet permet d'appliquer une enveloppe sur un flux audio mono ou stéréo.\n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (float) : facteur d'amplification\nEntrée 3 (float) : gain(dB)\nSortie 1 (audio) : flux audio wet\n"
+									"text" : "Nouveau nom : remplace l'objet s4M.audio.divers.gainEnveloppe. Cet objet permet d'appliquer une enveloppe ADSR sur un flux audio mono ou stéréo.\n\nEntrée 1 (audio) : flux audio dry canal gauche\nEntrée 2 (audio) : flux audio dry canal droit\nEntrée 3 (bang) : déclenchement du profil ADSR\n...\nEntrée 5 (entier) : indique le profil souhaité (1=ADSR ; 2=ADS ; 3=R ; 4=Custom)\n...\nSortie 1 (audio) : flux audio wet canal gauche\nSortie 2 (audio) : flux audio wet canal droit\n"
 								}
 
 							}
@@ -692,7 +697,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 7.0, 7.0, 555.0, 40.0 ],
 									"style" : "",
-									"text" : "Scratch4MAX - Audio - Enveloppe"
+									"text" : "Scratch4MAX - Audio - ADSR"
 								}
 
 							}
@@ -702,7 +707,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 437.0, 619.0, 45.0, 45.0 ],
+									"patching_rect" : [ 434.0, 637.0, 45.0, 45.0 ],
 									"style" : ""
 								}
 
@@ -714,7 +719,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 16.0, 249.5, 141.0, 22.0 ],
+									"patching_rect" : [ 13.0, 267.5, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.audio.sonPur 440 1"
 								}
@@ -733,7 +738,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 491.0, 302.0, 20.0, 20.0 ],
+									"patching_rect" : [ 488.0, 320.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "2",
@@ -754,7 +759,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 216.0, 302.0, 20.0, 20.0 ],
+									"patching_rect" : [ 211.0, 318.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "1",
@@ -986,12 +991,19 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-6::obj-3::obj-212" : [ "r", "r", 0 ],
-			"obj-7::obj-3::obj-212" : [ "r[1]", "r", 0 ],
-			"obj-6::obj-19::obj-212" : [ "r[2]", "r", 0 ]
+			"obj-6::obj-19::obj-212" : [ "r[2]", "r", 0 ],
+			"obj-7::obj-3::obj-212" : [ "r[3]", "r", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.sonPur.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.audio.adsr.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

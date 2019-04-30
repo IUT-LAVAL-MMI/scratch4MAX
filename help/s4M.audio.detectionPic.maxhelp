@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 6,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 232.0, 79.0, 1115.0, 712.0 ],
+		"rect" : [ 557.0, 79.0, 848.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 138.0, 305.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 83.0, 280.0, 192.0, 20.0 ],
+					"style" : "",
+					"text" : "Lancement lecture fichier audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 522.5, 579.0, 124.0, 20.0 ],
+					"patching_rect" : [ 523.5, 654.0, 124.0, 20.0 ],
 					"style" : "",
 					"text" : "Régler le seuil"
 				}
@@ -52,13 +76,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-12",
-					"linecount" : 9,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 58.0, 1007.0, 147.0 ],
+					"patching_rect" : [ 23.0, 58.0, 1007.0, 163.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de détecter les pics présents dans un flux audio. Cet objet possède un paramètre interne : le niveau du seuil (en volt). Généralement cet objet est utilisé pour pouvoir détecter les niveaux importants d'un flux audio, par exemple l'attaque d'un instrument de musique. Du fait du caractère oscillant des signaux audio, il est difficilement exploitable de faire travailler la détection de pic sur le flux audio directement, il faut plutôt faire travailler la détection de pic sur l'enveloppe du flux audio. \n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 (float) : niveau du seuil de détection, entre 0 et 1. \n\nSortie 1 (bang) : un bang est généré dès que le flux audio dépasse le seuil fixé"
+					"text" : "Cet objet permet de détecter les pics présents dans un flux audio. Cet objet possède un paramètre interne : le niveau du seuil (en volt). Généralement cet objet est utilisé pour pouvoir détecter les niveaux importants d'un flux audio, par exemple l'attaque d'un instrument de musique. Du fait du caractère oscillant des signaux audio, il est difficilement exploitable de faire travailler la détection de pic sur le flux audio directement, il faut plutôt faire travailler la détection de pic sur l'enveloppe du flux audio. \n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 (float) : niveau du seuil de détection, entre 0 et 1. \nSortie 1 (bang) : un bang est généré dès que le flux audio dépasse le seuil fixé\n\nArgument 1 (obligatoire) : valeur du seuil de détection (en Volt)"
 				}
 
 			}
@@ -83,7 +107,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 190.0, 699.0, 24.0, 24.0 ],
+					"patching_rect" : [ 191.0, 774.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -97,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 331.850006, 596.0, 62.0, 22.0 ],
+					"patching_rect" : [ 332.850006, 671.0, 62.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -108,7 +132,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.600006, 572.0, 150.0, 20.0 ],
+					"patching_rect" : [ 337.600006, 647.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "réglage SEUIL"
 				}
@@ -121,7 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 190.0, 651.0, 161.0, 22.0 ],
+					"patching_rect" : [ 191.0, 726.0, 161.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.detectionPic 0.21"
 				}
@@ -134,7 +158,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.0, 432.0, 208.0, 131.0 ],
+					"patching_rect" : [ 311.0, 507.0, 208.0, 131.0 ],
 					"style" : ""
 				}
 
@@ -146,7 +170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 189.0, 388.0, 183.0, 22.0 ],
+					"patching_rect" : [ 190.0, 463.0, 183.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.generationEnveloppe"
 				}
@@ -158,32 +182,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 392.0, 45.0, 45.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 76.5, 216.0, 192.0, 20.0 ],
-					"style" : "",
-					"text" : "Lancement lecture fichier audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 135.5, 247.0, 24.0, 24.0 ],
+					"patching_rect" : [ 83.0, 467.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -195,7 +194,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 213.0, 156.0, 33.0 ],
+					"patching_rect" : [ 243.0, 316.0, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -209,7 +208,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.600006, 251.0, 24.0, 24.0 ],
+					"patching_rect" : [ 298.600006, 354.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -221,7 +220,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 189.0, 314.0, 200.0, 22.0 ],
+					"patching_rect" : [ 190.0, 389.0, 200.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio Kick01.wav"
 				}
@@ -236,7 +235,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 149.5, 625.5, 262.0, 63.5 ],
+					"patching_rect" : [ 150.5, 700.5, 262.0, 63.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -255,7 +254,28 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 497.0, 579.0, 20.0, 20.0 ],
+					"patching_rect" : [ 498.0, 654.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-17",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 61.0, 280.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "1",
@@ -267,8 +287,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -277,8 +295,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -287,8 +303,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -296,27 +310,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -324,8 +332,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
@@ -334,8 +340,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
@@ -344,33 +348,34 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-5::obj-13" : [ "flonum", "flonum", 0 ]
+			"obj-5::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.detectionPic.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -478,8 +483,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -489,6 +494,24 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "panelGold-1",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
+						"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
 				}
 ,
 				"parentstyle" : "",
@@ -507,6 +530,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "texteditGold",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

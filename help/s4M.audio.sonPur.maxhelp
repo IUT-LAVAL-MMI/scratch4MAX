@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 857.0, 531.0 ],
+		"rect" : [ 506.0, 271.0, 823.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 454.5, 143.0, 33.0, 20.0 ],
+					"patching_rect" : [ 465.5, 262.0, 33.0, 20.0 ],
 					"style" : "",
 					"text" : "Volt"
 				}
@@ -54,7 +54,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 346.0, 143.0, 43.0, 20.0 ],
+					"patching_rect" : [ 357.0, 262.0, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "dBFS"
 				}
@@ -69,8 +69,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 446.0, 162.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 447.0, 149.0, 0.0, 0.0 ],
+					"patching_rect" : [ 457.0, 281.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -82,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.0, 104.0, 178.0, 33.0 ],
+					"patching_rect" : [ 350.0, 223.0, 178.0, 33.0 ],
 					"style" : "",
 					"text" : "Tester la modification de l'amplitude crête du son pur"
 				}
@@ -95,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.5, 104.0, 150.0, 33.0 ],
+					"patching_rect" : [ 125.5, 223.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Tester la modification de la fréquence du son pur"
 				}
@@ -105,13 +104,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 2,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 51.0, 583.0, 38.0 ],
+					"patching_rect" : [ 8.0, 51.0, 583.0, 147.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de synthétiser un son pur. Il possède deux paramètres internes : la fréquence en Hertz et l'amplitude crête en dBFS."
+					"text" : "Cet objet permet de synthétiser un son pur.\n\nEntrée 1 (float) : fréquence du son pur\nEntrée 2 (float) : amplitude crête en dBFS\nEntrée 3 (float) : amplitude crête en Volt\nSortie 1 (audio) : flux audio synthétisé\n\nArgument 1 (obligatoire) : fréquence du son pur\nArgument 2 (obligatoire) : amplitude crête par défaut (en dBFS)"
 				}
 
 			}
@@ -138,7 +137,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 339.0, 162.0, 50.0, 22.0 ],
+					"patching_rect" : [ 350.0, 281.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -151,7 +150,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 293.0, 302.0, 356.0, 208.0 ],
+					"patching_rect" : [ 256.0, 428.0, 356.0, 208.0 ],
 					"style" : "",
 					"trigger" : 1,
 					"triglevel" : 0.0001
@@ -167,21 +166,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 149.0, 50.0, 22.0 ],
+					"patching_rect" : [ 147.0, 268.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 370.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "Activer le son en cliquant sur cet objet"
 				}
 
 			}
@@ -191,7 +177,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 364.0, 45.0, 45.0 ],
+					"patching_rect" : [ 66.0, 497.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -203,30 +189,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 138.0, 241.0, 141.0, 22.0 ],
+					"patching_rect" : [ 149.0, 360.0, 141.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.sonPur 440 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 376.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -243,10 +208,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 314.0, 110.5, 20.0, 20.0 ],
+					"patching_rect" : [ 325.0, 229.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "3",
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -264,10 +229,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 89.5, 110.5, 20.0, 20.0 ],
+					"patching_rect" : [ 100.5, 229.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "2",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -276,8 +241,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -286,8 +249,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -296,8 +257,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -306,8 +265,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -315,8 +272,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -324,8 +279,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -333,7 +286,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.sonPur.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Audio/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -441,8 +395,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

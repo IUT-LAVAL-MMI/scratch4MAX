@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 6,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 173.0, 116.0, 693.0, 612.0 ],
+		"rect" : [ 652.0, 228.0, 693.0, 612.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 121.0, 183.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 66.0, 158.0, 192.0, 20.0 ],
+					"style" : "",
+					"text" : "Lancement lecture fichier audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 413.0, 466.0, 108.0, 47.0 ],
-					"presentation_rect" : [ 429.0, 461.0, 0.0, 0.0 ],
+					"patching_rect" : [ 413.0, 479.0, 108.0, 47.0 ],
 					"style" : "",
 					"text" : "Observer l'enveloppe de ce flux audio"
 				}
@@ -57,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.0, 221.0, 108.0, 33.0 ],
+					"patching_rect" : [ 422.0, 234.0, 108.0, 33.0 ],
 					"style" : "",
 					"text" : "Envoyer un flux audio"
 				}
@@ -98,7 +121,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.0, 440.0, 208.0, 131.0 ],
+					"patching_rect" : [ 167.0, 453.0, 208.0, 131.0 ],
 					"style" : ""
 				}
 
@@ -110,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 167.0, 379.0, 183.0, 22.0 ],
+					"patching_rect" : [ 167.0, 392.0, 183.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.generationEnveloppe"
 				}
@@ -122,32 +145,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.5, 310.5, 45.0, 45.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 53.5, 146.0, 192.0, 20.0 ],
-					"style" : "",
-					"text" : "Lancement lecture fichier audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 112.5, 177.0, 24.0, 24.0 ],
+					"patching_rect" : [ 200.5, 323.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -159,7 +157,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 145.0, 156.0, 33.0 ],
+					"patching_rect" : [ 260.0, 158.0, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -173,7 +171,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 315.600006, 183.0, 24.0, 24.0 ],
+					"patching_rect" : [ 315.600006, 196.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -185,7 +183,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 167.0, 257.0, 200.0, 22.0 ],
+					"patching_rect" : [ 167.0, 270.0, 200.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio Kick01.wav"
 				}
@@ -200,7 +198,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 365.25, 224.0, 55.5 ],
+					"patching_rect" : [ 155.0, 378.25, 224.0, 55.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -219,10 +217,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 397.0, 227.5, 20.0, 20.0 ],
+					"patching_rect" : [ 397.0, 240.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "1",
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -240,11 +238,31 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 388.0, 472.5, 20.0, 20.0 ],
-					"presentation_rect" : [ 404.0, 467.5, 0.0, 0.0 ],
+					"patching_rect" : [ 388.0, 485.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "2",
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-10",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 44.0, 158.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -253,8 +271,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -263,8 +279,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -273,8 +287,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -283,8 +295,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -292,36 +302,34 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-5::obj-13" : [ "flonum", "flonum", 0 ]
+			"obj-5::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -429,8 +437,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

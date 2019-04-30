@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 95.0, 89.0, 1258.0, 657.0 ],
+		"rect" : [ 330.0, 90.0, 1291.0, 819.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,12 +49,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1258.0, 631.0 ],
+						"rect" : [ 0.0, 26.0, 1291.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -348,8 +348,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
@@ -358,8 +356,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 1 ]
 								}
@@ -368,8 +364,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -378,8 +372,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -388,8 +380,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -397,8 +387,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 3 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -406,8 +394,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 2 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -415,8 +401,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 4 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -424,8 +408,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 5 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -433,8 +415,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -542,8 +522,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -604,12 +584,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 95.0, 115.0, 1258.0, 631.0 ],
+						"rect" : [ 330.0, 116.0, 1291.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -643,7 +623,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 480.0, 497.5, 98.0, 20.0 ],
+									"patching_rect" : [ 480.0, 554.5, 98.0, 20.0 ],
 									"style" : "",
 									"text" : "tête de lecture"
 								}
@@ -656,7 +636,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 633.0, 580.5, 427.0, 60.0 ],
+									"patching_rect" : [ 633.0, 637.5, 427.0, 60.0 ],
 									"style" : "",
 									"text" : "La tête de lecture est un signal audio qui varie de 0 à 1. \n0 = début du fichier\n1 = fin du fichier\ncette information permet de se synchroniser sur la lecture du fichier audio"
 								}
@@ -668,7 +648,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 549.0, 578.0, 77.0, 65.0 ],
+									"patching_rect" : [ 549.0, 635.0, 77.0, 65.0 ],
 									"style" : ""
 								}
 
@@ -680,7 +660,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 129.0, 400.0, 24.0, 24.0 ],
+									"patching_rect" : [ 129.0, 457.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -692,7 +672,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 872.0, 272.0, 150.0, 33.0 ],
+									"patching_rect" : [ 872.0, 329.0, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Tester le rembobinage du fichier audio"
 								}
@@ -705,7 +685,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 486.0, 272.0, 150.0, 33.0 ],
+									"patching_rect" : [ 486.0, 329.0, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Tester la lecture du fichier audio"
 								}
@@ -718,7 +698,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 72.5, 260.0, 150.0, 33.0 ],
+									"patching_rect" : [ 72.5, 317.0, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Tester la lecture du fichier audio"
 								}
@@ -730,7 +710,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 371.0, 504.0, 56.0, 20.0 ],
+									"patching_rect" : [ 371.0, 561.0, 56.0, 20.0 ],
 									"style" : "",
 									"text" : "canal R"
 								}
@@ -743,7 +723,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 183.0, 497.5, 68.0, 33.0 ],
+									"patching_rect" : [ 183.0, 554.5, 68.0, 33.0 ],
 									"style" : "",
 									"text" : "mono ou canal L"
 								}
@@ -756,7 +736,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 643.0, 454.0, 367.0, 60.0 ],
+									"patching_rect" : [ 643.0, 511.0, 367.0, 60.0 ],
 									"style" : "",
 									"text" : "Si le fichier audio est mono, alors le signal sort par la première sortie à gauche.\nSi le fichier audio est stéréo, alors le canal gauche sort par la première sortie et le canal droit par la deuxième sortie"
 								}
@@ -769,7 +749,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 358.0, 351.5, 390.0, 33.0 ],
+									"patching_rect" : [ 358.0, 408.5, 390.0, 33.0 ],
 									"style" : "",
 									"text" : "Si la lecture du fichier audio est en en cours, bang -> va mettre la lecture du fichier audio en pause"
 								}
@@ -782,7 +762,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 320.5, 333.0, 74.0 ],
+									"patching_rect" : [ 11.0, 377.5, 333.0, 74.0 ],
 									"style" : "",
 									"text" : "bang -> place la tête de lecture au début du fichier audio et lance la lecture du fichier audio\nSi le mode loop n'est pas activé, à la fin du fichier audio, la lecture s'arrête et la tête de lecture reste positionné à la fin du fichier audio"
 								}
@@ -795,7 +775,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 772.0, 315.0, 307.0, 33.0 ],
+									"patching_rect" : [ 772.0, 372.0, 307.0, 33.0 ],
 									"style" : "",
 									"text" : "Quel que soit l'état de lecture, bang -> va positionner la tête de lecture au début du fichier audio"
 								}
@@ -808,7 +788,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 358.0, 314.0, 366.0, 33.0 ],
+									"patching_rect" : [ 358.0, 371.0, 366.0, 33.0 ],
 									"style" : "",
 									"text" : "Si la lecture du fichier audio est en pause, bang -> va mettre en pause la lecture"
 								}
@@ -820,7 +800,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 298.5, 192.0, 20.0 ],
+									"patching_rect" : [ 11.0, 355.5, 192.0, 20.0 ],
 									"style" : "",
 									"text" : "Lancement lecture fichier audio"
 								}
@@ -833,7 +813,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 831.0, 360.5, 24.0, 24.0 ],
+									"patching_rect" : [ 831.0, 417.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -845,7 +825,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 423.0, 390.0, 24.0, 24.0 ],
+									"patching_rect" : [ 423.0, 447.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -857,7 +837,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 366.0, 558.0, 12.0, 58.0 ],
+									"patching_rect" : [ 366.0, 615.0, 12.0, 58.0 ],
 									"style" : ""
 								}
 
@@ -869,7 +849,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 239.0, 554.0, 12.0, 58.0 ],
+									"patching_rect" : [ 239.0, 611.0, 12.0, 58.0 ],
 									"style" : ""
 								}
 
@@ -878,13 +858,13 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-8",
-									"linecount" : 12,
+									"linecount" : 14,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 14.0, 56.0, 495.0, 194.0 ],
+									"patching_rect" : [ 14.0, 56.0, 495.0, 225.0 ],
 									"style" : "",
-									"text" : "Cet objet permet de lire un fichier audio mono ou stéréo au format WAVE. \nIl possède un paramètre interne : le nom du fichier avec l'extension. \n\nEntrée 1 (bang) : lance la lecture du fichier audio\nEntrée 2 (bang) : mode play/pause,\nEntrée 3 (bang) : replace la tête de lecture au début du fichieur audio\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (float) : début de boucle en ms\nEntrée 6 (float) : fin de boucle en ms\nSortie 1 (audio) : flux audio canal Gauche\nSortie 2 (audio) : flux audio canal Droit (si fichier stéréo)\nSortie 3 (audio) : position de la tête de lecture"
+									"text" : "Cet objet permet de lire un fichier audio mono ou stéréo au format WAVE. \nIl possède un paramètre interne : le nom du fichier avec l'extension. \n\nEntrée 1 (bang) : lance la lecture du fichier audio\nEntrée 2 (bang) : mode play/pause,\nEntrée 3 (bang) : replace la tête de lecture au début du fichieur audio\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (float) : début de boucle en ms\nEntrée 6 (float) : fin de boucle en ms\nSortie 1 (audio) : flux audio canal Gauche\nSortie 2 (audio) : flux audio canal Droit (si fichier stéréo)\nSortie 3 (audio) : position de la tête de lecture\n\nArgument 1 (obligatoire) : nom du fichier à charger (avec extension) "
 								}
 
 							}
@@ -909,7 +889,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 358.0, 674.0, 150.0, 33.0 ],
+									"patching_rect" : [ 358.0, 731.0, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "Activer le son en cliquant sur cet objet"
 								}
@@ -921,7 +901,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 279.0, 668.0, 45.0, 45.0 ],
+									"patching_rect" : [ 279.0, 725.0, 45.0, 45.0 ],
 									"style" : ""
 								}
 
@@ -933,7 +913,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
-									"patching_rect" : [ 249.0, 473.0, 229.0, 22.0 ],
+									"patching_rect" : [ 249.0, 530.0, 229.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.audio.lecteurAudio audioStereo.wav"
 								}
@@ -952,7 +932,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 333.0, 680.5, 20.0, 20.0 ],
+									"patching_rect" : [ 333.0, 737.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "1",
@@ -973,7 +953,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 847.0, 278.5, 20.0, 20.0 ],
+									"patching_rect" : [ 847.0, 335.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "4",
@@ -994,7 +974,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 461.0, 278.5, 20.0, 20.0 ],
+									"patching_rect" : [ 461.0, 335.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "3",
@@ -1015,7 +995,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 47.5, 266.5, 20.0, 20.0 ],
+									"patching_rect" : [ 47.5, 323.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "2",
@@ -1027,8 +1007,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
@@ -1037,8 +1015,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 1 ]
 								}
@@ -1047,8 +1023,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1057,8 +1031,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 2 ]
 								}
 
@@ -1066,8 +1038,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1076,8 +1046,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -1085,8 +1053,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 2 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -1094,8 +1060,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-36", 0 ]
 								}
 
@@ -1203,8 +1167,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1259,6 +1223,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1366,8 +1331,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

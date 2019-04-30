@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 1073.0, 659.0 ],
+		"rect" : [ 544.0, 93.0, 826.0, 789.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,44 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 236.0, 440.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 326.5, 391.0, 216.5, 33.0 ],
+					"style" : "",
+					"text" : "Modifier la fréquence et l'amplitude crête du son à synthétiser"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 106.5, 260.0, 216.5, 20.0 ],
+					"style" : "",
+					"text" : "Changer la forme d'onde synthétisée"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-5",
 					"maxclass" : "flonum",
@@ -45,7 +83,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 354.0, 341.0, 50.0, 22.0 ],
+					"patching_rect" : [ 353.0, 440.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -54,13 +92,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-6",
-					"linecount" : 7,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.5, 68.0, 778.0, 116.0 ],
+					"patching_rect" : [ 10.5, 68.0, 778.0, 179.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de générer un signal périodique élémentaire (sinus, triangle, dent de scie, rectangle). Cet objet possède trois paramètres internes : la fréquence du signal synthétiser, l'amplitude crête en Volt et la forme d'onde\n\nEntrée 1 (0,1,2,3,4) : forme d'onde à synthétiser\nEntrée 2 (float) : fréquence du signal synthétisé\nEntrée 3 (float) : amplitude crête du signal synthétisé\nSortie 1 (audio) : flux audio synthétisé"
+					"text" : "Cet objet permet de générer un signal périodique élémentaire (sinus, triangle, dent de scie, rectangle). Cet objet possède trois paramètres internes : la fréquence du signal synthétiser, l'amplitude crête en Volt et la forme d'onde\n\nEntrée 1 (0,1,2,3,4) : forme d'onde à synthétiser\nEntrée 2 (float) : fréquence du signal synthétisé\nEntrée 3 (float) : amplitude crête du signal synthétisé\nSortie 1 (audio) : flux audio synthétisé\n\nArgument 1 (obligatoire) : fréquence du son à synthétiser\nArgument 2 (obligatoire) : amplitude crête du son à synthétiser (en Volt)\nArgument 3 (obligatoire) : type de forme d'onde à synthétiser (1=sin;2=triangle;3=dent de scie;4=carré)"
 				}
 
 			}
@@ -84,7 +122,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 541.0, 45.0, 45.0 ],
+					"patching_rect" : [ 69.0, 640.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -95,7 +133,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.791626, 194.0, 241.0, 20.0 ],
+					"patching_rect" : [ 76.791626, 285.0, 241.0, 20.0 ],
 					"style" : "",
 					"text" : "Générateur signal périodique élémentaire"
 				}
@@ -108,7 +146,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 293.0, 341.0, 31.0, 22.0 ],
+					"patching_rect" : [ 292.0, 440.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "880"
 				}
@@ -116,25 +154,27 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-38",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 627.0, 396.0, 37.0, 22.0 ],
+					"patching_rect" : [ 682.0, 439.0, 35.0, 22.0 ],
 					"style" : "",
-					"text" : "1500"
+					"text" : "300"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-34",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.0, 385.0, 29.5, 22.0 ],
+					"patching_rect" : [ 630.0, 439.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "2"
 				}
@@ -147,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 308.0, 72.0, 22.0 ],
+					"patching_rect" : [ 197.0, 407.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 0"
 				}
@@ -160,21 +200,22 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.0, 228.5, 150.0, 74.0 ],
+					"patching_rect" : [ 131.0, 315.5, 150.0, 74.0 ],
 					"style" : "",
-					"text" : "0 : pas de signal\n1 : sinus\n2 : triangle\n3 : dent de scie\n4 : rectangle"
+					"text" : "0 : pas de signal\n1 : sinus\n2 : triangle\n3 : dent de scie\n4 : carré"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"attr" : "trigger",
+					"hidden" : 1,
 					"id" : "obj-23",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.0, 469.0, 203.0, 22.0 ],
+					"patching_rect" : [ 503.0, 523.0, 203.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -182,24 +223,26 @@
 , 			{
 				"box" : 				{
 					"attr" : "calccount",
+					"hidden" : 1,
 					"id" : "obj-22",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 413.0, 439.0, 150.0, 22.0 ],
+					"patching_rect" : [ 493.0, 493.0, 150.0, 22.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bufsize" : 256,
 					"calccount" : 2,
 					"id" : "obj-19",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 219.0, 519.0, 150.0, 130.0 ],
+					"patching_rect" : [ 236.0, 587.0, 150.0, 130.0 ],
 					"style" : "",
 					"trigger" : 1
 				}
@@ -215,10 +258,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 134.5, 224.5, 22.0, 82.0 ],
+					"patching_rect" : [ 106.5, 309.5, 22.0, 82.0 ],
 					"size" : 5,
 					"style" : "",
-					"value" : 0
+					"value" : 1
 				}
 
 			}
@@ -229,7 +272,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 145.0, 398.0, 177.0, 22.0 ],
+					"patching_rect" : [ 144.0, 497.0, 177.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.oscillateur 440 0.7 1"
 				}
@@ -244,9 +287,51 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 383.55188, 268.0, 52.44812 ],
+					"patching_rect" : [ 127.0, 482.55188, 268.0, 52.44812 ],
 					"proportion" : 0.39,
 					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-9",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 84.5, 260.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-8",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 304.5, 391.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -254,8 +339,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -264,8 +347,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -274,8 +355,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -284,17 +363,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -302,8 +385,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -311,8 +393,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -320,8 +401,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -329,8 +409,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -338,8 +416,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -347,16 +423,19 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
  ],
+		"parameters" : 		{
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.oscillateur.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -464,8 +543,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -519,8 +598,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

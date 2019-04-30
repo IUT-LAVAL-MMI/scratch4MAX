@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 820.0, 631.0 ],
+		"rect" : [ 688.0, 167.0, 753.0, 631.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.37 ],
 		"editing_bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
@@ -40,26 +40,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "button",
+					"id" : "obj-4",
+					"linecount" : 2,
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 112.300003, 177.0, 24.0, 24.0 ],
-					"style" : ""
+					"numoutlets" : 0,
+					"patching_rect" : [ 207.5, 238.0, 156.0, 33.0 ],
+					"style" : "",
+					"text" : "Activation/Désactivation\nMode loop"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 533.0, 378.0, 182.0, 33.0 ],
+					"patching_rect" : [ 552.0, 397.0, 182.0, 60.0 ],
 					"style" : "",
-					"text" : "même objet mais utilisable avec une interface graphique"
+					"text" : "même objet mais utilisable avec une interface graphique, faites un copier-coller pour le placer dans votre code"
 				}
 
 			}
@@ -71,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 599.900024, 226.0, 24.0, 24.0 ],
+					"patching_rect" : [ 617.900024, 260.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +85,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 193.899994, 177.0, 24.0, 24.0 ],
+					"patching_rect" : [ 213.899994, 273.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -96,7 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 478.0, 230.0, 24.0, 24.0 ],
+					"patching_rect" : [ 496.0, 264.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -108,7 +109,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 478.0, 269.0, 223.0, 22.0 ],
+					"patching_rect" : [ 496.0, 303.0, 223.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio audioMono.wav"
 				}
@@ -120,7 +121,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 484.0, 461.0, 45.0, 45.0 ],
+					"patching_rect" : [ 502.0, 493.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -140,7 +141,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 478.0, 368.0, 51.0, 53.0 ],
+					"patching_rect" : [ 496.0, 402.0, 51.0, 53.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -151,7 +152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.0, 147.5, 150.0, 20.0 ],
+					"patching_rect" : [ 118.0, 205.5, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Lancer le flux audio mono"
 				}
@@ -164,7 +165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 71.5, 177.0, 24.0, 24.0 ],
+					"patching_rect" : [ 91.5, 235.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -176,7 +177,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 71.5, 216.0, 223.0, 22.0 ],
+					"patching_rect" : [ 91.5, 312.0, 223.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio audioMono.wav"
 				}
@@ -189,7 +190,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 273.0, 178.0, 60.0 ],
+					"patching_rect" : [ 225.0, 345.0, 178.0, 60.0 ],
 					"style" : "",
 					"text" : "Modifier la valeur du pan\n0 -> tout à gauche\n0.5 -> centré\n1. -> tout à droite"
 				}
@@ -199,13 +200,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 2,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 51.0, 581.0, 38.0 ],
+					"patching_rect" : [ 8.0, 51.0, 581.0, 132.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de positionner un signal audio mono dans le champ stéréo : centré, plus à gauche ou plus à droite. "
+					"text" : "Cet objet permet de positionner un signal audio mono dans le champ stéréo : centré, plus à gauche ou plus à droite. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (float) : valeur du panoramique (valeur comprise entre 0 et 1)\nSortie 1 (audio) : flux audio canal gauche\nSortie 2 (audio) : flux audio canal droit\n"
 				}
 
 			}
@@ -234,21 +235,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 197.5, 344.0, 50.0, 22.0 ],
+					"patching_rect" : [ 211.5, 412.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 188.0, 461.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "Activer le son en cliquant sur cet objet"
 				}
 
 			}
@@ -258,7 +246,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 455.0, 45.0, 45.0 ],
+					"patching_rect" : [ 123.0, 527.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -270,30 +258,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 77.5, 378.0, 139.0, 22.0 ],
+					"patching_rect" : [ 91.5, 450.0, 139.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.panoramique"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 163.0, 467.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -310,10 +277,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 71.5, 147.5, 20.0, 20.0 ],
+					"patching_rect" : [ 91.5, 205.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "2",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -331,10 +298,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 188.0, 293.0, 20.0, 20.0 ],
+					"patching_rect" : [ 202.0, 365.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "3",
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -343,8 +310,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -352,8 +317,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -361,8 +324,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 1 ]
 				}
 
@@ -370,8 +331,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -379,8 +338,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -388,8 +345,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -397,8 +352,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -406,26 +359,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -433,8 +373,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -442,8 +380,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -457,12 +393,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.panoramique.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -570,8 +508,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -581,6 +519,24 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "panelGold-1",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
+						"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
 				}
 ,
 				"parentstyle" : "",
@@ -599,6 +555,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "texteditGold",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

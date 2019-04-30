@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 78.0, 79.0, 1249.0, 665.0 ],
+		"rect" : [ 78.0, 79.0, 1362.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,8 +43,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 351.5, 548.5, 37.0, 22.0 ],
-					"presentation_rect" : [ 315.0, 591.5, 0.0, 0.0 ],
+					"patching_rect" : [ 358.0, 542.5, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "7500"
 				}
@@ -57,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 293.0, 511.5, 184.0, 33.0 ],
-					"presentation_rect" : [ 285.0, 546.5, 0.0, 0.0 ],
+					"patching_rect" : [ 358.0, 507.5, 184.0, 33.0 ],
 					"style" : "",
 					"text" : "on peut changer l'adresse IP de destination"
 				}
@@ -71,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 137.0, 548.5, 81.0, 22.0 ],
+					"patching_rect" : [ 205.5, 542.5, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "192.168.0.12"
 				}
@@ -85,7 +83,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1162.0, 610.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1098.0, 592.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -98,7 +96,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1058.0, 610.0, 50.0, 22.0 ],
+					"patching_rect" : [ 994.0, 592.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -110,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 1087.0, 532.0, 69.0, 22.0 ],
+					"patching_rect" : [ 1023.0, 514.5, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack 0 0"
 				}
@@ -123,7 +121,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.5, 511.5, 184.0, 33.0 ],
+					"patching_rect" : [ 166.0, 507.5, 184.0, 33.0 ],
 					"style" : "",
 					"text" : "on peut changer l'adresse IP de destination"
 				}
@@ -136,9 +134,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 351.5, 327.0, 256.0, 33.0 ],
+					"patching_rect" : [ 326.0, 321.0, 274.0, 33.0 ],
 					"style" : "",
-					"text" : "modifier la valeur de ces paramètres qui simulent les infos issues de la kinect"
+					"text" : "modifier la valeur de ces paramètres qui simulent les infos issues de la kinect (par exemple)"
 				}
 
 			}
@@ -149,7 +147,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1087.0, 486.0, 87.0, 22.0 ],
+					"patching_rect" : [ 1023.0, 468.5, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /xy"
 				}
@@ -162,7 +160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.0, 416.5, 50.0, 22.0 ],
+					"patching_rect" : [ 381.0, 410.5, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "pak 0 0"
 				}
@@ -176,7 +174,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 442.0, 374.5, 50.0, 22.0 ],
+					"patching_rect" : [ 416.0, 368.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -188,7 +186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.0, 465.0, 89.0, 22.0 ],
+					"patching_rect" : [ 381.0, 459.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "/head/xy $1 $2"
 				}
@@ -202,7 +200,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 360.0, 374.5, 50.0, 22.0 ],
+					"patching_rect" : [ 334.0, 368.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -216,7 +214,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 875.0, 610.0, 50.0, 22.0 ],
+					"patching_rect" : [ 847.0, 592.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -227,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 422.0, 178.0, 20.0 ],
+					"patching_rect" : [ 609.0, 400.5, 178.0, 20.0 ],
 					"style" : "",
 					"text" : "information brute à la réception"
 				}
@@ -240,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 875.0, 567.0, 93.0, 22.0 ],
+					"patching_rect" : [ 847.0, 549.5, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /osc"
 				}
@@ -253,7 +251,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 875.0, 528.0, 133.0, 22.0 ],
+					"patching_rect" : [ 847.0, 510.5, 133.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /destination"
 				}
@@ -266,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 875.0, 492.0, 117.0, 22.0 ],
+					"patching_rect" : [ 847.0, 474.5, 117.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /adresse"
 				}
@@ -279,7 +277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 875.0, 459.0, 91.0, 22.0 ],
+					"patching_rect" : [ 847.0, 441.5, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /est"
 				}
@@ -292,7 +290,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 875.0, 422.0, 129.0, 22.0 ],
+					"patching_rect" : [ 847.0, 404.5, 129.0, 22.0 ],
 					"style" : "",
 					"text" : "OSC-route /ceci /head"
 				}
@@ -305,7 +303,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 416.0, 201.0, 22.0 ],
+					"patching_rect" : [ 5.0, 395.5, 201.0, 22.0 ],
 					"style" : "",
 					"text" : "/ceci/est/adresse/destination/osc $1"
 				}
@@ -320,7 +318,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 20.0, 371.0, 50.0, 22.0 ],
+					"patching_rect" : [ 5.0, 350.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -332,7 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 590.0, 448.0, 224.0, 22.0 ],
+					"patching_rect" : [ 585.0, 426.5, 224.0, 22.0 ],
 					"style" : "",
 					"text" : "/ceci/est/adresse/destination/osc 19.9"
 				}
@@ -344,7 +342,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.5, 343.0, 256.0, 20.0 ],
+					"patching_rect" : [ 34.5, 322.5, 256.0, 20.0 ],
 					"style" : "",
 					"text" : "modifier la valeur de ce paramètre à envoyer"
 				}
@@ -357,7 +355,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 831.0, 368.0, 173.0, 22.0 ],
+					"patching_rect" : [ 803.0, 350.5, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.divers.receptionOsc 7400"
 				}
@@ -369,7 +367,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 650.5, 205.0, 22.0 ],
+					"patching_rect" : [ 115.5, 607.5, 205.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.divers.envoiOsc 127.0.0.1 7400"
 				}
@@ -383,9 +381,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 56.0, 559.0, 194.0 ],
+					"patching_rect" : [ 14.0, 56.0, 626.0, 194.0 ],
 					"style" : "",
-					"text" : "Ces objets permettent respectivement d'envoyer et de recevoir des messages OSC\n\nenvoiOsc\nEntrée 1 (message) : message Osc à envoyer\nEntrée 2 (message) : adresse IP de destination\nEntrée 3 (integer) : numéro de port de destination\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port\n\nreceptionOsc\nSortie 1 (message) : message Osc reçu\nArgument 1 (obligatoire) : numéro de port"
+					"text" : "Ces objets permettent respectivement d'envoyer et de recevoir des messages OSC\n\nenvoiOsc\nEntrée 1 (message) : message Osc à envoyer\nEntrée 2 (message) : adresse IP de destination (si on veut la changer en cours de route)\nEntrée 3 (integer) : numéro de port de destination (si on veut le changer en cours de route)\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port\n\nreceptionOsc\nSortie 1 (message) : message Osc reçu\nArgument 1 (obligatoire) : numéro de port"
 				}
 
 			}
@@ -412,7 +410,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 638.25, 227.0, 46.5 ],
+					"patching_rect" : [ 104.5, 595.25, 227.0, 46.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -427,7 +425,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 809.5, 355.75, 227.0, 46.5 ],
+					"patching_rect" : [ 781.5, 338.25, 227.0, 46.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -446,7 +444,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 20.0, 343.0, 20.0, 20.0 ],
+					"patching_rect" : [ 5.0, 322.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "1",
@@ -467,7 +465,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.5, 327.0, 20.0, 20.0 ],
+					"patching_rect" : [ 300.5, 321.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "2",
@@ -614,14 +612,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.divers.envoiOsc.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Divers/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.divers.receptionOsc.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Divers/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -738,8 +736,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -793,8 +791,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

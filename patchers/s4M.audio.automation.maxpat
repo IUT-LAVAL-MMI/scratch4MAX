@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 89.0, 1338.0, 852.0 ],
+		"rect" : [ 161.0, 91.0, 1048.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -62,19 +62,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1509.5, 87.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1155.5, 373.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "0"
 				}
 
 			}
@@ -261,7 +248,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1171.25, 297.0, 150.0, 33.0 ],
 					"style" : "",
-					"text" : "par défaut il charge le fichier sauvData0"
+					"text" : "par défaut il charge le fichier sauvData1"
 				}
 
 			}
@@ -333,12 +320,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 48.0, 325.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"function" : [ 5000.0, 0.0, 2.0, 0.0, 0.0, 0, 1258.471558, 0.0, 0, 1574.736572, 1.367089, 0, 3221.950439, 1.367089, 0, 3538.215332, 0.0, 0, 5000.0, 0.0, 0, "linear" ]
+						"function" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 10.038338, 0.417722, 0, 73.518364, 1.0, 0, 178.544601, 0.521472, 0, 309.827393, 1.0, 0, 467.36676, 1.0, 0, 491.528625, 0.0, 0, 619.654785, 1.0, 0, 732.791504, 1.0, 0, 887.471741, 1.0, 0, 976.744019, 0.719146, 0, "linear" ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u720003030"
+					"varname" : "u488004601"
 				}
 
 			}
@@ -389,9 +376,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 934.5, 569.0, 425.0, 35.0 ],
+					"patching_rect" : [ 1000.5, 564.143555, 533.0, 35.0 ],
 					"style" : "",
-					"text" : "read \"Macintosh HD:/Users/fguntz/Documents/Max 7/Packages/scratch4MAX_Audio/data/sauvData0.json\""
+					"text" : "read \"Macintosh HD:/Users/fguntz/Documents/Max 7/Packages/scratch4MAX/data/sauvData0.json\""
 				}
 
 			}
@@ -468,9 +455,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 445.0, 550.0, 427.0, 35.0 ],
+					"patching_rect" : [ 445.0, 550.0, 533.0, 35.0 ],
 					"style" : "",
-					"text" : "write \"Macintosh HD:/Users/fguntz/Documents/Max 7/Packages/scratch4MAX_Audio/data/sauvData0.json\""
+					"text" : "write \"Macintosh HD:/Users/fguntz/Documents/Max 7/Packages/scratch4MAX/data/sauvData0.json\""
 				}
 
 			}
@@ -481,7 +468,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1155.5, 343.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1131.25, 332.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -809,8 +796,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 1258.471558, 0.0, 0, 1574.736572, 1.367089, 0, 3221.950439, 1.367089, 0, 3538.215332, 0.0, 0, 5000.0, 0.0, 0 ],
-					"domain" : 5000.0,
+					"addpoints" : [ 0.0, 0.0, 0, 10.038338, 0.417722, 0, 73.518364, 1.0, 0, 178.544601, 0.521472, 0, 309.827393, 1.0, 0, 467.36676, 1.0, 0, 491.528625, 0.0, 0, 619.654785, 1.0, 0, 732.791504, 1.0, 0, 887.471741, 1.0, 0, 976.744019, 0.719146, 0 ],
 					"id" : "obj-50",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -820,7 +806,6 @@
 					"patching_rect" : [ 119.0, 411.846558, 202.428604, 111.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.499985, 6.0, 391.428589, 104.0 ],
-					"range" : [ 0.0, 2.0 ],
 					"style" : "",
 					"varname" : "function"
 				}
@@ -926,7 +911,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1168,13 +1153,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -1268,8 +1246,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

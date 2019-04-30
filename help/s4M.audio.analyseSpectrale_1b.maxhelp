@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 6,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 713.0 ],
+		"rect" : [ 266.0, 79.0, 1372.0, 815.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 355.5, 655.0, 136.0, 22.0 ],
+					"presentation_rect" : [ 340.5, 655.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "s4M.audio.amplification"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 216.0, 655.0, 136.0, 22.0 ],
+					"style" : "",
+					"text" : "s4M.audio.amplification"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 166.0, 287.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 530.0, 194.0, 74.0 ],
+					"patching_rect" : [ 23.0, 565.0, 194.0, 74.0 ],
 					"style" : "",
 					"text" : "Appliquer éventuellement un gain sur le flux audio et sur son enveloppe pour obtenir un flux audio audible et pour avoir une enveloppe exploitable"
 				}
@@ -55,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.5, 346.0, 410.0, 20.0 ],
+					"patching_rect" : [ 430.5, 381.0, 410.0, 20.0 ],
 					"style" : "",
 					"text" : "Choisir la fréquence centrale et le facteur de qualité du filtre passe-bande"
 				}
@@ -69,7 +108,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 508.0, 549.0, 50.0, 22.0 ],
+					"patching_rect" : [ 500.75, 699.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -80,9 +119,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 140.5, 230.0, 124.0, 20.0 ],
+					"patching_rect" : [ 140.5, 265.0, 193.0, 20.0 ],
 					"style" : "",
-					"text" : "Lancer un flux audio"
+					"text" : "Lancement lecture fichier audio"
 				}
 
 			}
@@ -90,13 +129,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-12",
-					"linecount" : 10,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 58.0, 728.0, 163.0 ],
+					"patching_rect" : [ 23.0, 57.0, 734.0, 194.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'analyser une bande spectrale d'un flux audio. Cet objet possède deux paramètres internes : la fréquence centrale et le facteur de qualité. Le traitement est réalisé par un filtre passe-bande. \n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 (float - paramètre externe) : fréquence centrale \nEntrée 3 (float - param ext) : facteur de qualité\n\nSortie 1 (audio) : flux audio filtré\nSortie 2 (audio) : enveloppe du flux audio filtré (= intensité sonore de la bande spectrale sélectionnée)\nSortie 3 (integer) : énergie de la bande spectrale sélectionnée "
+					"text" : "Cet objet permet d'analyser une bande spectrale d'un flux audio. Cet objet possède deux paramètres : la fréquence centrale et le facteur de qualité. Le traitement est réalisé par un filtre passe-bande. \n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 (float - paramètre externe) : fréquence centrale  du filtre passe-bande\nEntrée 3 (float - param ext) : facteur de qualité\nSortie 1 (audio) : flux audio filtré\nSortie 2 (audio) : enveloppe du flux audio filtré (= intensité sonore de la bande spectrale sélectionnée)\nSortie 3 (integer) : énergie de la bande spectrale sélectionnée \n\nArgument 1 (obligatoire) : fréquence centrale du filtre passe-bande\nArgument 2 (obligatoire) : numéro du filtre (utile si plusieurs filtres utilisés en même temps)"
 				}
 
 			}
@@ -122,23 +161,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 571.0, 521.0, 20.0, 140.0 ],
+					"patching_rect" : [ 503.0, 551.0, 18.5, 138.0 ],
 					"setminmax" : [ 0.0, 700.0 ],
 					"setstyle" : 1,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 353.0, 611.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "*~"
 				}
 
 			}
@@ -151,21 +177,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 292.5, 565.0, 50.0, 22.0 ],
+					"patching_rect" : [ 292.5, 600.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 255.0, 611.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "*~"
 				}
 
 			}
@@ -175,7 +188,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.5, 396.0, 29.0, 20.0 ],
+					"patching_rect" : [ 467.5, 431.0, 29.0, 20.0 ],
 					"style" : "",
 					"text" : "Q"
 				}
@@ -187,7 +200,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 321.0, 396.0, 112.0, 20.0 ],
+					"patching_rect" : [ 323.5, 431.0, 112.0, 20.0 ],
 					"style" : "",
 					"text" : "fréquence centrale"
 				}
@@ -202,7 +215,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 453.5, 418.0, 54.0, 22.0 ],
+					"patching_rect" : [ 453.5, 453.0, 54.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -216,7 +229,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 353.0, 418.0, 66.0, 22.0 ],
+					"patching_rect" : [ 355.5, 453.0, 66.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -228,7 +241,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 257.5, 471.0, 215.0, 22.0 ],
+					"patching_rect" : [ 257.5, 506.0, 215.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.analyseSpectrale_1b 175 1"
 				}
@@ -241,7 +254,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.0, 697.0, 238.0, 161.0 ],
+					"patching_rect" : [ 355.5, 747.0, 238.0, 161.0 ],
 					"style" : ""
 				}
 
@@ -252,20 +265,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.25, 660.0, 45.0, 45.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 166.0, 262.0, 24.0, 24.0 ],
+					"patching_rect" : [ 202.25, 729.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -277,7 +277,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 262.0, 156.0, 33.0 ],
+					"patching_rect" : [ 247.25, 301.5, 139.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -291,7 +291,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 265.600006, 300.0, 24.0, 24.0 ],
+					"patching_rect" : [ 265.600006, 335.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -303,7 +303,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 166.0, 345.0, 186.0, 22.0 ],
+					"patching_rect" : [ 166.0, 380.0, 186.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
@@ -318,7 +318,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 234.5, 450.5, 262.0, 63.5 ],
+					"patching_rect" : [ 234.5, 485.5, 262.0, 63.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -337,7 +337,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 230.0, 20.0, 20.0 ],
+					"patching_rect" : [ 115.0, 265.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "1",
@@ -358,7 +358,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 307.5, 539.0, 20.0, 20.0 ],
+					"patching_rect" : [ 265.600006, 600.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "3",
@@ -379,7 +379,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 439.0, 372.0, 20.0, 20.0 ],
+					"patching_rect" : [ 439.0, 407.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "2",
@@ -391,26 +391,13 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -418,94 +405,79 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-5", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-5", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-74", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
+					"destination" : [ "obj-3", 1 ],
+					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -513,40 +485,49 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-19::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-5::obj-19::obj-13" : [ "flonum", "flonum", 0 ]
+			"obj-5::obj-19::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-5::obj-19::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.analyseSpectrale_1b.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filtreBande.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.audio.amplification.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -654,8 +635,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

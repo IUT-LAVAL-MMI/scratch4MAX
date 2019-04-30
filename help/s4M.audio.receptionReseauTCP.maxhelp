@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 97.0, 175.0, 992.0, 581.0 ],
+		"rect" : [ 406.0, 100.0, 1146.0, 826.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 92.0, 422.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.0, 397.0, 192.0, 20.0 ],
+					"style" : "",
+					"text" : "Lancement lecture fichier audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 319.0, 472.0, 139.0, 33.0 ],
+					"patching_rect" : [ 319.0, 567.0, 139.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation envoi"
 				}
@@ -51,28 +75,15 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 398.0, 108.0, 33.0 ],
-					"style" : "",
-					"text" : "Envoyer un flux audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-5",
-					"linecount" : 14,
+					"linecount" : 19,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 58.0, 780.0, 225.0 ],
+					"patching_rect" : [ 23.0, 58.0, 780.0, 304.0 ],
 					"style" : "",
-					"text" : "Ces objets permettent d'envoyer et de réceptionner un flux audio par le réseau avec le protocole TCP. \n\nenvoiReseauTCP\nEntrée 1 (audio) : flux audio (canal gauche) à envoyer\nEntrée 2 (audio) : flux audio (canal droit) à envoyer\nEntrée 3 (booléen) : activation/désactivation envoi\n\nSortie 1 (booléen) : indicateur connexion entre client et serveur. Si 0 alors il n'y a pas de connexion entre le client et le serveur, il y a donc un problème réseau\nSortie 2 : latence en ms entre le client et le serveur\n\nreceptionReseauTCP\nSortie 1 (audio) : flux audio (canal gauche) réceptionné \nSortie 2 (audio) : flux audio (canal droit) réceptionné"
+					"text" : "Ces objets permettent d'envoyer et de réceptionner un flux audio par le réseau avec le protocole TCP. \n\nenvoiReseauTCP\nEntrée 1 (audio) : flux audio (canal gauche) à envoyer\nEntrée 2 (audio) : flux audio (canal droit) à envoyer\nEntrée 3 (booléen) : activation/désactivation envoi\nSortie 1 (booléen) : indicateur connexion entre client et serveur. Si 0 alors il n'y a pas de connexion entre le client et le serveur, il y a donc un problème réseau\nSortie 2 : latence en ms entre le client et le serveur\n\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port de destination\n\nreceptionReseauTCP\nSortie 1 (audio) : flux audio (canal gauche) réceptionné \nSortie 2 (audio) : flux audio (canal droit) réceptionné\n\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port de destination"
 				}
 
 			}
@@ -98,7 +109,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 319.0, 510.0, 24.0, 24.0 ],
+					"patching_rect" : [ 319.0, 605.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -109,7 +120,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 627.0, 534.0, 45.0, 45.0 ],
+					"patching_rect" : [ 627.0, 629.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -121,7 +132,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 503.0, 398.0, 267.0, 22.0 ],
+					"patching_rect" : [ 503.0, 493.0, 267.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.receptionReseauTCP 127.0.0.1 8002"
 				}
@@ -136,7 +147,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 319.0, 646.0, 50.0, 22.0 ],
+					"patching_rect" : [ 319.0, 741.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -149,7 +160,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 92.0, 645.0, 24.0, 24.0 ],
+					"patching_rect" : [ 92.0, 740.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -161,34 +172,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 92.0, 590.0, 246.0, 22.0 ],
+					"patching_rect" : [ 92.0, 685.0, 246.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.envoiReseauTCP 127.0.0.1 8002"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 293.0, 192.0, 20.0 ],
-					"style" : "",
-					"text" : "Lancement lecture fichier audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 90.0, 324.0, 24.0, 24.0 ],
-					"style" : ""
 				}
 
 			}
@@ -199,7 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 353.0, 156.0, 33.0 ],
+					"patching_rect" : [ 134.0, 448.0, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -213,7 +199,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 189.600006, 391.0, 24.0, 24.0 ],
+					"patching_rect" : [ 189.600006, 486.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -225,7 +211,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 90.0, 436.0, 186.0, 22.0 ],
+					"patching_rect" : [ 90.0, 531.0, 186.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
@@ -240,7 +226,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 567.0, 301.0, 63.5 ],
+					"patching_rect" : [ 75.0, 662.0, 301.0, 63.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -255,30 +241,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.0, 377.25, 313.0, 63.5 ],
+					"patching_rect" : [ 485.0, 472.25, 313.0, 63.5 ],
 					"proportion" : 0.39,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 265.0, 404.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -295,10 +260,31 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 294.0, 478.5, 20.0, 20.0 ],
+					"patching_rect" : [ 294.0, 573.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-19",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 15.0, 397.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"style" : "",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -307,8 +293,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -316,8 +300,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -325,8 +307,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -334,8 +314,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -343,8 +321,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -353,8 +329,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -363,17 +337,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 1 ]
 				}
 
@@ -381,8 +351,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -391,18 +359,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.envoiReseauTCP.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.receptionReseauTCP.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -510,8 +481,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -565,8 +536,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

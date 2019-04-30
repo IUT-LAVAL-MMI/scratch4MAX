@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 997.0, 531.0 ],
+		"rect" : [ 396.0, 136.0, 947.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,20 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-11",
+					"linecount" : 12,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 9.5, 51.0, 648.0, 194.0 ],
+					"style" : "",
+					"text" : "Cet objet permet de synthétiser une harmonique d'une série de Fourier\n\nEntrée 1 (float) : fréquence son pur Fourier\nEntrée 2 (integer) : numéro de l'harmonique\nEntrée 2 (float) : amplitude crête en dBFS de l'harmonique\nEntrée 3 (float) : amplitude crête en Volt de l'harmonique\nEntrée 4 (toggle) : activation harmonique\nSortie 1 (audio) : flux audio synthétisé\n\nArgument 1 (obligatoire) : fréquence de la fréquence fondamentale\nArgument 2 (obligatoire) : amplitude crête en dBFS de l'harmonique\nArgument 3 (integer) : numéro de l'harmonique"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"attr" : "trigger",
 					"hidden" : 1,
 					"id" : "obj-30",
@@ -45,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 613.0, 262.0, 150.0, 22.0 ],
+					"patching_rect" : [ 584.0, 421.0, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -59,7 +73,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 613.0, 235.0, 150.0, 22.0 ],
+					"patching_rect" : [ 584.0, 394.0, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -70,8 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 773.0, 104.0, 124.0, 20.0 ],
-					"presentation_rect" : [ 773.0, 110.0, 0.0, 0.0 ],
+					"patching_rect" : [ 744.0, 263.0, 124.0, 20.0 ],
 					"style" : "",
 					"text" : "Activer l'harmonique"
 				}
@@ -85,7 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 745.5, 165.0, 24.0, 24.0 ],
+					"patching_rect" : [ 716.5, 324.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -98,7 +111,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 303.0, 149.0, 50.0, 22.0 ],
+					"patching_rect" : [ 274.0, 308.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -110,8 +123,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 303.0, 104.0, 144.0, 33.0 ],
-					"presentation_rect" : [ 240.0, 159.0, 0.0, 0.0 ],
+					"patching_rect" : [ 274.0, 263.0, 144.0, 33.0 ],
 					"style" : "",
 					"text" : "Tester la modification du numéro de l'harmonique"
 				}
@@ -123,7 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 621.5, 143.0, 33.0, 20.0 ],
+					"patching_rect" : [ 592.5, 302.0, 33.0, 20.0 ],
 					"style" : "",
 					"text" : "Volt"
 				}
@@ -135,7 +147,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 513.0, 143.0, 43.0, 20.0 ],
+					"patching_rect" : [ 484.0, 302.0, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "dBFS"
 				}
@@ -150,7 +162,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 613.0, 165.0, 50.0, 22.0 ],
+					"patching_rect" : [ 584.0, 324.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -162,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 506.0, 104.0, 178.0, 33.0 ],
+					"patching_rect" : [ 477.0, 263.0, 178.0, 33.0 ],
 					"style" : "",
 					"text" : "Tester la modification de l'amplitude crête du son pur"
 				}
@@ -175,22 +187,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.5, 104.0, 150.0, 33.0 ],
+					"patching_rect" : [ 85.5, 263.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Tester la modification de la fréquence du son pur"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 14.0,
-					"id" : "obj-8",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 51.0, 583.0, 22.0 ],
-					"style" : "",
-					"text" : "Cet objet permet de synthétiser une harmonique d'une série de Fourier"
 				}
 
 			}
@@ -217,7 +216,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 506.0, 162.0, 50.0, 22.0 ],
+					"patching_rect" : [ 477.0, 321.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -230,7 +229,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 293.0, 315.0, 356.0, 208.0 ],
+					"patching_rect" : [ 264.0, 474.0, 356.0, 208.0 ],
 					"style" : "",
 					"trigger" : 1,
 					"triglevel" : 0.0001
@@ -246,21 +245,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 149.0, 50.0, 22.0 ],
+					"patching_rect" : [ 107.0, 308.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 383.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "Activer le son en cliquant sur cet objet"
 				}
 
 			}
@@ -270,7 +256,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 377.0, 45.0, 45.0 ],
+					"patching_rect" : [ 26.0, 536.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -282,7 +268,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 194.0, 272.0, 199.0, 22.0 ],
+					"patching_rect" : [ 165.0, 413.0, 199.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.sonPurFourier 440 1 -13"
 				}
@@ -301,32 +287,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 476.5, 110.5, 20.0, 20.0 ],
-					"presentation_rect" : [ 476.5, 111.5, 0.0, 0.0 ],
+					"patching_rect" : [ 447.5, 269.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "5",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 389.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
+					"text" : "4",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -344,11 +308,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 88.0, 110.5, 20.0, 20.0 ],
-					"presentation_rect" : [ 215.0, 165.5, 0.0, 0.0 ],
+					"patching_rect" : [ 59.0, 269.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "3",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -366,10 +329,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 276.0, 110.5, 20.0, 20.0 ],
+					"patching_rect" : [ 247.0, 269.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "4",
+					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -387,7 +350,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 745.5, 110.5, 20.0, 20.0 ],
+					"patching_rect" : [ 716.5, 269.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "2",
@@ -399,8 +362,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -409,8 +370,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -419,8 +378,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -429,8 +386,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -438,8 +393,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -447,7 +400,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -456,8 +408,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -465,7 +415,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -474,8 +423,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -483,8 +430,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -492,7 +437,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.sonPurFourier.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Audio/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -600,8 +546,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -611,6 +557,24 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "panelGold-1",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
+						"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
 				}
 ,
 				"parentstyle" : "",
@@ -629,6 +593,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "texteditGold",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

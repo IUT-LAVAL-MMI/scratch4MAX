@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 6,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1104.0, 715.0 ],
+		"rect" : [ 256.0, 79.0, 1435.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 141.5, 233.0, 192.0, 20.0 ],
+					"style" : "",
+					"text" : "Lancement lecture fichier audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 165.0, 257.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-65",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -63,18 +87,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-58",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 142.0, 233.0, 124.0, 20.0 ],
-					"style" : "",
-					"text" : "Lancer un flux audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-51",
 					"linecount" : 9,
@@ -83,7 +95,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 63.0, 899.0, 147.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'analyser le spectre d'un flux audio dans les bandes de fréquence suivante : 31,5 Hz ; 63 Hz ; 125 Hz ; 250 Hz ; 500 Hz ; 1kHz ; 2kHz ; 4kHz ; 8kHz ; 16kHz. Le traitement est réalisé par dix filtres filtres passe-bande pré-réglés tfréquence cntrale fixe et facteur de qualité fixé à 20)\n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 à 11(float - paramètre externe) : gain de chaque bande spectrale à régler pour avoir en sortie des enveloppes exploitables \n\nSortie 1 à 10 (audio) : enveloppe de chaque bande de fréquence\nSortie 11 (graphique) : énergie de chaque bande sous forme graphique ou sous forme de liste d'entiers"
+					"text" : "Cet objet permet d'analyser le spectre d'un flux audio dans les bandes de fréquence suivante : 31,5 Hz ; 63 Hz ; 125 Hz ; 250 Hz ; 500 Hz ; 1kHz ; 2kHz ; 4kHz ; 8kHz ; 16kHz. Le traitement est réalisé par dix filtres filtres passe-bande pré-réglés tfréquence cntrale fixe et facteur de qualité fixé à 20)\n\nEntrée 1 (audio) : flux audio à analyser\nEntrée 2 à 11(float) : gain de chaque bande spectrale à régler pour avoir en sortie des enveloppes exploitables \n\nSortie 1 à 10 (audio) : enveloppe de chaque bande de fréquence\nSortie 11 (graphique) : énergie de chaque bande sous forme graphique ou sous forme de liste d'entiers"
 				}
 
 			}
@@ -774,19 +786,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 177.5, 257.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-28",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -906,8 +905,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -916,8 +913,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -926,8 +921,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -936,8 +929,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -945,8 +936,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -954,8 +943,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -963,8 +950,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -972,8 +957,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -981,8 +964,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -990,8 +971,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -999,8 +978,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1008,8 +985,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 6 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1017,8 +992,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1026,8 +999,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 7 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -1035,8 +1006,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1044,8 +1013,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 8 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1053,8 +1020,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -1062,8 +1027,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 9 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1071,8 +1034,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -1080,8 +1041,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 10 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1089,8 +1048,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1098,8 +1055,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1107,8 +1062,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -1116,8 +1069,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1126,8 +1077,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 2 ]
 				}
 
@@ -1135,8 +1084,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 3 ]
 				}
 
@@ -1144,8 +1091,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 4 ]
 				}
 
@@ -1153,8 +1098,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 9 ]
 				}
 
@@ -1162,8 +1105,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-5", 8 ]
 				}
@@ -1172,8 +1113,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 7 ]
 				}
 
@@ -1181,8 +1120,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 6 ]
 				}
 
@@ -1190,8 +1127,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 5 ]
 				}
 
@@ -1199,8 +1134,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1209,8 +1142,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -1218,8 +1149,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-5", 8 ]
 				}
@@ -1228,8 +1157,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 10 ]
 				}
 
@@ -1237,8 +1164,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -1246,8 +1171,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1255,8 +1178,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1264,69 +1185,73 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-24::obj-19::obj-16" : [ "flonum[8]", "flonum[1]", 0 ],
-			"obj-5::obj-22::obj-19::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
-			"obj-5::obj-18::obj-19::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
-			"obj-5::obj-6::obj-19::obj-13" : [ "flonum[17]", "flonum", 0 ],
-			"obj-5::obj-14::obj-19::obj-16" : [ "flonum[10]", "flonum[1]", 0 ],
-			"obj-5::obj-20::obj-19::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
-			"obj-5::obj-2::obj-19::obj-16" : [ "flonum[18]", "flonum[1]", 0 ],
-			"obj-5::obj-10::obj-19::obj-16" : [ "flonum[12]", "flonum[1]", 0 ],
-			"obj-5::obj-22::obj-19::obj-13" : [ "flonum[7]", "flonum", 0 ],
-			"obj-5::obj-16::obj-19::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-5::obj-8::obj-19::obj-16" : [ "flonum[14]", "flonum[1]", 0 ],
 			"obj-5::obj-16::obj-19::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-5::obj-14::obj-19::obj-13" : [ "flonum[11]", "flonum", 0 ],
+			"obj-5::obj-2::obj-19::obj-13" : [ "flonum[19]", "flonum", 0 ],
+			"obj-5::obj-10::obj-19::obj-16" : [ "flonum[12]", "flonum[1]", 0 ],
 			"obj-5::obj-24::obj-19::obj-13" : [ "flonum[9]", "flonum", 0 ],
-			"obj-5::obj-18::obj-19::obj-13" : [ "flonum[3]", "flonum", 0 ],
+			"obj-5::obj-18::obj-19::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
 			"obj-5::obj-6::obj-19::obj-16" : [ "flonum[16]", "flonum[1]", 0 ],
 			"obj-5::obj-10::obj-19::obj-13" : [ "flonum[13]", "flonum", 0 ],
+			"obj-5::obj-22::obj-19::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
+			"obj-5::obj-18::obj-19::obj-13" : [ "flonum[3]", "flonum", 0 ],
+			"obj-5::obj-16::obj-19::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
+			"obj-5::obj-6::obj-19::obj-13" : [ "flonum[17]", "flonum", 0 ],
+			"obj-5::obj-14::obj-19::obj-16" : [ "flonum[10]", "flonum[1]", 0 ],
+			"obj-5::obj-22::obj-19::obj-13" : [ "flonum[7]", "flonum", 0 ],
+			"obj-5::obj-8::obj-19::obj-13" : [ "flonum[15]", "flonum", 0 ],
+			"obj-5::obj-14::obj-19::obj-13" : [ "flonum[11]", "flonum", 0 ],
 			"obj-5::obj-20::obj-19::obj-13" : [ "flonum[5]", "flonum", 0 ],
-			"obj-5::obj-2::obj-19::obj-13" : [ "flonum[19]", "flonum", 0 ],
-			"obj-5::obj-8::obj-19::obj-13" : [ "flonum[15]", "flonum", 0 ]
+			"obj-5::obj-2::obj-19::obj-16" : [ "flonum[18]", "flonum[1]", 0 ],
+			"obj-5::obj-8::obj-19::obj-16" : [ "flonum[14]", "flonum[1]", 0 ],
+			"obj-5::obj-24::obj-19::obj-16" : [ "flonum[8]", "flonum[1]", 0 ],
+			"obj-5::obj-20::obj-19::obj-16" : [ "flonum[4]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.analyseSpectrale_10b.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.analyseSpectrale_1b.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filtreBande.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.detectionPic.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1434,8 +1359,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1445,6 +1370,24 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "panelGold-1",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
+						"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
 				}
 ,
 				"parentstyle" : "",
@@ -1463,6 +1406,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "texteditGold",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

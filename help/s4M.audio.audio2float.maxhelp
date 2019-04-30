@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 124.0, 1182.0, 630.0 ],
+		"rect" : [ 377.0, 124.0, 1091.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 448.0, 272.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 401.5, 247.0, 192.0, 20.0 ],
+					"style" : "",
+					"text" : "Lancement lecture fichier audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 476.0, 525.5, 180.0, 33.0 ],
-					"presentation_rect" : [ 466.0, 558.5, 0.0, 0.0 ],
+					"patching_rect" : [ 475.0, 605.5, 180.0, 33.0 ],
 					"style" : "",
 					"text" : "en sortie la valeur du réel peut varier de 0 à 200"
 				}
@@ -57,8 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 525.5, 180.0, 33.0 ],
-					"presentation_rect" : [ 230.0, 558.5, 0.0, 0.0 ],
+					"patching_rect" : [ 239.0, 605.5, 180.0, 33.0 ],
 					"style" : "",
 					"text" : "en sortie la valeur du réel peut varier de 0 à 360"
 				}
@@ -71,8 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 567.0, 392.5, 201.0, 47.0 ],
-					"presentation_rect" : [ 557.0, 425.5, 0.0, 0.0 ],
+					"patching_rect" : [ 566.0, 472.5, 201.0, 47.0 ],
 					"style" : "",
 					"text" : "en entrée la valeur du signal audio peut varier de 0V à 1V. En effet il s'agit d'une enveloppe. "
 				}
@@ -85,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 412.5, 174.0, 33.0 ],
+					"patching_rect" : [ 226.0, 492.5, 174.0, 33.0 ],
 					"style" : "",
 					"text" : "en entrée la valeur du signal audio peut varier de -1 V à 1V"
 				}
@@ -102,8 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 497.0, 398.5, 56.0, 22.0 ],
-					"presentation_rect" : [ 479.0, 379.0, 0.0, 0.0 ],
+					"patching_rect" : [ 496.0, 478.5, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -118,8 +138,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 449.0, 585.0, 99.0, 22.0 ],
-					"presentation_rect" : [ 422.0, 525.0, 0.0, 0.0 ],
+					"patching_rect" : [ 448.0, 665.0, 99.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -131,7 +150,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.0, 472.0, 188.0, 22.0 ],
+					"patching_rect" : [ 448.0, 552.0, 188.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.audio2float 0. 1. 0 200"
 				}
@@ -144,7 +163,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 449.0, 348.0, 183.0, 22.0 ],
+					"patching_rect" : [ 448.0, 428.0, 183.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.generationEnveloppe"
 				}
@@ -161,7 +180,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 221.0, 348.0, 56.0, 22.0 ],
+					"patching_rect" : [ 220.0, 428.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -176,34 +195,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 214.0, 585.0, 99.0, 22.0 ],
+					"patching_rect" : [ 213.0, 665.0, 99.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 462.0, 128.0, 108.0, 33.0 ],
-					"style" : "",
-					"text" : "Lancer le flux audio 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 118.0, 152.0, 108.0, 33.0 ],
-					"style" : "",
-					"text" : "Lancer le flux audio 1"
 				}
 
 			}
@@ -211,13 +204,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 63.0, 790.0, 53.0 ],
+					"patching_rect" : [ 23.0, 63.0, 796.0, 147.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de convertir un flux audio en réel dont on peut maîtriser la mise à l'échelle. Cet objet possède quatre paramètres internes : valeur min du flux audio, valeur max du flux audio, valeur min du réel et valeur max du réel en sortie de l'objet. "
+					"text" : "Cet objet permet de convertir un flux audio en réel dont on peut maîtriser la mise à l'échelle. \n\nEntrée 1 (audio) : flux audio à convertir (la conversion se fait toutes les 5 ms)\nSortie 1 (float) : valeur du flux audio à un instant t donné\n\nArgument 1 (obligatoire) : valeur min du flux audio (en V)\nArgument 2 (obligatoire) : valeur max du flux audio (en V)\nArgument 3 (obligatoire) : valeur min du réel en sortie de cet objet\nArgument 4 (obligatoire) : valeur max du réel en sortie de cet objet"
 				}
 
 			}
@@ -242,34 +235,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 472.0, 192.0, 22.0 ],
+					"patching_rect" : [ 213.0, 552.0, 192.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.audio2float -1. 1. 0 360"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 165.0, 192.0, 20.0 ],
-					"style" : "",
-					"text" : "Lancement lecture fichier audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 449.0, 196.0, 24.0, 24.0 ],
-					"style" : ""
 				}
 
 			}
@@ -280,7 +248,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 516.0, 200.0, 156.0, 33.0 ],
+					"patching_rect" : [ 515.0, 280.0, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -294,7 +262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 571.400024, 235.0, 24.0, 24.0 ],
+					"patching_rect" : [ 570.400024, 315.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -306,7 +274,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 449.0, 272.0, 223.0, 22.0 ],
+					"patching_rect" : [ 448.0, 352.0, 223.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio audioMono.wav"
 				}
@@ -314,25 +282,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 140.0, 189.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 140.0, 272.0, 137.0, 22.0 ],
+					"patching_rect" : [ 139.0, 303.0, 137.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.sonPur 0.5 0"
 				}
@@ -347,30 +302,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 197.0, 454.75, 459.0, 56.5 ],
+					"patching_rect" : [ 196.0, 534.75, 459.0, 56.5 ],
 					"proportion" : 0.39,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-17",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 93.0, 158.5, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"style" : "",
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -387,10 +321,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 437.0, 134.5, 20.0, 20.0 ],
+					"patching_rect" : [ 380.0, 247.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
-					"text" : "2",
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -398,9 +332,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -409,8 +348,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -419,8 +356,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -429,8 +364,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -439,35 +372,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -475,8 +386,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -484,39 +393,41 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-25::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-25::obj-13" : [ "flonum", "flonum", 0 ]
+			"obj-25::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-25::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.sonPur.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.audio2float.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
