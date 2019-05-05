@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -40,13 +40,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 6,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 945.0, 100.0 ],
+					"patching_rect" : [ 13.0, 57.0, 945.0, 132.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de redimensionner une vidéo. Vous pouvez mettre la largeur et la hauteur de la vidéo en sortie en tant que paramètre interne de l'objet.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (message entier entier) : largeur et hauteur en pixels vidéo en sortie\nSortie 1 (vidéo) : flux vidéo redimensionnée"
+					"text" : "Cet objet permet de redimensionner une vidéo. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (message entier entier) : largeur et hauteur en pixels vidéo en sortie\nSortie 1 (vidéo) : flux vidéo redimensionnée\n\nArgument 1 (obligatoire) : largeur en pixels de la vidéo en sortie (valeur par défaut)\nArgument 2 (obligatoire) : hauteur en pixels de la vidéo en sortie (valeur par défaut)"
 				}
 
 			}
@@ -71,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 361.0, 317.0, 54.0, 22.0 ],
+					"patching_rect" : [ 445.5, 379.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "320 180"
 				}
@@ -84,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 424.0, 317.0, 47.0, 22.0 ],
+					"patching_rect" : [ 508.5, 379.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "160 90"
 				}
@@ -97,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 297.0, 317.0, 54.0, 22.0 ],
+					"patching_rect" : [ 381.5, 379.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "640 360"
 				}
@@ -114,7 +114,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 47.0, 467.0, 80.0, 35.0 ],
+					"patching_rect" : [ 135.5, 514.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -130,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.0, 277.0, 80.0, 35.0 ],
+					"patching_rect" : [ 128.5, 339.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -142,7 +142,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 160.0, 93.0, 22.0 ],
+					"patching_rect" : [ 150.5, 222.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "image1.png 0.1"
 				}
@@ -155,7 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 342.0, 251.0, 24.0, 24.0 ],
+					"patching_rect" : [ 426.5, 313.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -168,7 +168,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 183.75, 159.0, 24.0, 24.0 ],
+					"patching_rect" : [ 268.25, 221.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -178,9 +178,9 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 11,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 131.0, 224.0, 230.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 215.5, 286.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -193,7 +193,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 171.0, 384.0, 145.0, 22.0 ],
+					"patching_rect" : [ 255.5, 446.0, 145.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.redim 320 180"
 				}
@@ -206,7 +206,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 171.0, 487.0, 291.0, 202.0 ]
+					"patching_rect" : [ 255.5, 520.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -219,7 +219,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 162.0, 370.75, 173.0, 46.5 ],
+					"patching_rect" : [ 246.5, 432.75, 173.0, 46.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -229,8 +229,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -239,8 +237,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -248,8 +244,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -258,8 +252,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -267,8 +259,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -276,8 +266,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -285,8 +273,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -295,8 +281,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -305,8 +289,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -314,8 +296,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -323,13 +303,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.redim.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -441,8 +423,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -496,8 +478,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

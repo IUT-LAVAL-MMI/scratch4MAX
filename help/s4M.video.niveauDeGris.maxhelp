@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -47,8 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 369.0, 463.0, 80.0, 35.0 ],
-					"presentation_rect" : [ 339.0, 439.0, 0.0, 0.0 ],
+					"patching_rect" : [ 367.0, 470.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -64,7 +63,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 93.0, 463.0, 80.0, 35.0 ],
+					"patching_rect" : [ 91.0, 470.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -75,8 +74,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 456.0, 474.0, 150.0, 20.0 ],
-					"presentation_rect" : [ 414.0, 473.0, 0.0, 0.0 ],
+					"patching_rect" : [ 454.0, 481.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "video 1 plan : Luminance"
 				}
@@ -89,8 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 353.0, 506.0, 291.0, 202.0 ],
-					"presentation_rect" : [ 353.0, 505.0, 0.0, 0.0 ]
+					"patching_rect" : [ 351.0, 513.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -100,7 +97,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 177.0, 478.0, 150.0, 20.0 ],
+					"patching_rect" : [ 175.0, 485.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "video 4 plans : ARGB"
 				}
@@ -110,13 +107,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 7,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 802.0, 116.0 ],
+					"patching_rect" : [ 13.0, 57.0, 802.0, 132.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'appliquer un effet niveau de gris à un flux vidéo. Cet objet présente 1 paramètre interne : l'activation ou la désactivation de l'effet\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nSortie 1 (vidéo) : flux vidéo wet 4 plans ARGB\nSortie 2 (video) : flux vidéo wet 1 plan Luminance"
+					"text" : "Cet objet permet d'appliquer un effet niveau de gris à un flux vidéo. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nSortie 1 (vidéo) : flux vidéo wet 4 plans ARGB\nSortie 2 (video) : flux vidéo wet 1 plan Luminance\n\nArgument 1 : l'activation ou la désactivation de l'effet (valeur par défaut)"
 				}
 
 			}
@@ -142,7 +139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 236.0, 347.0, 24.0, 24.0 ],
+					"patching_rect" : [ 234.0, 354.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -154,7 +151,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 212.0, 93.0, 22.0 ],
+					"patching_rect" : [ 37.0, 219.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "image1.png 0.1"
 				}
@@ -167,7 +164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 209.5, 308.0, 24.0, 24.0 ],
+					"patching_rect" : [ 207.5, 315.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -180,7 +177,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 156.75, 211.0, 24.0, 24.0 ],
+					"patching_rect" : [ 154.75, 218.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -190,9 +187,9 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 11,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 104.0, 276.0, 230.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 102.0, 283.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -205,7 +202,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "jit_matrix" ],
-					"patching_rect" : [ 104.0, 395.0, 151.0, 22.0 ],
+					"patching_rect" : [ 102.0, 402.0, 151.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.niveauDeGris 1"
 				}
@@ -218,7 +215,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 54.0, 506.0, 291.0, 202.0 ]
+					"patching_rect" : [ 52.0, 513.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -231,7 +228,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.0, 383.25, 168.0, 45.5 ],
+					"patching_rect" : [ 95.0, 390.25, 168.0, 45.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -241,8 +238,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -250,8 +245,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -259,8 +252,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -268,8 +259,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -277,8 +266,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-7", 1 ]
 				}
@@ -287,8 +274,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -297,8 +282,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-7", 1 ]
 				}
@@ -307,8 +290,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -317,8 +298,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -326,13 +305,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.niveauDeGris.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

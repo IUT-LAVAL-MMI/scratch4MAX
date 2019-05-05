@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 112.0, 1149.0, 659.0 ],
+		"rect" : [ 34.0, 112.0, 1282.0, 765.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 750.5, 532.0, 291.0, 202.0 ]
+					"patching_rect" : [ 758.5, 523.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -64,13 +64,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-6",
-					"linecount" : 12,
+					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 59.0, 816.0, 194.0 ],
+					"patching_rect" : [ 13.0, 57.0, 816.0, 225.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de faire du compositing de type picture in picture (PIP). Cela permet de placer une vidéo par-dessus une autre vidéo en indiquant les coordonnées du coin supérieur gauche et inférieur droit de la vidéo située au premier plan. \n\nEntrée 1 (vidéo) : flux vidéo 1\nEntrée 2 (vidéo) : flux vidéo 2\nEntrée 3 (entier) : x1\nEntrée 4 (entier) : y1\nEntrée 5 (entier) : x2\nEntrée 6 (entier) : y2\nEntrée 7 (toggle) : 0 -> on ne prend pas en compte la couche alpha de la vidéo 2 / 1 -> on prend en compte la couche alpha de la vidéo 2\nSortie 1 (vidéo) : flux vidéo wet"
+					"text" : "Cet objet permet de faire du compositing de type picture in picture (PIP). Cela permet de placer une vidéo par-dessus une autre vidéo en indiquant les coordonnées du coin supérieur gauche et inférieur droit de la vidéo située au premier plan. \n\nEntrée 1 (vidéo) : flux vidéo 1\nEntrée 2 (vidéo) : flux vidéo 2\nEntrée 3 (entier) : x1\nEntrée 4 (entier) : y1\nEntrée 5 (entier) : x2\nEntrée 6 (entier) : y2\nEntrée 7 (toggle) : 0 -> on ne prend pas en compte la couche alpha de la vidéo 2 / 1 -> on prend en compte la couche alpha de la vidéo 2\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (obligatoire) : définition du mode par défaut (cf entrée 7)"
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1045.5, 432.0, 23.0, 20.0 ],
+					"patching_rect" : [ 1067.5, 424.5, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "x2"
 				}
@@ -106,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1029.5, 459.0, 23.0, 20.0 ],
+					"patching_rect" : [ 1048.5, 445.0, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "y2"
 				}
@@ -118,7 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 892.5, 337.0, 23.0, 20.0 ],
+					"patching_rect" : [ 914.5, 329.5, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "y1"
 				}
@@ -130,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 917.5, 321.0, 23.0, 20.0 ],
+					"patching_rect" : [ 939.5, 313.5, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "x1"
 				}
@@ -142,7 +142,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 876.0, 277.0, 150.0, 20.0 ],
+					"patching_rect" : [ 898.0, 269.5, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "destination : x1,y1, x2, y2"
 				}
@@ -154,7 +154,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 876.0, 233.0, 150.0, 20.0 ],
+					"patching_rect" : [ 898.0, 225.5, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "vidéo 1 : vert"
 				}
@@ -166,7 +166,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 876.0, 255.0, 150.0, 20.0 ],
+					"patching_rect" : [ 898.0, 247.5, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "vidéo 2 : rouge"
 				}
@@ -181,7 +181,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 917.5, 337.0, 124.0, 115.0 ],
+					"patching_rect" : [ 939.5, 329.5, 124.0, 115.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -196,7 +196,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 876.0, 311.5, 207.0, 162.0 ],
+					"patching_rect" : [ 898.0, 304.0, 207.0, 162.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -399,8 +399,8 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 11,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 583.0, 329.0, 280.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo motifCoucheAlpha.png 0.1"
@@ -434,7 +434,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 21.0, 639.0, 80.0, 35.0 ],
+					"patching_rect" : [ 22.0, 663.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -475,7 +475,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 420.422974, 275.0, 24.0, 24.0 ],
+					"patching_rect" : [ 447.922974, 288.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -485,8 +485,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 11,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 121.0, 329.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
@@ -500,7 +500,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 191.922974, 594.0, 95.0, 22.0 ],
+					"patching_rect" : [ 191.922974, 594.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.pip 1"
 				}
@@ -536,8 +536,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -546,8 +544,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -555,8 +551,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -565,8 +559,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
@@ -575,8 +567,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
@@ -585,8 +575,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -594,8 +582,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-10", 0 ]
 				}
@@ -604,8 +590,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-102", 0 ]
 				}
 
@@ -613,8 +597,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-103", 0 ]
 				}
 
@@ -622,8 +604,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-104", 0 ]
 				}
 
@@ -631,8 +611,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-105", 0 ]
 				}
 
@@ -640,7 +618,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -649,7 +626,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-103", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -658,7 +634,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
@@ -667,7 +642,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
@@ -676,8 +650,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 6 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -685,8 +657,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -695,8 +665,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -705,8 +673,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -715,8 +681,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -725,31 +689,36 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.pip.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.negatif.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.routeurVideo_2_1.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.remplaceCoucheAlpha.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX_Video/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -912,8 +881,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 205.0, 80.0, 754.0, 659.0 ],
+		"rect" : [ 205.0, 80.0, 1013.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 591.0, 348.0, 154.0, 87.0 ],
+					"patching_rect" : [ 591.0, 404.0, 154.0, 87.0 ],
 					"style" : "",
 					"text" : "Dans cet exemple on peut retarder au maximum de 50 images. Ensuite avec l'entrée 2 on peut faire varier le retard entre 0 et 50. "
 				}
@@ -53,13 +53,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 6,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 55.0, 780.0, 100.0 ],
+					"patching_rect" : [ 12.0, 55.0, 780.0, 163.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de retarder un flux vidéo. Cet objet présente 4 paramètres internes : le nombre de plans de l'image, la largeur de l'image en pixels, la hauteur de l'image en pixels et le nombre maximum d'images en retard. \n\nEntrée 1 (vidéo) : flux vidéo\nEntrée 2 (entier) : nombre d'images en retard\nSortie 1 (vidéo) : flux vidéo retardé"
+					"text" : "Cet objet permet de retarder un flux vidéo. \n\nEntrée 1 (vidéo) : flux vidéo\nEntrée 2 (entier) : nombre d'images en retard\nSortie 1 (vidéo) : flux vidéo retardé\n\nArgument 1 (obligatoire) : le nombre de plans de l'image\nArgument 2 (obligatoire) : la largeur de l'image en pixels\nArgument 3 (obligatoire) : la hauteur de l'image en pixels\nArgument 4 (obligatoire) : le nombre maximum d'images en retard"
 				}
 
 			}
@@ -84,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 550.0, 258.0, 150.0, 33.0 ],
+					"patching_rect" : [ 550.0, 314.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "nombre d'images en retard"
 				}
@@ -98,7 +98,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 550.0, 291.0, 50.0, 22.0 ],
+					"patching_rect" : [ 550.0, 347.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -110,7 +110,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 64.0, 444.0, 291.0, 202.0 ]
+					"patching_rect" : [ 64.0, 500.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -125,7 +125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 34.0, 280.0, 80.0, 35.0 ],
+					"patching_rect" : [ 34.0, 336.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -137,7 +137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 226.5, 258.0, 24.0, 24.0 ],
+					"patching_rect" : [ 226.5, 314.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -150,7 +150,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.444443, 171.0, 24.0, 24.0 ],
+					"patching_rect" : [ 144.444443, 227.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -159,10 +159,10 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 10,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 121.0, 227.0, 230.0, 22.0 ],
+					"numinlets" : 11,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 121.0, 283.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -175,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 366.0, 374.0, 203.0, 22.0 ],
+					"patching_rect" : [ 366.0, 430.0, 203.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.ligneRetard 4 640 360 50"
 				}
@@ -188,7 +188,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 366.0, 444.0, 291.0, 202.0 ]
+					"patching_rect" : [ 366.0, 500.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -201,7 +201,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 354.0, 362.25, 227.0, 45.5 ],
+					"patching_rect" : [ 354.0, 418.25, 227.0, 45.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -211,8 +211,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -221,8 +219,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -230,8 +226,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -240,8 +234,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -250,8 +242,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -259,8 +249,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -268,8 +256,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-94", 0 ]
 				}
 
@@ -278,12 +264,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.ligneRetard.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -391,8 +379,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -446,8 +434,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

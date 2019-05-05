@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 81.0, 1264.0, 703.0 ],
+		"rect" : [ 67.0, 81.0, 1388.0, 861.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,12 +49,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1264.0, 677.0 ],
+						"rect" : [ 0.0, 26.0, 1388.0, 835.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -346,8 +346,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 11,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 132.0, 460.0, 631.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
@@ -442,8 +442,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -452,8 +450,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 2 ]
 								}
 
@@ -461,8 +457,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -471,8 +465,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -480,8 +472,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 4 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -489,8 +479,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 9 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -498,8 +486,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 4 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -507,8 +493,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -516,8 +500,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 3 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -525,8 +507,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -696,12 +676,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1264.0, 677.0 ],
+						"rect" : [ 0.0, 26.0, 1388.0, 835.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -982,8 +962,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 11,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 146.0, 374.0, 820.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
@@ -1099,8 +1079,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1109,8 +1087,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1119,8 +1095,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -1128,8 +1102,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 5 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -1137,8 +1109,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 6 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -1146,8 +1116,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 7 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -1155,8 +1123,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 8 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -1164,8 +1130,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 8 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -1173,8 +1137,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -1182,8 +1144,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -1353,12 +1313,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1264.0, 677.0 ],
+						"rect" : [ 0.0, 26.0, 1388.0, 835.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1495,8 +1455,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 11,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 139.0, 370.0, 244.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.video.lecteurVideo laufen_1883.jpg 0.1"
@@ -1528,8 +1488,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1538,8 +1496,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -1548,8 +1504,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -1557,8 +1511,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -1728,12 +1680,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 67.0, 107.0, 1264.0, 677.0 ],
+						"rect" : [ 67.0, 107.0, 1388.0, 835.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1768,7 +1720,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 996.0, 473.0, 189.0, 33.0 ],
+									"patching_rect" : [ 1084.0, 535.0, 189.0, 33.0 ],
 									"style" : "",
 									"text" : "Booléen : pour avoir un noir lorsque la vidéo est à l'arrêt"
 								}
@@ -1782,7 +1734,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1004.0, 513.0, 24.0, 24.0 ],
+									"patching_rect" : [ 1092.0, 575.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1794,7 +1746,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 775.0, 391.0, 189.0, 60.0 ],
+									"patching_rect" : [ 863.0, 453.0, 189.0, 60.0 ],
 									"style" : "",
 									"text" : "Uniquement pour les vidéos\nBang : permet de récupérer le nombre d'images présentes dans la vidéo"
 								}
@@ -1808,7 +1760,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 750.0, 693.0, 50.0, 22.0 ],
+									"patching_rect" : [ 838.0, 755.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1820,7 +1772,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 787.0, 457.5, 24.0, 24.0 ],
+									"patching_rect" : [ 875.0, 519.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1833,7 +1785,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 496.0, 435.5, 24.0, 24.0 ],
+									"patching_rect" : [ 584.0, 497.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1845,7 +1797,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 433.0, 384.0, 189.0, 47.0 ],
+									"patching_rect" : [ 521.0, 446.0, 189.0, 47.0 ],
 									"style" : "",
 									"text" : "Uniquement pour les vidéos\nBooléen : 0 désactivation son / 1 activation son"
 								}
@@ -1857,7 +1809,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 473.0, 693.0, 251.0, 20.0 ],
+									"patching_rect" : [ 561.0, 755.0, 251.0, 20.0 ],
 									"style" : "",
 									"text" : "indicateur de fin de chargement de la vidéo"
 								}
@@ -1870,7 +1822,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 444.0, 693.0, 24.0, 24.0 ],
+									"patching_rect" : [ 532.0, 755.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1885,7 +1837,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 697.0, 80.0, 35.0 ],
+									"patching_rect" : [ 138.0, 759.0, 80.0, 35.0 ],
 									"style" : ""
 								}
 
@@ -1898,7 +1850,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 319.0, 429.0, 24.0, 24.0 ],
+									"patching_rect" : [ 407.0, 491.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1910,7 +1862,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 75.5, 444.0, 82.0, 22.0 ],
+									"patching_rect" : [ 163.5, 506.0, 82.0, 22.0 ],
 									"style" : "",
 									"text" : "bball.mov 0.1"
 								}
@@ -1923,7 +1875,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 138.0, 703.0, 265.0, 173.0 ]
+									"patching_rect" : [ 226.0, 765.0, 265.0, 173.0 ]
 								}
 
 							}
@@ -1934,7 +1886,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 303.0, 384.0, 95.0, 47.0 ],
+									"patching_rect" : [ 391.0, 446.0, 95.0, 47.0 ],
 									"style" : "",
 									"text" : "Booléen : Lecture/Pause de l'image/vidéo"
 								}
@@ -1947,7 +1899,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.5, 373.5, 220.0, 60.0 ],
+									"patching_rect" : [ 128.5, 435.5, 220.0, 60.0 ],
 									"style" : "",
 									"text" : "Changer le fichier à lire en envoyant le nom avec extension de l'image/vidéo avec la taille en Go à la première entrée de cet objet"
 								}
@@ -1957,13 +1909,13 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-8",
-									"linecount" : 19,
+									"linecount" : 22,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 51.0, 654.0, 304.0 ],
+									"patching_rect" : [ 8.0, 51.0, 654.0, 351.0 ],
 									"style" : "",
-									"text" : "Cet objet permet de lire une image ou une vidéo à partir d'un fichier image ou vidéo qui se situe dans la bibliothèque MAX ou dans votre projet MAX.\nLa vitesse de défilement du flux vidéo en sortie de cet objet est de 25 fps. \nIl faut préciser en paramètre de cet objet le fichier image/vidéo et la taille en Go de cette image/vidéo. \nPetite précision pour les images, cet objet transforme une image en un flux vidéo à 25 images par seconde. \nEntrée 1 (liste : message float) : fichier avec extension et taille en Go du fichier\nEntrée 2 (booléen) : mode play/pause,\nEntrée 3 (booléen) : activation et désactivation son\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (liste : entier entier) : point de départ et fin boucle (unité QT value)\nEntrée 6 (float) : vitesse de lecture \nEntrée 7 (booléen) : lecture avant/arrière\nEntrée 8 (entier) : cadence posterisation (nombre d'images par seconde)\nEntrée 9 (entier) : saut iage (avant ou arrière)\nEntrée 10 (bang) : pour récupérer le nombre total d'images présentes dans la vidéo\nSortie 1 (vidéo) : flux vidéo\nSortie 2 (bang) : indicateur de fin de chargement \nSortie 3 (entier) : nombre total d'images présentes dans la vidéo"
+									"text" : "Cet objet permet de lire une image ou une vidéo à partir d'un fichier image ou vidéo qui se situe dans la bibliothèque MAX ou dans votre projet MAX.\nLa vitesse de défilement du flux vidéo en sortie de cet objet est de 25 fps. \nPetite précision pour les images, cet objet transforme une image en un flux vidéo à 25 images par seconde. \n\nEntrée 1 (liste : message float) : fichier avec extension et taille en Go du fichier\nEntrée 2 (booléen) : mode play/pause,\nEntrée 3 (booléen) : activation et désactivation son\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (liste : entier entier) : point de départ et fin boucle (unité QT value)\nEntrée 6 (float) : vitesse de lecture \nEntrée 7 (booléen) : lecture avant/arrière\nEntrée 8 (entier) : cadence posterisation (nombre d'images par seconde)\nEntrée 9 (entier) : saut iage (avant ou arrière)\nEntrée 10 (bang) : pour récupérer le nombre total d'images présentes dans la vidéo\nSortie 1 (vidéo) : flux vidéo\nSortie 2 (bang) : indicateur de fin de chargement \nSortie 3 (entier) : nombre total d'images présentes dans la vidéo\n\nArgument 1 (obligatoire) : nom du fichier image/vidéo avec l'extension\nArgument 2 (obligatoire) : taille en Go de cette image/vidéo"
 								}
 
 							}
@@ -1986,9 +1938,9 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 11,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 138.0, 633.0, 631.0, 22.0 ],
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 226.0, 695.0, 631.0, 22.0 ],
 									"style" : "",
 									"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 								}
@@ -2003,7 +1955,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 127.0, 612.75, 657.0, 55.5 ],
+									"patching_rect" : [ 215.0, 674.75, 657.0, 55.5 ],
 									"proportion" : 0.39,
 									"style" : ""
 								}
@@ -2022,7 +1974,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 748.5, 404.5, 20.0, 20.0 ],
+									"patching_rect" : [ 836.5, 466.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "3",
@@ -2043,7 +1995,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 967.5, 479.5, 20.0, 20.0 ],
+									"patching_rect" : [ 1055.5, 541.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "4",
@@ -2064,7 +2016,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 273.0, 391.0, 20.0, 20.0 ],
+									"patching_rect" : [ 361.0, 453.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "1",
@@ -2085,7 +2037,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 407.0, 391.0, 20.0, 20.0 ],
+									"patching_rect" : [ 495.0, 453.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"style" : "",
 									"text" : "2",
@@ -2097,8 +2049,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -2107,8 +2057,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 2 ]
 								}
 
@@ -2116,8 +2064,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -2126,8 +2072,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -2135,8 +2079,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 10 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -2144,8 +2086,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 9 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2153,8 +2093,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 2 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2162,8 +2100,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -2171,8 +2107,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -2335,8 +2269,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2364,6 +2298,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

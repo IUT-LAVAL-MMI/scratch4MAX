@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -44,8 +44,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 255.0, 352.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 253.0, 352.0, 0.0, 0.0 ],
+					"patching_rect" : [ 254.0, 368.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -54,13 +53,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 796.0, 116.0 ],
+					"patching_rect" : [ 13.0, 57.0, 796.0, 147.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'appliquer un effet miroir à un flux vidéo. Cet objet présente 2 paramètres internes : l'activation ou la désactivation de l'effet  et l'axe de l'effet (0 axe vertical et 1 axe horizontal) \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nEntrée 3 (booléen) : axe de l'effet 0 -> axe vetical 1-> axe horizontal\nSortie 1 (vidéo) : flux vidéo wet"
+					"text" : "Cet objet permet d'appliquer un effet miroir à un flux vidéo.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nEntrée 3 (booléen) : axe de l'effet 0 -> axe vetical 1-> axe horizontal\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (obligatoire) : activation ou désactivation de l'effet (valeur par défaut)\nArgument 2 (obligatoire) : axe de l'effet -> 0 axe vertical ou 1 axe horizontal (valeur par défaut)"
 				}
 
 			}
@@ -86,7 +85,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 204.0, 352.0, 24.0, 24.0 ],
+					"patching_rect" : [ 204.0, 368.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -98,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 216.0, 93.0, 22.0 ],
+					"patching_rect" : [ 87.0, 232.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "image1.png 0.1"
 				}
@@ -111,7 +110,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 309.0, 321.0, 24.0, 24.0 ],
+					"patching_rect" : [ 309.0, 337.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -124,7 +123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 204.75, 215.0, 24.0, 24.0 ],
+					"patching_rect" : [ 204.75, 231.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -133,10 +132,10 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 10,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 152.0, 280.0, 230.0, 22.0 ],
+					"numinlets" : 11,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 152.0, 296.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -149,7 +148,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 154.0, 399.0, 119.0, 22.0 ],
+					"patching_rect" : [ 154.0, 415.0, 119.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.miroir 0 0"
 				}
@@ -162,7 +161,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 154.0, 453.0, 291.0, 202.0 ]
+					"patching_rect" : [ 154.0, 469.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -175,7 +174,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 387.25, 158.0, 45.5 ],
+					"patching_rect" : [ 132.0, 403.25, 158.0, 45.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -185,8 +184,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -194,8 +191,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -203,8 +198,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -212,8 +205,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -221,8 +212,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -230,8 +219,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -239,8 +226,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -249,12 +234,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.miroir.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -362,8 +349,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -417,8 +404,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 652.0, 228.0, 693.0, 612.0 ],
+		"rect" : [ 1872.0, 185.0, 693.0, 612.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -133,9 +133,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 167.0, 392.0, 183.0, 22.0 ],
+					"patching_rect" : [ 167.0, 392.0, 209.0, 22.0 ],
 					"style" : "",
-					"text" : "s4M.audio.generationEnveloppe"
+					"text" : "s4M.audio.generationEnveloppe 1 20"
 				}
 
 			}
@@ -198,7 +198,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 378.25, 224.0, 55.5 ],
+					"patching_rect" : [ 155.0, 378.25, 241.0, 55.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}

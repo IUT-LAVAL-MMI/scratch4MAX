@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 171.0, 111.0, 1235.0, 659.0 ],
+		"rect" : [ 171.0, 111.0, 956.0, 659.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,41 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 341.0, 354.0, 107.0, 22.0 ],
+					"style" : "",
+					"text" : "640 360"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 257.666656, 354.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 6,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 796.0, 100.0 ],
+					"patching_rect" : [ 13.0, 57.0, 796.0, 179.0 ],
 					"style" : "",
-					"text" : "Cet objet permet d'appliquer un effet négatif à un flux vidéo. Cet objet présente 1 paramètre interne : l'activation ou la désactivation de l'effet\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nSortie 1 (vidéo) : flux vidéo wet"
+					"text" : "Cet objet permet d'appliquer un effet négatif à un flux vidéo. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (booléen) : activation/désactivation de l'effet\nSortie 1 (vidéo) : flux vidéo wet\nSortie 2 (bang) : indicateur de fin de chargement de vidéo\nSortie 3 (integer) : nombre d'images dans la vidéo\nSortie 4 (integer integer) : largeur et hauteur de l'image\n\nArgument 1 (obligatoire) : l'activation ou la désactivation de l'effet (valeur par défaut)\n"
 				}
 
 			}
@@ -72,7 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 214.0, 348.0, 24.0, 24.0 ],
+					"patching_rect" : [ 213.0, 407.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +110,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 188.0, 93.0, 22.0 ],
+					"patching_rect" : [ 52.0, 247.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "image1.png 0.1"
 				}
@@ -97,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 324.0, 287.0, 24.0, 24.0 ],
+					"patching_rect" : [ 208.0, 354.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -110,7 +136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 170.75, 187.0, 24.0, 24.0 ],
+					"patching_rect" : [ 169.75, 246.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -119,10 +145,10 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 10,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 118.0, 252.0, 230.0, 22.0 ],
+					"numinlets" : 11,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 116.999992, 311.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -135,7 +161,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 118.0, 401.0, 115.0, 22.0 ],
+					"patching_rect" : [ 117.0, 460.0, 115.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.negatif 1"
 				}
@@ -148,7 +174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 118.0, 523.0, 291.0, 202.0 ]
+					"patching_rect" : [ 117.0, 538.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -161,7 +187,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.5, 389.25, 158.0, 45.5 ],
+					"patching_rect" : [ 95.5, 448.25, 158.0, 45.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -170,9 +196,21 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"source" : [ "obj-1", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -180,8 +218,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -189,8 +225,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -198,8 +232,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -207,8 +239,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -216,8 +246,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -226,12 +254,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.negatif.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -339,8 +369,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -394,8 +424,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

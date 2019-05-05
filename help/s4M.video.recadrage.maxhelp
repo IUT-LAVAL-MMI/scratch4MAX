@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 171.0, 111.0, 1235.0, 659.0 ],
+		"rect" : [ 171.0, 111.0, 1235.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-10",
-					"linecount" : 9,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 850.0, 147.0 ],
+					"patching_rect" : [ 13.0, 57.0, 850.0, 179.0 ],
 					"style" : "",
-					"text" : "Cet objet permet de recadrer un flux vidéo. Cet objet présente 2 paramètres internes : la largeur et la hauteur en pixels de la vidéo. On précise le coin supérieur gauche et le coin inférieur droit du recadrage. On peut également choisir la dimension du flux vidéo de sortie, soit on garde la taille de la vidéo d'entrée soit on choisit la taille de la sélection. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (message entier entier) : coin supérieur gauche du recadrage\nEntrée 3 (message) : coin inférieur droite du recadrage\nEntrée 4 (booléen) : choix de la taille de la vidéo en sortie. 0 = taille de la vidéo d'entrée / 1 = taille de la sélection\nSortie 1 (vidéo) : flux vidéo recadrée"
+					"text" : "Cet objet permet de recadrer un flux vidéo. On précise le coin supérieur gauche et le coin inférieur droit du recadrage. On peut également choisir la dimension du flux vidéo de sortie, soit on garde la taille de la vidéo d'entrée soit on choisit la taille de la sélection. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (message entier entier) : coin supérieur gauche du recadrage\nEntrée 3 (message) : coin inférieur droite du recadrage\nEntrée 4 (booléen) : choix de la taille de la vidéo en sortie. 0 = taille de la vidéo d'entrée / 1 = taille de la sélection\nSortie 1 (vidéo) : flux vidéo recadrée\n\nArgument 1 (obligatoire) : largeur en pixels de la vidéo\nArgument 2 (obligatoire) : hauteur en pixels de la vidéo"
 				}
 
 			}
@@ -71,7 +71,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 742.0, 355.0, 256.0, 33.0 ],
+					"patching_rect" : [ 741.0, 405.0, 256.0, 33.0 ],
 					"style" : "",
 					"text" : "0 : dim vidéo sortie = vidéo entrée\n1 : dim vidéo sortie = zone recadrée"
 				}
@@ -83,7 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 553.5, 355.0, 150.0, 20.0 ],
+					"patching_rect" : [ 552.5, 405.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "coin inférieur droit"
 				}
@@ -95,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 393.5, 355.0, 150.0, 20.0 ],
+					"patching_rect" : [ 392.5, 405.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "coin supérieur gauche"
 				}
@@ -108,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 60.0, 559.0, 291.0, 202.0 ]
+					"patching_rect" : [ 59.0, 609.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -120,7 +120,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 817.0, 386.0, 24.0, 24.0 ],
+					"patching_rect" : [ 816.0, 436.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -132,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 569.0, 386.0, 54.0, 22.0 ],
+					"patching_rect" : [ 568.0, 436.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "150 200"
 				}
@@ -145,7 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.0, 379.0, 47.0, 22.0 ],
+					"patching_rect" : [ 436.0, 429.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "50 100"
 				}
@@ -162,7 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 437.0, 501.0, 80.0, 35.0 ],
+					"patching_rect" : [ 436.0, 551.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -178,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 49.0, 340.0, 80.0, 35.0 ],
+					"patching_rect" : [ 48.0, 390.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -190,7 +190,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 82.0, 219.0, 93.0, 22.0 ],
+					"patching_rect" : [ 81.0, 269.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "image1.png 0.1"
 				}
@@ -203,7 +203,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 252.5, 321.0, 24.0, 24.0 ],
+					"patching_rect" : [ 251.5, 371.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -216,7 +216,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 199.75, 218.0, 24.0, 24.0 ],
+					"patching_rect" : [ 198.75, 268.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -225,10 +225,10 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 10,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 147.0, 283.0, 230.0, 22.0 ],
+					"numinlets" : 11,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 146.0, 333.0, 230.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
 				}
@@ -241,7 +241,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 399.0, 447.0, 169.0, 22.0 ],
+					"patching_rect" : [ 398.0, 497.0, 169.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.video.recadrage 640 360"
 				}
@@ -254,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 375.0, 559.0, 291.0, 202.0 ]
+					"patching_rect" : [ 374.0, 609.0, 291.0, 202.0 ]
 				}
 
 			}
@@ -267,7 +267,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 381.0, 435.375, 222.0, 45.25 ],
+					"patching_rect" : [ 380.0, 485.375, 222.0, 45.25 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -277,8 +277,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -287,8 +285,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -296,8 +292,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -306,8 +300,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -316,8 +308,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -325,8 +315,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -334,8 +322,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -343,8 +329,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -353,8 +337,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -363,8 +345,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -372,8 +352,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -382,12 +360,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.recadrage.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -499,8 +479,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -554,8 +534,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
