@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 500.0, 116.0, 809.0, 792.0 ],
+		"rect" : [ 195.0, 81.0, 1131.0, 863.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 159.5, 527.5, 80.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 92.0, 422.0, 24.0, 24.0 ],
+					"patching_rect" : [ 90.0, 366.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -54,7 +71,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 397.0, 192.0, 20.0 ],
+					"patching_rect" : [ 35.0, 341.0, 192.0, 20.0 ],
 					"style" : "",
 					"text" : "Lancement lecture fichier audio"
 				}
@@ -67,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 319.0, 567.0, 139.0, 33.0 ],
+					"patching_rect" : [ 317.0, 511.0, 139.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation envoi"
 				}
@@ -77,13 +94,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-5",
-					"linecount" : 19,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 58.0, 780.0, 304.0 ],
+					"patching_rect" : [ 23.0, 58.0, 780.0, 257.0 ],
 					"style" : "",
-					"text" : "Ces objets permettent d'envoyer et de réceptionner un flux audio par le réseau avec le protocole TCP. \n\nenvoiReseauTCP\nEntrée 1 (audio) : flux audio (canal gauche) à envoyer\nEntrée 2 (audio) : flux audio (canal droit) à envoyer\nEntrée 3 (booléen) : activation/désactivation envoi\nSortie 1 (booléen) : indicateur connexion entre client et serveur. Si 0 alors il n'y a pas de connexion entre le client et le serveur, il y a donc un problème réseau\nSortie 2 : latence en ms entre le client et le serveur\n\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port de destination\n\nreceptionReseauTCP\nSortie 1 (audio) : flux audio (canal gauche) réceptionné \nSortie 2 (audio) : flux audio (canal droit) réceptionné\n\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port de destination"
+					"text" : "Ces objets permettent d'envoyer et de réceptionner un flux audio par le réseau sur le protocole UDP. \n\nenvoiUdpAudio\nEntrée 1 (audio) : flux audio (canal gauche) à envoyer\nEntrée 2 (audio) : flux audio (canal droit) à envoyer\nEntrée 3 (booléen) : activation/désactivation envoi\nSortie 1 (toggle) : état connexion\n\nArgument 1 (obligatoire) : adresse IP de destination\nArgument 2 (obligatoire) : numéro de port de destination\n\nreceptionUdpAudio\nSortie 1 (audio) : flux audio (canal gauche) réceptionné \nSortie 2 (audio) : flux audio (canal droit) réceptionné\n\nArgument 1 (obligatoire) : numéro de port de destination"
 				}
 
 			}
@@ -95,9 +112,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 12.0, 780.0, 40.0 ],
+					"patching_rect" : [ 23.0, 12.0, 903.0, 40.0 ],
 					"style" : "",
-					"text" : "Scratch4MAX - Audio - Envoi et Réception flux audio"
+					"text" : "Scratch4MAX - Audio - Envoi et Réception flux audio sur UDP"
 				}
 
 			}
@@ -109,7 +126,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 319.0, 605.0, 24.0, 24.0 ],
+					"patching_rect" : [ 317.0, 549.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -120,7 +137,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 627.0, 629.0, 45.0, 45.0 ],
+					"patching_rect" : [ 620.0, 722.75, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -132,23 +149,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 503.0, 493.0, 267.0, 22.0 ],
+					"patching_rect" : [ 542.0, 626.75, 201.0, 22.0 ],
 					"style" : "",
-					"text" : "s4M.audio.receptionReseauTCP 127.0.0.1 8002"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-8",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 319.0, 741.0, 50.0, 22.0 ],
-					"style" : ""
+					"text" : "s4M.audio.receptionUdpAudio 9000"
 				}
 
 			}
@@ -160,7 +163,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 92.0, 740.0, 24.0, 24.0 ],
+					"patching_rect" : [ 89.0, 684.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -170,11 +173,11 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 92.0, 685.0, 246.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 88.0, 626.75, 234.0, 22.0 ],
 					"style" : "",
-					"text" : "s4M.audio.envoiReseauTCP 127.0.0.1 8002"
+					"text" : "s4M.audio.envoiUdpAudio 127.0.0.1 9000"
 				}
 
 			}
@@ -185,7 +188,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 448.0, 156.0, 33.0 ],
+					"patching_rect" : [ 132.0, 392.0, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "Activation/Désactivation\nMode loop"
 				}
@@ -199,7 +202,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 189.600006, 486.0, 24.0, 24.0 ],
+					"patching_rect" : [ 187.600006, 430.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -211,7 +214,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 90.0, 531.0, 186.0, 22.0 ],
+					"patching_rect" : [ 88.0, 475.0, 186.0, 22.0 ],
 					"style" : "",
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
@@ -226,7 +229,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 662.0, 301.0, 63.5 ],
+					"patching_rect" : [ 73.0, 606.0, 301.0, 63.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -241,7 +244,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.0, 472.25, 313.0, 63.5 ],
+					"patching_rect" : [ 524.0, 606.0, 262.0, 63.75 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -260,7 +263,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 294.0, 573.5, 20.0, 20.0 ],
+					"patching_rect" : [ 292.0, 517.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "2",
@@ -281,7 +284,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 397.0, 20.0, 20.0 ],
+					"patching_rect" : [ 13.0, 341.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"style" : "",
 					"text" : "1",
@@ -294,13 +297,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-1", 1 ]
 				}
 
 			}
@@ -329,6 +325,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -364,18 +368,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.audio.envoiReseauTCP.maxpat",
+				"name" : "s4M.audio.envoiUdpAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.audio.receptionReseauTCP.maxpat",
+				"name" : "s4M.audio.receptionUdpAudio.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "netsend~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "netreceive~.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
@@ -481,8 +493,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -536,8 +548,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
