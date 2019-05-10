@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 290.0, 202.0, 655.0, 617.0 ],
+		"rect" : [ 290.0, 202.0, 713.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "integer : numéro de port",
+					"comment" : "integer : numéro de port",
+					"hint" : "integer : numéro de port",
+					"id" : "obj-6",
+					"index" : 1,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 486.0, 53.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 486.0, 53.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -55,11 +72,11 @@
 					"comment" : "toggle : activation mode verbeux",
 					"hint" : "toggle : activation mode verbeux",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 572.0, 53.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -74,7 +91,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 338.0, 255.0, 92.0, 22.0 ],
 					"style" : "",
-					"text" : "port 7500"
+					"text" : "port 7400"
 				}
 
 			}
@@ -85,7 +102,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 188.0, 79.0, 22.0 ],
+					"patching_rect" : [ 309.0, 200.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend port"
 				}
@@ -221,6 +238,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
