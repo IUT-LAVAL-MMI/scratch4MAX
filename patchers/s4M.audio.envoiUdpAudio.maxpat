@@ -108,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 88.0, 204.0, 60.0, 22.0 ],
+					"patching_rect" : [ 25.0, 224.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -600,6 +600,13 @@
 					"destination" : [ "obj-22", 0 ],
 					"midpoints" : [ 199.5, 390.0, 315.0, 390.0, 315.0, 444.0, 370.5, 444.0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
