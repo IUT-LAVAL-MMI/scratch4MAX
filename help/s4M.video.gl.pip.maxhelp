@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 206.0, 79.0, 1162.0, 817.0 ],
+		"rect" : [ 74.0, 79.0, 1162.0, 817.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 208.0, 107.0, 22.0 ],
-					"text" : "jit.gl.syphonserver"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
@@ -405,13 +393,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -428,61 +409,61 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-2::obj-37" : [ "y offset", "y offset", 0 ],
-			"obj-1::obj-66" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-1::obj-104" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-47::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-1::obj-120" : [ "range[5]", "range", 0 ],
-			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-48" : [ "umenu[6]", "umenu", 0 ],
-			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-1::obj-119" : [ "zoom[6]", "zoom", 0 ],
-			"obj-2::obj-53" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-47::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
 			"obj-2::obj-41" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-47::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
 			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-1::obj-1" : [ "range[6]", "range", 0 ],
-			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
 			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-1::obj-121" : [ "zoom[7]", "zoom", 0 ],
-			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-1::obj-51" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-68" : [ "x offset", "x offset", 0 ],
-			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-1::obj-2" : [ "umenu[4]", "umenu", 0 ],
-			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-1::obj-104" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-48" : [ "umenu[6]", "umenu", 0 ],
+			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
+			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-2::obj-53" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-1::obj-39" : [ "live.dial[3]", "live.dial", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-68" : [ "x offset", "x offset", 0 ],
+			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-2::obj-13" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-47::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-37" : [ "y offset", "y offset", 0 ],
+			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-1::obj-51" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
+			"obj-1::obj-121" : [ "zoom[7]", "zoom", 0 ],
+			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-1::obj-66" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-1::obj-120" : [ "range[5]", "range", 0 ],
+			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-1::obj-119" : [ "zoom[6]", "zoom", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-1::obj-1" : [ "range[6]", "range", 0 ],
+			"obj-1::obj-2" : [ "umenu[4]", "umenu", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -732,8 +713,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -787,8 +768,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

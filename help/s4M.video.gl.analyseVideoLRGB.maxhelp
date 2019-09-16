@@ -1022,12 +1022,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 51.0, 1019.0, 100.0 ],
-					"text" : "Cet objet permet d'analyser un flux vidéo avec différents outils. Il permet d'afficher les composantes du flux vidéos, les histogrammes, les formes d'onde de la Luminance, de la composante Rouge, de la composante Verte et de la composante Bleue du flux vidéo, ainsi que le vecteurscope. Pour pouvoir utiliser cet objet il faut soit faire un copier-coller depuis ce fichier vers votre fichier de travail, soit ajouter sur votre patch l'objet suivant bpatcher s4M.video.analyseVideoLRGB.   \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (integer) : permet de changer par le code le mode d'analyse de la vidéo. 0 = Composantes ; 1 = Histogramme ; 2 = Forme d'onde 3 = Vecteurscope"
+					"patching_rect" : [ 8.0, 51.0, 1019.0, 116.0 ],
+					"text" : "Cet objet permet d'analyser un flux vidéo (JItter ou OpenGL) avec différents outils. Il permet d'afficher les composantes du flux vidéos, les histogrammes, les formes d'onde de la Luminance, de la composante Rouge, de la composante Verte et de la composante Bleue du flux vidéo, ainsi que le vecteurscope. Pour pouvoir utiliser cet objet il faut soit faire un copier-coller depuis ce fichier vers votre fichier de travail, soit ajouter sur votre patch l'objet suivant bpatcher s4M.video.analyseVideoLRGB.   \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (integer) : permet de changer par le code le mode d'analyse de la vidéo. 0 = Composantes ; 1 = Histogramme ; 2 = Forme d'onde 3 = Vecteurscope"
 				}
 
 			}

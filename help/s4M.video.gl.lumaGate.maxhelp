@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 249.0, 125.0, 1147.0, 765.0 ],
+		"rect" : [ 100.0, 100.0, 1147.0, 765.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -114,11 +114,11 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 300.0, 275.0, 169.0, 22.0 ],
-					"text" : "s4M.video.gl.lumaThreshold 1"
+					"patching_rect" : [ 300.0, 275.0, 156.0, 22.0 ],
+					"text" : "s4M.video.gl.lumaGate 1"
 				}
 
 			}
@@ -192,29 +192,29 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-7::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-6::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-6::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-6::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-6::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-6::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-6::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-6::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-7::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-6::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-6::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
 			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-6::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-7::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-6::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-7::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-6::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-6::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-6::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-6::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-6::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-6::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-6::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-6::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-6::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
 			"obj-6::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-6::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-6::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-6::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-6::obj-112::obj-120" : [ "range", "range", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -282,7 +282,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.lumaThreshold.maxpat",
+				"name" : "s4M.video.gl.lumaGate.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
