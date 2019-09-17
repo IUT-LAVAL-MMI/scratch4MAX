@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 150.0, 160.0, 1419.0, 735.0 ],
+		"rect" : [ 150.0, 160.0, 1341.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-22",
+					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 811.5, 409.0, 425.0, 20.0 ],
-					"text" : "dimension vidéo, utile uniquement lorsqu'on travaille avec un flux openGL"
+					"patching_rect" : [ 1276.0, 103.0, 214.0, 20.0 ],
+					"text" : "lancer la lecture de la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 718.0, 360.0, 192.0, 47.0 ],
+					"text" : "Pour l'analyse des flux vidéo opengl il faut fournir en plus les dimensions de la vidéo"
 				}
 
 			}
@@ -159,7 +171,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 164.0, 214.0, 20.0 ],
+					"patching_rect" : [ 258.0, 178.0, 214.0, 20.0 ],
 					"text" : "lancer la lecture de la vidéo"
 				}
 
@@ -1014,7 +1026,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 201.100006103515625, 164.0, 24.0, 24.0 ]
+					"patching_rect" : [ 201.100006103515625, 178.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1081,6 +1093,46 @@
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 					"hint" : "",
+					"id" : "obj-22",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1252.0, 103.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-14",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 693.0, 373.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
 					"id" : "obj-25",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -1089,7 +1141,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 234.0, 164.0, 20.0, 20.0 ],
+					"patching_rect" : [ 234.0, 178.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1179,21 +1231,21 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-4::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-4::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-4::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-4::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-4::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-4::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-4::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 

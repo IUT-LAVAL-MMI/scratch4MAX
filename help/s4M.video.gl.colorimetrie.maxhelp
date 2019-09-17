@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 174.0, 93.0, 1097.0, 858.0 ],
+		"rect" : [ 263.0, 114.0, 982.0, 837.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,77 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.0, 664.5, 192.0, 47.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Modifiez les paramètres de ce traitement, voyez les conséquences sur l'outil d'analyse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 643.0, 729.0, 192.0, 47.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Pour l'analyse des flux vidéo opengl il faut fournir en plus les dimensions de la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 446.0, 296.0, 192.0, 20.0 ],
+					"text" : "Lancement lecture fichier vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 697.5, 778.0, 52.0, 22.0 ],
+					"text" : "640 360"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "jit.fpsgui",
+					"mode" : 3,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 17.0, 530.0, 80.0, 35.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 632.0, 667.0, 24.0, 24.0 ]
+					"patching_rect" : [ 887.0, 335.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -68,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 667.0, 70.0, 22.0 ],
+					"patching_rect" : [ 765.0, 336.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -80,7 +144,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 465.0, 696.0, 64.0, 22.0 ],
+					"patching_rect" : [ 720.0, 364.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
@@ -181,7 +245,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "s4M.video.analyseVideoLRGB.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 292.0, 825.0, 830.0, 207.0 ],
@@ -360,7 +424,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 51.0, 711.0, 241.0 ],
-					"text" : "Cet objet permet de modifier la colorimétrie d'une image/vidéo openGL\nModification composante rouge : en ajoutant un offset à la composante rouge ( de -1 à 1 d'offset) ou en compressant/étirant l'histogramme (1 histogramme initial / <1 compession d'histogramme / >1 étirement d'histogramme)\nil en est de même pour les autres composantes\nVous pouvez indiquer les valeurs de la correction colorimétrique en paramètres internes de l'objet.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (float) : Gain rouge (0.-1.)\nEntrée 3 (float) : Offset rouge (0.-1.)\nEntrée 4 (float) : Gain vert (0.-1.)\nEntrée 5 (float) : Offset vert (0.-1.)\nEntrée 6 (float) : Gain bleu (0.-1.)\nEntrée 7 (float) : Offset bleu (0.-1.)\nSortie 1 (vidéo) : flux vidéo wet OpenGL (0.-1.)"
+					"text" : "Cet objet permet de modifier la colorimétrie d'une image/vidéo openGL\nModification composante rouge : en ajoutant un offset à la composante rouge ( de -1 à 1 d'offset) ou en compressant/étirant l'histogramme (1 histogramme initial / <1 compession d'histogramme / >1 étirement d'histogramme)\nil en est de même pour les autres composantes\nVous pouvez indiquer les valeurs de la correction colorimétrique en paramètres internes de l'objet.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (float) : Gain rouge (0.-1.)\nEntrée 3 (float) : Offset rouge (-1.-1.)\nEntrée 4 (float) : Gain vert (0.-1.)\nEntrée 5 (float) : Offset vert (-1.-1.)\nEntrée 6 (float) : Gain bleu (0.-1.)\nEntrée 7 (float) : Offset bleu (-1.-1.)\nSortie 1 (vidéo) : flux vidéo wet OpenGL"
 				}
 
 			}
@@ -377,10 +441,70 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-24",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 424.0, 296.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-32",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 329.0, 678.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-29",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 618.0, 742.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
+					"destination" : [ "obj-31", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -397,6 +521,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -483,6 +616,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 4 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -490,42 +630,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-1::obj-119" : [ "R_gain[1]", "R_gain", 0 ],
-			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-1::obj-32" : [ "G_offset[1]", "G_offset", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-1::obj-147" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-1::obj-104" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-1::obj-6" : [ "range[1]", "range", 0 ],
-			"obj-1::obj-34" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-1::obj-21" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-25::obj-50" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-1::obj-34" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"obj-1::obj-44" : [ "B_offset[1]", "B_offset", 0 ],
 			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-25::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-1::obj-15" : [ "R_offset[1]", "R_offset", 0 ],
-			"obj-1::obj-21" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-25::obj-41" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-1::obj-24" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-1::obj-148" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-1::obj-142" : [ "B_gain[1]", "B_gain", 0 ],
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-25::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-1::obj-147" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-1::obj-127" : [ "G_gain[1]", "G_gain", 0 ],
-			"obj-25::obj-50" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-25::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-1::obj-32" : [ "G_offset[1]", "G_offset", 0 ],
+			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-1::obj-15" : [ "R_offset[1]", "R_offset", 0 ],
+			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-1::obj-148" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-1::obj-24" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-1::obj-119" : [ "R_gain[1]", "R_gain", 0 ],
+			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-25::obj-41" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-1::obj-127" : [ "G_gain[1]", "G_gain", 0 ],
+			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-25::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-25::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-1::obj-142" : [ "B_gain[1]", "B_gain", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -554,18 +694,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.playr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "vzgl-object.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -575,6 +703,18 @@
 				"name" : "vizzie-global.js",
 				"bootpath" : "C74:/packages/vizzie/code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.playr.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
