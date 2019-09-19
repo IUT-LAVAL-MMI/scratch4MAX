@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 208.5, 452.0, 146.0, 20.0 ],
+					"text" : "activez/désactivez l'effet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 479.5, 216.0, 214.0, 20.0 ],
+					"text" : "lancez la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -63,7 +85,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 266.0, 554.25, 837.0, 218.0 ],
+					"patching_rect" : [ 266.0, 589.25, 837.0, 218.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -82,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 19.0, 550.0, 236.0, 214.0 ],
+					"patching_rect" : [ 19.0, 585.0, 236.0, 214.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -94,7 +116,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 8.0, 498.0, 64.0, 22.0 ],
+					"patching_rect" : [ 8.0, 533.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
@@ -106,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 203.0, 107.0, 22.0 ],
+					"patching_rect" : [ 493.0, 238.0, 107.0, 22.0 ],
 					"text" : "read aeroport.mp4"
 				}
 
@@ -126,7 +148,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 130.0, 239.0, 389.0, 163.0 ],
+					"patching_rect" : [ 123.0, 274.0, 389.0, 163.0 ],
 					"varname" : "vz.playr",
 					"viewvisibility" : 1
 				}
@@ -140,7 +162,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 231.0, 415.0, 24.0, 24.0 ]
+					"patching_rect" : [ 231.0, 474.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -153,7 +175,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 57.0, 803.0, 132.0 ],
-					"text" : "Cet objet permet d'appliquer un effet négatif à un flux vidéo. Par défaut l'effet n'est pas activé, l'activation peut être indiquée en argument interne de l'objet. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (toggle) : activer/désactiver l'effet\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (facultatif) : activation automatique de l'effet (1)"
+					"text" : "Cet objet permet d'appliquer un effet négatif à un flux vidéo. Par défaut l'effet n'est pas activé, l'activation peut être indiquée en argument interne de l'objet. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (toggle) : activer/désactiver l'effet\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (facultatif) : activation automatique de l'effet (1), par défaut l'effet est désactivé"
 				}
 
 			}
@@ -177,8 +199,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.0, 493.0, 127.0, 22.0 ],
-					"text" : "s4M.video.gl.negatif"
+					"patching_rect" : [ 123.0, 528.0, 132.0, 22.0 ],
+					"text" : "s4M.video.gl.negatif 0"
 				}
 
 			}
@@ -191,8 +213,48 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 481.25, 208.0, 44.5 ],
+					"patching_rect" : [ 101.0, 516.25, 208.0, 44.5 ],
 					"proportion" : 0.39
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-13",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 454.5, 216.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-15",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 183.5, 452.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -236,7 +298,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -244,36 +306,36 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-1::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-3::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-1::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-1::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-1::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
 			"obj-1::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}

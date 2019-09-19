@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 1147.0, 765.0 ],
+		"rect" : [ 447.0, 114.0, 868.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,113 +39,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 592.0, 505.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
+					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 472.5, 481.0, 31.0, 20.0 ],
-					"text" : "max"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 369.0, 481.0, 30.0, 20.0 ],
-					"text" : "min"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 377.5, 449.0, 214.0, 20.0 ],
-					"text" : "Régler le min et le max du seuillage"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 598.5, 208.0, 214.0, 20.0 ],
-					"text" : "lancez la vidéo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 14.0,
-					"id" : "obj-4",
-					"linecount" : 9,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 58.0, 1000.0, 147.0 ],
-					"text" : "Permet de réaliser un seuillage d'une vidéo en fonction de la luminosité\n\nEntrée 1 (video) : vidéo dry\nEntrée 2 (float) : seuil min luminosité\nEntrée 3 (float) : seuil max luminosité\nEntrée 4 (toggle) : pour activer/désactiver l'effet\nSortie 1 (vidéo OpenGL) : vidéo wet openGL\n\nArgument 1 (facultatif) : possibilité d'activer l'effet à l'initialisation de l'effet"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 30.0,
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 11.0, 950.0, 40.0 ],
-					"text" : "Scratch4MAX - Vidéo - lumaGate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-12",
-					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 464.0, 505.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-10",
-					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 363.0, 505.0, 50.0, 22.0 ]
+					"patching_rect" : [ 400.5, 518.0, 325.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Regardez la différence d'affichage avec et sans cet objet"
 				}
 
 			}
@@ -156,27 +56,95 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-7",
+					"id" : "obj-15",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "vz.viewr.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 314.0, 611.0, 378.0, 349.0 ],
+					"patching_rect" : [ 441.0, 610.0, 236.0, 214.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 205.5, 214.0, 214.0, 20.0 ],
+					"text" : "Mettez la vidéo en pause"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 228.0, 238.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 511.5, 234.0, 214.0, 20.0 ],
+					"text" : "lancez la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 230.0, 107.0, 22.0 ],
-					"text" : "read aeroport.mp4"
+					"patching_rect" : [ 140.0, 557.0, 174.0, 22.0 ],
+					"text" : "s4M.video.gestionNoir 640 360"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "jit.fpsgui",
+					"mode" : 3,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 42.0, 475.0, 80.0, 35.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-3",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.viewr.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 140.0, 610.0, 236.0, 214.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -187,32 +155,31 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 512.0, 585.0, 64.0, 22.0 ],
+					"patching_rect" : [ 42.0, 602.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 548.0, 156.0, 22.0 ],
-					"text" : "s4M.video.gl.lumaGate 1"
+					"patching_rect" : [ 493.0, 258.0, 107.0, 22.0 ],
+					"text" : "read aeroport.mp4"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "## The VIZZIE video player/looper ##",
-					"bgmode" : 1,
+					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-6",
+					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "vz.playr.maxpat",
@@ -220,10 +187,35 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 287.0, 272.0, 348.0, 158.0 ],
-					"prototypename" : "pixl",
-					"varname" : "playr",
+					"patching_rect" : [ 123.0, 286.0, 389.0, 163.0 ],
+					"varname" : "vz.playr",
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-4",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 57.0, 791.0, 132.0 ],
+					"text" : "Cet objet permet d'envoyer un noir lorsqu'on arrête une vidéo, sinon par défaut il garde affichée la dernière image de la vidéo. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (toggle) : information lecture / pause de la vidéo\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (obligatoire) : largeur en pixels de la vidéo\nArgument 2 (obligatoire) : hauteur en pixels de la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 30.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 11.0, 776.0, 40.0 ],
+					"text" : "Scratch4MAX - Vidéo - gestion Noir"
 				}
 
 			}
@@ -232,7 +224,7 @@
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 					"hint" : "",
-					"id" : "obj-8",
+					"id" : "obj-12",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
@@ -240,7 +232,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 573.5, 208.0, 20.0, 20.0 ],
+					"patching_rect" : [ 486.5, 234.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -252,7 +244,7 @@
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 					"hint" : "",
-					"id" : "obj-13",
+					"id" : "obj-17",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
@@ -260,7 +252,27 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 352.5, 449.0, 20.0, 20.0 ],
+					"patching_rect" : [ 378.5, 518.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-14",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 183.5, 214.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -270,15 +282,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-15", 0 ],
+					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -286,64 +298,78 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 4 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 4 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-1::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-6::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-6::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-6::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-15::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
 			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-7::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-6::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-6::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-6::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-7::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-6::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-6::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-6::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-6::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-6::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-6::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-3::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-15::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-1::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-1::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-1::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-1::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -411,13 +437,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.lumaGate.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "vz.projectr.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -445,6 +464,13 @@
 				"name" : "windowresize.js",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.gestionNoir.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

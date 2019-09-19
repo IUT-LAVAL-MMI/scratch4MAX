@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 188.0, 89.0, 1192.0, 862.0 ],
+		"rect" : [ 34.0, 89.0, 1192.0, 862.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 407.5, 364.0, 214.0, 20.0 ],
+					"text" : "lancer la vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 412.0, 393.0, 82.0, 22.0 ],
+					"patching_rect" : [ 412.0, 388.0, 82.0, 22.0 ],
 					"text" : "read tom.mov"
 				}
 
@@ -123,7 +134,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.5, 571.0, 214.0, 20.0 ],
+					"patching_rect" : [ 690.5, 567.0, 214.0, 20.0 ],
 					"text" : "activer le mode debug"
 				}
 
@@ -147,7 +158,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 640.5, 569.0, 24.0, 24.0 ]
+					"patching_rect" : [ 636.5, 567.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -310,12 +321,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 19,
+					"linecount" : 20,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 50.0, 1052.0, 304.0 ],
-					"text" : "Cet objet permet de déterminer dans un flux vidéo s'il y a du mouvement dans une zone préalablement sélectionnée. Attention cet objet ne peut fonctionner que si l'arrière plan est fixe ou qui varie très peu.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (integer) : x coin supérieur gauche de la sélection\nEntrée 3 (integer) : y coin supérieur gauche de la sélection\nEntrée 4 (integer) : x coin inférieur droit de la sélection\nEntrée 5 (integer) : y coin inférieur droit de la sélection\nEntrée 5 (float) : seuil de détection (0-255)\nSortie 1 (vidéo) : si mode debug, vidéo initiale avec un marqueur de la sélection\nSortie 2 (toggle) : 0 si pas de mouvement détecté dans la sélection / 1 si mouvement détecté dans la sélection\n\nArgument 1 (obligatoire) : largeur en pixels de la véidéo\nArgument 2 (obligatoire) : hauteur en pixels de la véidéo\nArgument 3 (obligatoire) : x (en pix) coin inférieur droit\nArgument 4 (obligatoire) : y (en pix) coin inférieur droit\nArgument 5 (obligatoire) : x (en pix) coin sup gauche\nArgument 6 (obligatoire) : y (en pix) coin sup gauche\nArgument 7 (obligatoire) : seuil de détection du mouvement"
+					"patching_rect" : [ 8.0, 50.0, 1052.0, 319.0 ],
+					"text" : "Cet objet permet de déterminer dans un flux vidéo s'il y a du mouvement dans une zone préalablement sélectionnée. Attention cet objet ne peut fonctionner que si l'arrière plan est fixe ou qui varie très peu.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (integer) : x coin supérieur gauche de la sélection\nEntrée 3 (integer) : y coin supérieur gauche de la sélection\nEntrée 4 (integer) : x coin inférieur droit de la sélection\nEntrée 5 (integer) : y coin inférieur droit de la sélection\nEntrée 6 (float) : seuil de détection (0-255)\nEntrée 7 (toggle) : activation (1) /désactivation (0) mode debug\nSortie 1 (vidéo) : si mode debug, vidéo initiale avec un marqueur de la sélection sinon pas de sortie\nSortie 2 (toggle) : 0 si pas de mouvement détecté dans la sélection / 1 si mouvement détecté dans la sélection\n\nArgument 1 (obligatoire) : largeur en pixels de la véidéo\nArgument 2 (obligatoire) : hauteur en pixels de la véidéo\nArgument 3 (obligatoire) : x (en pix) coin inférieur droit\nArgument 4 (obligatoire) : y (en pix) coin inférieur droit\nArgument 5 (obligatoire) : x (en pix) coin sup gauche\nArgument 6 (obligatoire) : y (en pix) coin sup gauche\nArgument 7 (obligatoire) : seuil de détection du mouvement"
 				}
 
 			}
@@ -374,7 +385,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 770.0, 376.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"text" : "2",
+					"text" : "4",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -383,6 +394,27 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-12",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 382.5, 364.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"fontsize" : 5.0,
 					"hint" : "",
 					"id" : "obj-25",
 					"ignoreclick" : 1,
@@ -394,7 +426,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 809.0, 611.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"text" : "3",
+					"text" : "4",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -412,9 +444,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 677.5, 571.0, 20.0, 20.0 ],
+					"patching_rect" : [ 665.5, 567.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"text" : "1",
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -528,57 +560,57 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-26::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
-			"obj-3::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-7::obj-26::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-121" : [ "brightness[3]", "brightness", 0 ],
-			"obj-3::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-3::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-128" : [ "range[24]", "range", 0 ],
-			"obj-7::obj-17::obj-7" : [ "range[4]", "range", 0 ],
-			"obj-3::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-7::obj-26::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-8" : [ "range[5]", "range", 0 ],
-			"obj-7::obj-26::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
-			"obj-7::obj-26::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-7::obj-31::obj-1" : [ "textbutton[2]", "textbutton[1]", 0 ],
-			"obj-7::obj-31::obj-6" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-7::obj-31::obj-54" : [ "umenu[5]", "umenu", 0 ],
-			"obj-7::obj-26::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
-			"obj-7::obj-19::obj-39" : [ "umenu[10]", "umenu", 0 ],
-			"obj-7::obj-31::obj-44" : [ "umenu[3]", "umenu", 0 ],
-			"obj-7::obj-26::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
-			"obj-7::obj-26::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
-			"obj-7::obj-85::obj-39" : [ "umenu[6]", "umenu", 0 ],
-			"obj-3::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-7::obj-31::obj-17" : [ "pictctrl[43]", "pictctrl[1]", 0 ],
-			"obj-3::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-3::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-3::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-3::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-7::obj-31::obj-48" : [ "umenu[4]", "umenu", 0 ],
-			"obj-3::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-3::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-3::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-7::obj-19::obj-3" : [ "range[7]", "range", 0 ],
-			"obj-7::obj-26::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
-			"obj-7::obj-19::obj-51" : [ "pictctrl[47]", "pictctrl[1]", 0 ],
-			"obj-7::obj-85::obj-51" : [ "pictctrl[48]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
-			"obj-3::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-7::obj-26::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-7::obj-26::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
-			"obj-7::obj-85::obj-3" : [ "range[6]", "range", 0 ],
-			"obj-7::obj-31::obj-46" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-3::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-7::obj-26::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-3::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-7::obj-26::obj-121" : [ "brightness[3]", "brightness", 0 ],
+			"obj-3::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-7::obj-26::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
+			"obj-7::obj-85::obj-3" : [ "range[25]", "range", 0 ],
+			"obj-3::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-7::obj-26::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
+			"obj-7::obj-17::obj-7" : [ "range[4]", "range", 0 ],
+			"obj-7::obj-19::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-3::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-3::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-7::obj-26::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
+			"obj-7::obj-26::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-46" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-19" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-44" : [ "umenu[3]", "umenu", 0 ],
+			"obj-7::obj-26::obj-8" : [ "range[5]", "range", 0 ],
 			"obj-7::obj-17::obj-9" : [ "delay", "delay", 0 ],
+			"obj-7::obj-85::obj-51" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
+			"obj-3::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-3::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-7::obj-26::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-3::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-7::obj-26::obj-128" : [ "range[24]", "range", 0 ],
+			"obj-7::obj-26::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
 			"obj-3::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-7::obj-31::obj-19" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-6" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
+			"obj-3::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-1" : [ "textbutton[2]", "textbutton[1]", 0 ],
+			"obj-3::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-3::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-7::obj-85::obj-39" : [ "umenu[6]", "umenu", 0 ],
+			"obj-3::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-3::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
+			"obj-7::obj-19::obj-3" : [ "range[6]", "range", 0 ],
+			"obj-7::obj-31::obj-48" : [ "umenu[4]", "umenu", 0 ],
+			"obj-3::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-54" : [ "umenu[5]", "umenu", 0 ],
+			"obj-3::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-3::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"obj-7::obj-26::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-7::obj-31::obj-17" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-7::obj-26::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
+			"obj-7::obj-19::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-7::obj-26::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -684,6 +716,13 @@
 , 			{
 				"name" : "vz.analyzr.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.gl.oper8r.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -876,8 +915,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

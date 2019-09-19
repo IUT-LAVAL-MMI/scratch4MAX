@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 97.0, 1092.0, 808.0 ],
+		"rect" : [ 134.0, 97.0, 974.0, 808.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 489.933349609375, 206.0, 150.0, 20.0 ],
+					"text" : "pour régler la force du flou"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 670.0, 510.0, 70.0, 22.0 ],
+					"patching_rect" : [ 590.5, 551.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -56,7 +67,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 595.0, 549.0, 64.0, 22.0 ],
+					"patching_rect" : [ 515.5, 590.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
@@ -75,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 80.100006103515625, 614.0, 378.0, 349.0 ],
+					"patching_rect" : [ 119.100006103515625, 619.0, 378.0, 349.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -87,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 171.0, 107.0, 22.0 ],
+					"patching_rect" : [ 494.0, 228.0, 107.0, 22.0 ],
 					"text" : "read aeroport.mp4"
 				}
 
@@ -108,7 +119,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 166.0, 213.0, 348.0, 158.0 ],
+					"patching_rect" : [ 165.0, 259.0, 348.0, 158.0 ],
 					"prototypename" : "pixl",
 					"varname" : "playr",
 					"viewvisibility" : 1
@@ -121,7 +132,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 590.3333740234375, 405.0, 165.0, 20.0 ],
+					"patching_rect" : [ 589.3333740234375, 435.0, 165.0, 20.0 ],
 					"text" : "activation/désactivation effet"
 				}
 
@@ -134,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 566.0, 432.5, 24.0, 24.0 ]
+					"patching_rect" : [ 565.0, 462.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -144,7 +155,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.933349609375, 414.0, 150.0, 20.0 ],
+					"patching_rect" : [ 389.933349609375, 444.0, 150.0, 20.0 ],
 					"text" : "pour régler la force du flou"
 				}
 
@@ -158,7 +169,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 357.600006103515625, 441.5, 50.0, 22.0 ]
+					"patching_rect" : [ 356.600006103515625, 471.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -169,7 +180,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 284.100006103515625, 519.5, 119.0, 22.0 ],
+					"patching_rect" : [ 283.100006103515625, 527.5, 119.0, 22.0 ],
 					"text" : "s4M.video.gl.blur 1.5"
 				}
 
@@ -178,12 +189,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 6,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 1000.0, 100.0 ],
-					"text" : "Effet de flou appliqué à un flux vidéo. Le résultat est un flux openGL. Il est possible de mettre en paramètre interne la force du flou.   \n\nEntrée 1 (video) : vidéo dry\nEntrée 2 (float) : pour régler la force du flou\nEntrée 3 (toggle) : pour activer/désactiver l'effet, le module garde en mémoire la dernière valeur de force de flou\nSortie 1 (vidéo OpenGL) : vidéo wet openGL"
+					"patching_rect" : [ 13.0, 61.0, 1000.0, 132.0 ],
+					"text" : "Effet de flou appliqué à un flux vidéo.\n\nEntrée 1 (video) : vidéo dry\nEntrée 2 (float) : pour régler la force du flou\nEntrée 3 (toggle) : pour activer/désactiver l'effet, le module garde en mémoire la dernière valeur de force de flou\nSortie 1 (vidéo OpenGL) : vidéo wet openGL\n\nArgument 1 (obligatoire) : paramétrage de la force du flou à l'initialisation de cet objet"
 				}
 
 			}
@@ -209,7 +220,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.600006103515625, 508.25, 140.0, 44.5 ],
+					"patching_rect" : [ 274.600006103515625, 516.25, 140.0, 44.5 ],
 					"proportion" : 0.39
 				}
 
@@ -227,9 +238,29 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 566.0, 405.0, 20.0, 20.0 ],
+					"patching_rect" : [ 565.0, 435.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-12",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 465.5999755859375, 206.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -247,9 +278,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 366.600006103515625, 414.0, 20.0, 20.0 ],
+					"patching_rect" : [ 365.600006103515625, 444.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"text" : "1",
+					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -308,29 +339,29 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-9::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-7::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-6::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-9::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-6::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-6::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-6::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-9::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-9::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-6::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-7::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-6::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-6::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-6::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-7::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-6::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-6::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-6::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-6::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-6::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-6::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-6::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-6::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-6::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-9::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-6::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-6::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-9::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-9::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-6::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-9::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
 			"obj-6::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-6::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-6::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-6::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-6::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-9::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-9::obj-16" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}

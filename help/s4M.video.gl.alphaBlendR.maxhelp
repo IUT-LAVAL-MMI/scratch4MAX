@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 536.0, 79.0, 1151.0, 873.0 ],
+		"rect" : [ 93.0, 79.0, 1151.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,26 +39,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 820.933349609375, 186.0, 150.0, 20.0 ],
+					"text" : "pour régler la force du flou"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 440.0, 186.0, 150.0, 20.0 ],
+					"text" : "pour régler la force du flou"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 61.0, 498.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-21",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 366.0, 499.0, 50.0, 22.0 ]
+					"patching_rect" : [ 60.0, 540.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -70,7 +79,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 447.0, 492.0, 24.0, 24.0 ]
+					"patching_rect" : [ 429.0, 581.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -85,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 526.0, 400.0, 80.0, 35.0 ]
+					"patching_rect" : [ 525.0, 442.0, 80.0, 35.0 ]
 				}
 
 			}
@@ -100,7 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 92.0, 405.0, 80.0, 35.0 ]
+					"patching_rect" : [ 91.0, 447.0, 80.0, 35.0 ]
 				}
 
 			}
@@ -111,7 +120,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.0, 168.0, 95.0, 22.0 ],
+					"patching_rect" : [ 833.0, 210.0, 95.0, 22.0 ],
 					"text" : "read track2.mov"
 				}
 
@@ -131,7 +140,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 491.0, 210.0, 362.0, 160.0 ],
+					"patching_rect" : [ 490.0, 252.0, 362.0, 160.0 ],
 					"varname" : "vz.playr[1]",
 					"viewvisibility" : 1
 				}
@@ -144,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 690.0, 499.0, 121.0, 76.0 ]
+					"patching_rect" : [ 689.0, 541.0, 121.0, 76.0 ]
 				}
 
 			}
@@ -155,8 +164,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.0, 417.5, 214.0, 33.0 ],
-					"text" : "pour remplacer la couche alpha de la vidéo 1"
+					"patching_rect" : [ 714.0, 459.5, 214.0, 33.0 ],
+					"text" : "pour mélanger les deux vidéos en fonction de ce masque"
 				}
 
 			}
@@ -168,7 +177,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 659.0, 422.0, 24.0, 24.0 ]
+					"patching_rect" : [ 658.0, 464.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -757,7 +766,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 659.0, 457.5, 50.0, 22.0 ],
+					"patching_rect" : [ 658.0, 499.5, 50.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -784,7 +793,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "jit_matrix" ],
-					"patching_rect" : [ 174.0, 574.0, 275.0, 155.0 ],
+					"patching_rect" : [ 173.0, 616.0, 275.0, 155.0 ],
 					"varname" : "vz.alphablendr",
 					"viewvisibility" : 1
 				}
@@ -804,7 +813,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 174.0, 786.0, 269.0, 198.0 ],
+					"patching_rect" : [ 173.0, 828.0, 269.0, 198.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -816,8 +825,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 616.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
+					"patching_rect" : [ 578.0, 783.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
 				}
 
 			}
@@ -828,7 +837,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 527.0, 645.0, 64.0, 22.0 ],
+					"patching_rect" : [ 533.0, 812.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
@@ -848,7 +857,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 22.0, 210.0, 444.0, 168.0 ],
+					"patching_rect" : [ 21.0, 252.0, 444.0, 168.0 ],
 					"varname" : "vz.playr",
 					"viewvisibility" : 1
 				}
@@ -861,7 +870,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 447.0, 168.0, 97.0, 22.0 ],
+					"patching_rect" : [ 446.0, 210.0, 97.0, 22.0 ],
 					"text" : "read dishes.mov"
 				}
 
@@ -875,7 +884,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 57.0, 920.0, 100.0 ],
-					"text" : "L'objet vz.alphablendr permet de réaliser un compositing entre deux flux vidéo à partir d'une troisième image/vidéo (video mask). \n\nEntrée 1 (vidéo) : flux vidéo 1\nEntrée 2 (vidéo) : flux vidéo 2\nEntrée 3 (vidéo) : vidéo masktt\nSortie 1 (vidéo) : flux vidéo wet"
+					"text" : "L'objet vz.alphablendr permet de réaliser un compositing entre deux flux vidéo à partir d'une troisième image/vidéo (video mask). \n\nEntrée 1 (vidéo) : flux vidéo 1\nEntrée 2 (vidéo) : flux vidéo 2\nEntrée 3 (vidéo) : vidéo mask\nSortie 1 (vidéo) : flux vidéo wet"
 				}
 
 			}
@@ -905,7 +914,47 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 690.0, 424.0, 20.0, 20.0 ],
+					"patching_rect" : [ 689.0, 466.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-5",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 796.5999755859375, 186.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-1",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 415.6666259765625, 186.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -924,13 +973,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 3 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -989,7 +1031,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1019,50 +1070,50 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-39::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-7::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-39::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-7::obj-28" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-39::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-7::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-6::obj-1" : [ "umenu[7]", "umenu", 0 ],
-			"obj-39::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-39::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-39::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-6::obj-1" : [ "umenu[7]", "umenu", 0 ],
+			"obj-39::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-6::obj-65" : [ "alphacontrast[1]", "alpha contrast", 0 ],
+			"obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-7::obj-28" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-7::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-14::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-14::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-6::obj-2" : [ "range[2]", "range", 0 ],
-			"obj-39::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-7::obj-81" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-7::obj-60" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-7::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-7::obj-83" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-6::obj-42" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
 			"obj-39::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-7::obj-83" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-39::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-39::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-39::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-39::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-7::obj-40" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-39::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-14::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-39::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-14::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
-			"obj-39::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-7::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-14::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-6::obj-22" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-6::obj-65" : [ "alphacontrast[1]", "alpha contrast", 0 ],
-			"obj-7::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-7::obj-81" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-39::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-39::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-39::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-14::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-7::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-7::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
+			"obj-7::obj-89" : [ "moviename[1]", "moviename", 0 ],
+			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-39::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-7::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-39::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-7::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-39::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-39::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-39::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-39::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-7::obj-40" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-7::obj-60" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-39::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-6::obj-2" : [ "range[2]", "range", 0 ],
+			"obj-39::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
+			"obj-14::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-14::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1330,8 +1381,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

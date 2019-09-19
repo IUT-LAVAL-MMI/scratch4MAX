@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 178.0, 80.0, 1340.0, 749.0 ],
+		"rect" : [ 178.0, 80.0, 1038.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,29 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 464.0, 428.0, 237.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "réglez le nombre d'images de décalage"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 442.0, 194.0, 150.0, 20.0 ],
+					"text" : "lancez la vidéo"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -109,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 189.0, 87.0, 22.0 ],
+					"patching_rect" : [ 442.0, 218.0, 87.0, 22.0 ],
 					"text" : "read bball.mov"
 				}
 
@@ -129,7 +152,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 108.0, 217.0, 354.0, 163.0 ],
+					"patching_rect" : [ 107.0, 246.0, 354.0, 163.0 ],
 					"varname" : "vz.playr",
 					"viewvisibility" : 1
 				}
@@ -144,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 55.0, 780.0, 116.0 ],
-					"text" : "Cet objet permet de retarder un flux vidéo. \n\nEntrée 1 (vidéo) : flux vidéo\nEntrée 2 (entier) : nombre d'images en retard\nSortie 1 (vidéo) : flux vidéo retardé\n\nArgument 1 (facultatif) : le nombre d'images de décalage"
+					"text" : "Cet objet permet de retarder un flux vidéo. \n\nEntrée 1 (vidéo) : flux vidéo\nEntrée 2 (entier) : nombre d'images en retard\nSortie 1 (vidéo) : flux vidéo retardé\n\nArgument 1 (facultatif) : le nombre d'images de décalage à l'initialisation de l'objet"
 				}
 
 			}
@@ -158,6 +181,46 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 9.0, 776.0, 40.0 ],
 					"text" : "Scratch4MAX - Vidéo - ligne retard vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-22",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 417.6666259765625, 194.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-7",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 439.6666259765625, 428.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -201,28 +264,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-3::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-12::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-3::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-3::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-6::obj-7" : [ "range[4]", "range", 0 ],
-			"obj-9::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-3::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-9::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-3::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-3::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-3::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-3::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-3::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-3::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-3::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-3::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-6::obj-7" : [ "range[4]", "range", 0 ],
 			"obj-3::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-3::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-3::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-3::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-12::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
+			"obj-3::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-6::obj-9" : [ "delay", "delay", 0 ],
+			"obj-9::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-3::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-3::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
 			"obj-3::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-9::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-3::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-12::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-3::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-3::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-3::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-3::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-3::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-3::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-3::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -492,8 +555,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

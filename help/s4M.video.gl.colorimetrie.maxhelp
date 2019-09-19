@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 351.0, 664.5, 192.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Modifiez les paramètres de ce traitement, voyez les conséquences sur l'outil d'analyse"
 				}
 
@@ -58,7 +57,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 643.0, 729.0, 192.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Pour l'analyse des flux vidéo opengl il faut fournir en plus les dimensions de la vidéo"
 				}
 
@@ -109,7 +107,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 887.0, 335.0, 24.0, 24.0 ]
+					"patching_rect" : [ 857.0, 336.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -146,18 +144,6 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 720.0, 364.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 686.0, 630.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
 				}
 
 			}
@@ -505,7 +491,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -513,7 +499,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -657,8 +643,8 @@
 			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-1::obj-24" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-1::obj-119" : [ "R_gain[1]", "R_gain", 0 ],
+			"obj-1::obj-24" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-25::obj-41" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-1::obj-127" : [ "G_gain[1]", "G_gain", 0 ],
