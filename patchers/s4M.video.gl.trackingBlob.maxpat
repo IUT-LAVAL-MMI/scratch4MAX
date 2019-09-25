@@ -112,7 +112,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-31",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -197,7 +197,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-87",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -212,8 +212,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 883.5, 812.0, 119.0, 22.0 ],
-					"text" : "s4M.video.gl.oper8r",
+					"patching_rect" : [ 883.5, 812.0, 117.0, 22.0 ],
+					"text" : "s4M.video.vz.oper8r",
 					"varname" : "vz.oper8r[2]"
 				}
 
@@ -284,7 +284,7 @@
 					"comment" : "Booléen : 0 pas de mode debug / 1 mode debug",
 					"hint" : "Booléen : 0 pas de mode debug / 1 mode debug",
 					"id" : "obj-9",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -299,7 +299,7 @@
 					"comment" : "Integer : y du centre de gravité du blob",
 					"hint" : "Integer : y du centre de gravité du blob",
 					"id" : "obj-3",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -313,7 +313,7 @@
 					"comment" : "Integer : x du centre de gravité du blob",
 					"hint" : "Integer : x du centre de gravité du blob",
 					"id" : "obj-1",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -327,7 +327,7 @@
 					"comment" : "Video : vidéo dry",
 					"hint" : "Video : vidéo dry",
 					"id" : "obj-24",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -387,11 +387,11 @@
 					"comment" : "Video : masque de détection du blob",
 					"hint" : "Video : masque de détection du blob",
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1126.0, 113.0, 30.0, 30.0 ]
 				}
 
@@ -972,6 +972,75 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-10::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-10::obj-3" : [ "range[25]", "range", 0 ],
+			"obj-10::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "s4M.video.vz.oper8r.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-routemat.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-routegl.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cv.jit.blobs.centroids.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "cv.jit.label.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

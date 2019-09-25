@@ -39,6 +39,46 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-25",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "s4M.video.vz.pannr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 81.0, 723.0, 197.0, 134.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-24",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "s4M.video.vz.zoomr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 70.0, 511.0, 157.0, 139.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
 					"linecount" : 6,
@@ -70,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 295.0, 710.0, 150.0, 47.0 ],
+					"patching_rect" : [ 306.0, 723.0, 150.0, 47.0 ],
 					"text" : "on peut déplacer la vidéo à superposer sur la vidéo en arrière plan où on veut"
 				}
 
@@ -94,7 +134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 292.5, 652.0, 73.0, 22.0 ],
+					"patching_rect" : [ 303.5, 665.0, 73.0, 22.0 ],
 					"text" : "loadmess 0."
 				}
 
@@ -106,7 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.5, 652.0, 87.0, 22.0 ],
+					"patching_rect" : [ 214.5, 665.0, 87.0, 22.0 ],
 					"text" : "loadmess 0.54"
 				}
 
@@ -118,7 +158,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 109.5, 652.0, 87.0, 22.0 ],
+					"patching_rect" : [ 120.5, 665.0, 87.0, 22.0 ],
 					"text" : "loadmess 0.48"
 				}
 
@@ -231,29 +271,6 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "## Move an image left/right/up/down ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-2",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.pannr.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 706.0, 198.0, 130.0 ],
-					"prototypename" : "pixl",
-					"varname" : "pannr",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -302,29 +319,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 360.0, 784.0, 302.0, 334.0 ],
 					"varname" : "vz.alphablendr",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## Scale VIZZIE video output ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.zoomr.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 508.0, 158.0, 130.0 ],
-					"prototypename" : "pixl",
-					"varname" : "zoomr",
 					"viewvisibility" : 1
 				}
 
@@ -438,13 +432,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
@@ -452,14 +439,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
+					"destination" : [ "obj-24", 1 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-25", 1 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -489,21 +476,21 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 2 ],
+					"destination" : [ "obj-25", 2 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
+					"destination" : [ "obj-24", 3 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -511,7 +498,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
+					"destination" : [ "obj-24", 2 ],
 					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -519,8 +506,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 3 ],
+					"destination" : [ "obj-25", 3 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -528,7 +522,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"order" : 0,
-					"source" : [ "obj-2", 0 ]
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -536,7 +530,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"order" : 1,
-					"source" : [ "obj-2", 0 ]
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -586,61 +580,60 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-37" : [ "y offset", "y offset", 0 ],
-			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
-			"obj-2::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
-			"obj-47::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-13" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-1::obj-66" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-1::obj-120" : [ "range[5]", "range", 0 ],
-			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-1::obj-119" : [ "zoom[6]", "zoom", 0 ],
-			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-47::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-1::obj-121" : [ "zoom[7]", "zoom", 0 ],
-			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-48" : [ "umenu[6]", "umenu", 0 ],
-			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-1::obj-51" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
-			"obj-1::obj-1" : [ "range[6]", "range", 0 ],
-			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-1::obj-2" : [ "umenu[4]", "umenu", 0 ],
-			"obj-2::obj-68" : [ "x offset", "x offset", 0 ],
-			"obj-2::obj-53" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-25::obj-68" : [ "x offset[1]", "x offset", 0 ],
+			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
 			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-24::obj-51" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-24::obj-104" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-24::obj-120" : [ "range[7]", "range", 0 ],
+			"obj-25::obj-48" : [ "umenu[1]", "umenu", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-24::obj-119" : [ "zoom[1]", "zoom", 0 ],
+			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-24::obj-66" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-25::obj-3" : [ "range[5]", "range", 0 ],
+			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-25::obj-37" : [ "y offset[1]", "y offset", 0 ],
+			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-25::obj-41" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-25::obj-53" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-47::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
+			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
 			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-1::obj-104" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-1::obj-39" : [ "live.dial[3]", "live.dial", 0 ],
+			"obj-24::obj-1" : [ "range[8]", "range", 0 ],
+			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-24::obj-121" : [ "zoom[2]", "zoom", 0 ],
+			"obj-24::obj-2" : [ "umenu[7]", "umenu", 0 ],
 			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
+			"obj-25::obj-13" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-47::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -708,24 +701,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.zoomr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-routemat.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "vz.viewr.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -763,13 +738,33 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.pannr.maxpat",
+				"name" : "s4M.video.gestionNoir.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.vz.zoomr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gestionNoir.maxpat",
+				"name" : "vzgl-routemat.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.vz.pannr.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

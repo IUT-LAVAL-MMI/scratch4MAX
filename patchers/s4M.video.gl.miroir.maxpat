@@ -152,8 +152,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 271.0, 503.0, 114.0, 22.0 ],
-					"text" : "s4M.video.gl.oper8r",
+					"patching_rect" : [ 271.0, 503.0, 183.0, 22.0 ],
+					"text" : "s4M.video.vz.oper8r",
 					"varname" : "vz.oper8r"
 				}
 
@@ -298,8 +298,8 @@
 					"numinlets" : 12,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 340.0, 360.5, 22.0 ],
-					"text" : "s4M.video.gl.croppr",
+					"patching_rect" : [ 323.0, 340.0, 193.5, 22.0 ],
+					"text" : "s4M.video.vz.croppr",
 					"varname" : "vz.croppr"
 				}
 
@@ -737,28 +737,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-121" : [ "brightness[3]", "brightness", 0 ],
-			"obj-4::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-4::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
-			"obj-39::obj-3" : [ "range[25]", "range", 0 ],
-			"obj-4::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
-			"obj-39::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-4::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-4::obj-121" : [ "brightness[3]", "brightness", 0 ],
+			"obj-39::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-4::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
+			"obj-39::obj-3" : [ "range[25]", "range", 0 ],
+			"obj-4::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-39::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-4::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
+			"obj-4::obj-8" : [ "range[5]", "range", 0 ],
+			"obj-4::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-4::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
 			"obj-4::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
+			"obj-4::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
+			"obj-4::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
 			"obj-4::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
 			"obj-4::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
-			"obj-4::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
-			"obj-4::obj-8" : [ "range[5]", "range", 0 ],
-			"obj-4::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
-			"obj-4::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-4::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
 			"obj-4::obj-128" : [ "range[24]", "range", 0 ],
-			"obj-4::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
-			"obj-4::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-4::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
-			"obj-4::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
 			"obj-4::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
-			"obj-39::obj-39" : [ "umenu[1]", "umenu", 0 ],
-			"obj-4::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-4::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
+			"obj-4::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-4::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -766,7 +766,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "s4M.video.gl.croppr.maxpat",
+				"name" : "s4M.video.vz.croppr.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -817,7 +817,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.oper8r.maxpat",
+				"name" : "s4M.video.vz.oper8r.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

@@ -253,8 +253,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.0, 654.0, 114.0, 22.0 ],
-					"text" : "s4M.video.gl.oper8r",
+					"patching_rect" : [ 326.0, 654.0, 117.0, 22.0 ],
+					"text" : "s4M.video.vz.oper8r",
 					"varname" : "vz.oper8r"
 				}
 
@@ -644,8 +644,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-18::obj-3" : [ "range[25]", "range", 0 ],
 			"obj-18::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-18::obj-3" : [ "range[25]", "range", 0 ],
 			"obj-18::obj-39" : [ "umenu[1]", "umenu", 0 ],
 			"parameterbanks" : 			{
 
@@ -654,7 +654,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "s4M.video.gl.oper8r.maxpat",
+				"name" : "s4M.video.vz.oper8r.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

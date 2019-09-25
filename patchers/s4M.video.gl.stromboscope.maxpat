@@ -116,11 +116,11 @@
 					"comment" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
 					"hint" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
 					"id" : "obj-9",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1173.5, 36.0, 30.0, 30.0 ]
 				}
 
@@ -154,8 +154,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.0, 515.0, 118.0, 22.0 ],
-					"text" : "s4M.video.gl.xfadr",
+					"patching_rect" : [ 208.0, 515.0, 143.0, 22.0 ],
+					"text" : "s4M.video.vz.xfadr",
 					"varname" : "vz.xfadr"
 				}
 
@@ -275,11 +275,11 @@
 					"comment" : "Booléen : mode de l'effet (0 = mode manuel / 1 = mode automatique)",
 					"hint" : "Booléen : mode de l'effet (0 = mode manuel / 1 = mode automatique)",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 306.0, 77.0, 30.0, 30.0 ]
 				}
 
@@ -290,7 +290,7 @@
 					"comment" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
 					"hint" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
 					"id" : "obj-2",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -367,7 +367,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 367.0, 335.0, 63.0, 22.0 ],
-					"text" : "1 50"
+					"text" : "1 #1"
 				}
 
 			}
@@ -379,7 +379,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 438.0, 341.0, 63.0, 22.0 ],
-					"text" : "0 50"
+					"text" : "0 #1"
 				}
 
 			}
@@ -413,11 +413,11 @@
 					"comment" : "Bang : pour afficher un flash de la vidéo entrée (mode manuel)",
 					"hint" : "Bang : pour afficher un flash de la vidéo entrée (mode manuel)",
 					"id" : "obj-10",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 414.0, 77.0, 30.0, 30.0 ]
 				}
 
@@ -428,7 +428,7 @@
 					"comment" : "Video : flux vidéo sortie",
 					"hint" : "Video : flux vidéo sortie",
 					"id" : "obj-6",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -442,7 +442,7 @@
 					"comment" : "Video : flux vidéo entrée",
 					"hint" : "Video : flux vidéo entrée",
 					"id" : "obj-15",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -740,6 +740,56 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-5::obj-6" : [ "crossfade", "crossfade", 0 ],
+			"obj-5::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-5::obj-2" : [ "range[4]", "range", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "s4M.video.vz.xfadr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "xfade.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

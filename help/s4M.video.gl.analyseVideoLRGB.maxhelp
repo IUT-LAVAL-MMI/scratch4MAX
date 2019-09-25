@@ -125,8 +125,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1291.0, 131.0, 97.0, 22.0 ],
-					"text" : "read dishes.mov"
+					"patching_rect" : [ 1291.0, 131.0, 89.0, 22.0 ],
+					"text" : "read exo3.mp4"
 				}
 
 			}
@@ -230,7 +230,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 499.0, 263.5, 87.0, 66.0 ],
 					"size" : 4,
-					"value" : 3
+					"value" : 0
 				}
 
 			}
@@ -1231,22 +1231,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-4::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-4::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-4::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-4::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-4::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-4::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1255,15 +1255,15 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.lecteurVideo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers/s4M.video.old",
+				"patcherrelativepath" : "../patchers/s4M.video.old",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.video.analyseVideoLRGB.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers/s4M.video.old",
+				"patcherrelativepath" : "../patchers/s4M.video.old",
 				"type" : "JSON",
 				"implicit" : 1
 			}

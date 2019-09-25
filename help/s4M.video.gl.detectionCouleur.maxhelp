@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 188.0, 79.0, 905.0, 873.0 ],
+		"rect" : [ 188.0, 79.0, 1134.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,7 +88,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 220.0, 462.0, 286.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Réglage détection teinte et détection saturation"
 				}
 
@@ -99,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 557.0, 264.0, 192.0, 20.0 ],
+					"patching_rect" : [ 600.0, 264.0, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier vidéo"
 				}
 
@@ -113,7 +112,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 72.0, 802.0, 179.0 ],
-					"presentation_linecount" : 11,
 					"text" : "Cet objet permet de détecter une couleur déterminée par sa teinte et sa saturation\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (float) : seuil min teinte\nEntrée 3 (float) : seuil max teinte\nEntrée 4 (float) : seuil min saturation\nEntrée 5 (float) : seuil max saturation\nSortie 1 (vidéo) : masque global (pixel blanc lorsque le pixel possède la teinte ET la saturation souhaitée)\nSortie 2 (video) : masque teinte (pixel blanc lorsque le pixel possède une teinte comprise entre min teinte et max teinte)\nSortie 2 (video) : masque saturation (pixel blanc lorsque le pixel possède une saturation comprise entre min saturation et max saturation)"
 				}
 
@@ -331,7 +329,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 535.0, 264.0, 20.0, 20.0 ],
+					"patching_rect" : [ 578.0, 264.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -440,36 +438,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-3::obj-18::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-4::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-14::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-14::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-5::obj-20" : [ "letterbox_menu[2]", "letterbox_menu", 0 ],
-			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-2::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
 			"obj-14::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
 			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-3::obj-18::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-14::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-5::obj-20" : [ "letterbox_menu[2]", "letterbox_menu", 0 ],
+			"obj-14::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-2::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-4::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-2::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-3::obj-18::obj-51" : [ "pictctrl[47]", "pictctrl[1]", 0 ],
-			"obj-2::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-3::obj-18::obj-39" : [ "umenu[10]", "umenu", 0 ],
+			"obj-2::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-2::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-2::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-3::obj-18::obj-39" : [ "umenu[10]", "umenu", 0 ],
 			"obj-2::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-14::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-2::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-2::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-4::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
+			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-2::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"obj-5::obj-37" : [ "aspect_menu[2]", "aspect_menu", 0 ],
 			"obj-14::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-14::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-3::obj-18::obj-51" : [ "pictctrl[47]", "pictctrl[1]", 0 ],
+			"obj-2::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-4::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"parameterbanks" : 			{
 
 			}

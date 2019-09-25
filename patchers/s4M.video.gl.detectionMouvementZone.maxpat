@@ -78,11 +78,11 @@
 					"comment" : "Booléen : 0 pas mode debug / 1 mode debug",
 					"hint" : "Booléen : 0 pas mode debug / 1 mode debug",
 					"id" : "obj-36",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1498.0, 336.0, 30.0, 30.0 ]
 				}
 
@@ -149,7 +149,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -259,7 +258,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-87",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -274,8 +273,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.5, 930.0, 119.0, 22.0 ],
-					"text" : "s4M.video.gl.oper8r",
+					"patching_rect" : [ 633.5, 930.0, 117.0, 22.0 ],
+					"text" : "s4M.video.vz.oper8r",
 					"varname" : "vz.oper8r[1]"
 				}
 
@@ -525,7 +524,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-62",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -538,7 +537,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-61",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -551,7 +550,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-58",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -564,7 +563,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-57",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -577,7 +576,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-56",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -590,7 +589,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-49",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -811,8 +810,8 @@
 					"numinlets" : 12,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 899.25, 396.0, 317.5, 22.0 ],
-					"text" : "s4M.video.gl.croppr",
+					"patching_rect" : [ 899.25, 396.0, 298.5, 22.0 ],
+					"text" : "s4M.video.vz.croppr",
 					"varname" : "vz.croppr"
 				}
 
@@ -821,7 +820,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1556,6 +1555,152 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-31::obj-44" : [ "umenu[3]", "umenu", 0 ],
+			"obj-26::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-26::obj-121" : [ "brightness[3]", "brightness", 0 ],
+			"obj-19::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-17::obj-7" : [ "range[4]", "range", 0 ],
+			"obj-31::obj-17" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
+			"obj-26::obj-89" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-85::obj-3" : [ "range[25]", "range", 0 ],
+			"obj-26::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-85::obj-51" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-17::obj-9" : [ "delay", "delay", 0 ],
+			"obj-19::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-31::obj-54" : [ "umenu[5]", "umenu", 0 ],
+			"obj-31::obj-1" : [ "textbutton[2]", "textbutton[1]", 0 ],
+			"obj-26::obj-49" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-31::obj-19" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
+			"obj-19::obj-3" : [ "range[5]", "range", 0 ],
+			"obj-31::obj-48" : [ "umenu[4]", "umenu", 0 ],
+			"obj-31::obj-46" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-85::obj-39" : [ "umenu[6]", "umenu", 0 ],
+			"obj-26::obj-204" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-26::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
+			"obj-26::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-26::obj-8" : [ "range[6]", "range", 0 ],
+			"obj-26::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
+			"obj-26::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
+			"obj-26::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
+			"obj-26::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
+			"obj-26::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
+			"obj-26::obj-51" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-26::obj-128" : [ "range[24]", "range", 0 ],
+			"obj-26::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
+			"obj-26::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-26::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
+			"obj-31::obj-6" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "s4M.video.vz.croppr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-pwindow.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "srcdimcrop.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dstdimcrop.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.gl.delay.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.textureset.js",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/javascript/render",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/javascript/render",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.oper8r.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-routemat.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-routegl.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.analyzr.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.vz.oper8r.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
