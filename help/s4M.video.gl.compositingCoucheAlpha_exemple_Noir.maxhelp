@@ -342,8 +342,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.0, 625.5, 118.0, 22.0 ],
-					"text" : "s4M.video.gl.video 1"
+					"patching_rect" : [ 145.0, 625.5, 142.0, 22.0 ],
+					"text" : "s4M.video.gl.planVideo 1"
 				}
 
 			}
@@ -353,8 +353,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 780.5, 569.5, 118.0, 22.0 ],
-					"text" : "s4M.video.gl.video 0"
+					"patching_rect" : [ 780.5, 569.5, 142.0, 22.0 ],
+					"text" : "s4M.video.gl.planVideo 0"
 				}
 
 			}
@@ -794,43 +794,43 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
-			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
-			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
+			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
 			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
 			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
 			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -898,7 +898,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.video.maxpat",
+				"name" : "s4M.video.gl.planVideo.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
