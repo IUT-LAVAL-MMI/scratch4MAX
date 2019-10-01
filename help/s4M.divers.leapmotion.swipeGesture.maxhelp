@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 83.0, 820.0, 483.0 ],
+		"rect" : [ 51.0, 83.0, 972.0, 698.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 426.0, 354.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 439.0, 219.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 291.0, 200.0, 22.0 ],
-					"text" : "s4M.divers.leapmotion.fingersCount"
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 172.0, 291.0, 265.0, 22.0 ],
+					"text" : "s4M.divers.leapmotion.swipeGesture"
 				}
 
 			}
@@ -57,7 +81,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 172.0, 339.0, 50.0, 22.0 ]
+					"patching_rect" : [ 116.0, 359.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -70,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 353.0, 226.0, 50.0, 22.0 ]
+					"patching_rect" : [ 295.0, 219.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -90,12 +114,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 52.0, 721.0, 85.0 ],
-					"text" : "Cet objet permet de compter le nombre de doigts d'une seule main au-dessus d'une leapmotion.\n\nEntrée 1 (integer) : activation/désactivation leapmotion\nEntrée 2 (float) : seuil minimum de détection des doigts\nSortie 1 (integer) : nombre de doigts détectés"
+					"patching_rect" : [ 14.0, 52.0, 721.0, 116.0 ],
+					"text" : "Cet objet permet de détecter le balaiement de la main\n\nEntrée 1 (toggle) : activation/désactivation leapmotion\nEntrée 2 (float) : tolérance de détection\nEntrée 3 (bang) : pour réinitialiser le compteur\nSortie 1 (integer) : incrément => +1 balaiement droite / -1 balaiement gauche\nSortie 2 (integer) : compteur de gestes"
 				}
 
 			}
@@ -108,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 10.0, 807.0, 40.0 ],
-					"text" : "Scratch4MAX - Divers - leapmotion - fingersCount"
+					"text" : "Scratch4MAX - Divers - leapmotion - swipeGesture"
 				}
 
 			}
@@ -122,8 +146,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 2 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-7", 1 ]
 				}
 
 			}
@@ -136,16 +174,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "s4M.divers.leapmotion.fingersCount.maxpat",
+				"name" : "s4M.divers.leapmotion.swipeGesture.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "leapjs_fingersCount-node.js",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/extras/leapjs_fingersCount-node",
-				"patcherrelativepath" : "../extras/leapjs_fingersCount-node",
+				"name" : "leapjs_swipeGesture-node.js",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/extras/leapjs-node",
+				"patcherrelativepath" : "../extras/leapjs-node",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

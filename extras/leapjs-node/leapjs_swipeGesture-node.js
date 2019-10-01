@@ -3,37 +3,19 @@ const Leap = require("./node_modules/leapjs/lib/index");
 const MaxAPI = require("max-api");
 
 
-var controller = new Leap.Controller();
-var thresholdValue = 80.0;
+var controller = new Leap.Controller({enableGestures: true});
 
-controller.on("frame", function(frame) {
-    var fingersCount=0;
-    var hand = frame.hands[0];
-    if(hand!=null){
-        //Calcul distance pouce/paume
-        var distance = Leap.vec3.distance(hand.thumb.tipPosition, hand.palmPosition);
-        if (distance>thresholdValue) fingersCount++;
-        MaxAPI.outlet("pouce",distance);
-        //Calcul distance index/paume
-        distance = Leap.vec3.distance(hand.indexFinger.tipPosition, hand.palmPosition);
-        if (distance>thresholdValue) fingersCount++;
-        MaxAPI.outlet("index",distance);
-        //Calcul distance majeur/paume
-        distance = Leap.vec3.distance(hand.middleFinger.tipPosition, hand.palmPosition);
-        if (distance>thresholdValue) fingersCount++;
-        MaxAPI.outlet("majeur",distance);
-        //Calcul distance annulaire/paume
-        distance = Leap.vec3.distance(hand.ringFinger.tipPosition, hand.palmPosition);
-        if (distance>thresholdValue) fingersCount++;
-        MaxAPI.outlet("annulaire",distance);
-        //Calcul distance auriculaire/paume
-        distance = Leap.vec3.distance(hand.pinky.tipPosition, hand.palmPosition);
-        if (distance>thresholdValue) fingersCount++;
-        MaxAPI.outlet("auriculaire",distance);
-        MaxAPI.outlet("fingersCount",fingersCount);
+var tolerance = 50;
+
+var swiper = controller.gesture('swipe');
+
+swiper.update(function(g) {
+    if (Math.abs(g.translation()[0]) > tolerance || Math.abs(g.translation()[1]) > tolerance) {
+        var xDir = Math.abs(g.translation()[0]) > tolerance ? (g.translation()[0] > 0 ? -1 : 1) : 0;
+        //var yDir = Math.abs(g.translation()[1]) > tolerance ? (g.translation()[1] < 0 ? -1 : 1) : 0;
+        MaxAPI.outlet("increment",xDir);
     }
 });
-
 
 controller.on('ready', function() {
     console.log("ready");
@@ -62,13 +44,13 @@ console.log("\nWaiting for device to connect...");
 
 
 const handlers = {
-    threshold: (thres) => {
+    tolerance: (tol) => {
 		const params = {
-			thres
+			tol
 		};
-		if (thres) {
-            thresholdValue=thres;
-            MaxAPI.post(thres, MaxAPI.POST_LEVELS.INFO);
+		if (tol) {
+            tolerance=tol;
+            MaxAPI.post(tol, MaxAPI.POST_LEVELS.INFO);
 		}
 	}
 };
