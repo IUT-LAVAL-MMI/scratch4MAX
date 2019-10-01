@@ -12,6 +12,7 @@ var swiper = controller.gesture('swipe');
 swiper.update(function(g) {
     if (Math.abs(g.translation()[0]) > tolerance || Math.abs(g.translation()[1]) > tolerance) {
         var xDir = Math.abs(g.translation()[0]) > tolerance ? (g.translation()[0] > 0 ? -1 : 1) : 0;
+        MaxAPI.outlet("translation",g.translation()[0]);
         //var yDir = Math.abs(g.translation()[1]) > tolerance ? (g.translation()[1] < 0 ? -1 : 1) : 0;
         MaxAPI.outlet("increment",xDir);
     }

@@ -45,7 +45,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 426.0, 354.0, 50.0, 22.0 ]
+					"patching_rect" : [ 426.0, 404.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 439.0, 219.0, 24.0, 24.0 ]
+					"patching_rect" : [ 439.0, 269.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -68,7 +68,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 172.0, 291.0, 265.0, 22.0 ],
+					"patching_rect" : [ 172.0, 341.0, 265.0, 22.0 ],
 					"text" : "s4M.divers.leapmotion.swipeGesture"
 				}
 
@@ -81,7 +81,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 116.0, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 116.0, 409.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 295.0, 219.0, 50.0, 22.0 ]
+					"patching_rect" : [ 295.0, 269.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 152.0, 219.0, 24.0, 24.0 ]
+					"patching_rect" : [ 152.0, 269.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -119,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 52.0, 721.0, 116.0 ],
-					"text" : "Cet objet permet de détecter le balaiement de la main\n\nEntrée 1 (toggle) : activation/désactivation leapmotion\nEntrée 2 (float) : tolérance de détection\nEntrée 3 (bang) : pour réinitialiser le compteur\nSortie 1 (integer) : incrément => +1 balaiement droite / -1 balaiement gauche\nSortie 2 (integer) : compteur de gestes"
+					"text" : "Cet objet permet de détecter le balaiement de la main (+1 balaiement droite / -1 balaiement gauche).\n\nEntrée 1 (toggle) : activation/désactivation leapmotion\nEntrée 2 (float) : tolérance de détection\nEntrée 3 (bang) : pour réinitialiser le compteur\nSortie 1 (integer) : détection mouvement\nSortie 2 (integer) : compteur de gestes (+1 droite / -1 gauche)"
 				}
 
 			}
