@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 119.0, 220.0, 896.0, 508.0 ],
+		"rect" : [ 119.0, 220.0, 896.0, 572.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 224.0, 223.0, 20.0 ],
+					"patching_rect" : [ 51.0, 283.0, 223.0, 20.0 ],
 					"text" : "pous simuler des données de kinect"
 				}
 
@@ -54,7 +54,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.0, 451.0, 92.0, 22.0 ],
+					"patching_rect" : [ 242.0, 510.0, 92.0, 22.0 ],
 					"text" : "print dataKinect"
 				}
 
@@ -68,7 +68,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 186.0, 246.0, 50.0, 22.0 ]
+					"patching_rect" : [ 187.0, 305.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 126.5, 246.0, 50.0, 22.0 ]
+					"patching_rect" : [ 127.5, 305.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 246.0, 50.0, 22.0 ]
+					"patching_rect" : [ 64.0, 305.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 106.5, 287.0, 68.0, 22.0 ],
+					"patching_rect" : [ 107.5, 346.0, 68.0, 22.0 ],
 					"text" : "pak 0. 0. 0."
 				}
 
@@ -117,7 +117,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 106.5, 319.0, 187.0, 22.0 ],
+					"patching_rect" : [ 107.5, 378.0, 187.0, 22.0 ],
 					"text" : "sprintf user 5 skell head %f %f %f"
 				}
 
@@ -130,7 +130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 479.0, 330.0, 24.0, 24.0 ]
+					"patching_rect" : [ 464.0, 389.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -142,7 +142,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 360.0, 330.0, 24.0, 24.0 ]
+					"patching_rect" : [ 353.0, 394.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -153,8 +153,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.0, 388.0, 257.0, 22.0 ],
-					"text" : "s4M.divers.saveLoadDataKinect sauvData1.txt"
+					"patching_rect" : [ 242.0, 447.0, 241.0, 22.0 ],
+					"text" : "s4M.divers.saveLoadData sauvData1.txt 33"
 				}
 
 			}
@@ -162,12 +162,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 6,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 52.0, 721.0, 100.0 ],
-					"text" : "Cet objet permet de sauvegarder et de lire des données, par exemple des données fournies par une kinect. \n\nEntrée 1 (message) : données envoyées par la kinect par exemple\nEntrée 2 (toggle) : activation/désactivation sauvegarde (lorsque ce mode est activé la lecture est désactivée)\nEntrée 3 (toggle) : activation/désactivation lecture (lorsque ce mode est activé la sauvegarde est désactivée)\nSortie 1 (message) : données en mode lecture"
+					"patching_rect" : [ 14.0, 52.0, 721.0, 184.0 ],
+					"text" : "Cet objet permet de sauvegarder et de lire des données, par exemple des données fournies par une kinect ou une leapmotion. Le fichier est stocké dans scratch4Max/extras/leapjs-node/\n\nEntrée 1 (message) : données envoyées par la kinect ou la leapmotion par exemple\nEntrée 2 (toggle) : activation/désactivation sauvegarde (lorsque ce mode est activé la lecture est désactivée)\nEntrée 3 (toggle) : activation/désactivation lecture (lorsque ce mode est activé la sauvegarde est désactivée)\nSortie 1 (message) : données en mode lecture\n\nArgument 1 (obligatoire) : nom du fichier dans lequel stocker les données ou à partir duquel lire les données\nArgument 2 (obligatoire) : vitesse de lecture des données contenues dans le fichier. Par exemple 33 signifie une ligne du fichier sort toutes les 33 ms. "
 				}
 
 			}
@@ -179,8 +179,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 10.0, 871.0, 40.0 ],
-					"text" : "Scratch4MAX - Divers - leapmotion - saveLoadDataKinect"
+					"patching_rect" : [ 14.0, 10.0, 871.0, 41.0 ],
+					"text" : "Scratch4MAX - Divers - leapmotion - saveLoadData"
 				}
 
 			}
@@ -243,17 +243,10 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "s4M.divers.saveLoadDataKinect.maxpat",
+				"name" : "s4M.divers.saveLoadData.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sauvData1.txt",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/help",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

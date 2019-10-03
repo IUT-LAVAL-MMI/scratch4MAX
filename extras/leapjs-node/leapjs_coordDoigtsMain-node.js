@@ -29,6 +29,10 @@ controller.on("frame", function(frame) {
         MaxAPI.outlet("auriculaire_z",hand.pinky.tipPosition[2]);
         MaxAPI.outlet("auriculaire_y",hand.pinky.tipPosition[1]);
         MaxAPI.outlet("auriculaire_x",hand.pinky.tipPosition[0]);
+        //récupération position paume main
+        MaxAPI.outlet("paume_z",hand.palmPosition[2]);
+        MaxAPI.outlet("paume_y",hand.palmPosition[1]);
+        MaxAPI.outlet("paume_x",hand.palmPosition[0]);
     }
 });
 
