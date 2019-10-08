@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "dim",
+					"attr" : "fsaa",
 					"id" : "obj-2",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -150,13 +150,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "pictctrl[1]",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -392,13 +392,13 @@
 					"rounded" : 18.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.toggle",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.toggle",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -442,13 +442,13 @@
 					"rounded" : 18.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.toggle",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "live.toggle",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_initial" : [ 1.0 ]
 						}
 
 					}
@@ -548,13 +548,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "pictctrl[1]",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[7]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -754,8 +754,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 229.5, 780.0, 708.0, 23.0 ],
-					"text" : "jit.world @windowposition 640 160 @enable 1 @erase_color 0 0 0 1 @shared 1 @esc_fullscreen 0 @output_texture 1 @dim #1 #2"
+					"patching_rect" : [ 229.5, 780.0, 768.0, 23.0 ],
+					"text" : "jit.world @windowposition 640 160 @enable 1 @erase_color 0 0 0 1 @shared 1 @esc_fullscreen 0 @output_texture 1 @dim @fsaa 1 #1 #2"
 				}
 
 			}
@@ -836,14 +836,14 @@
 					"presentation_rect" : [ 9.0, 42.0, 60.0, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "textbutton",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 3,
 							"parameter_longname" : "textbutton[3]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "textbutton",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 3
+							"parameter_initial" : [ 0 ]
 						}
 
 					}

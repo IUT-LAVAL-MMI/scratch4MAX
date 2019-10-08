@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 263.0, 114.0, 982.0, 837.0 ],
+		"rect" : [ 100.0, 111.0, 1410.0, 837.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -331,8 +331,8 @@
 					"format" : 6,
 					"id" : "obj-18",
 					"maxclass" : "flonum",
-					"maximum" : 0.0,
-					"minimum" : 0.0,
+					"maximum" : 1.0,
+					"minimum" : -1.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -362,7 +362,7 @@
 					"id" : "obj-16",
 					"maxclass" : "flonum",
 					"maximum" : 1.0,
-					"minimum" : 0.0,
+					"minimum" : -1.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -392,7 +392,7 @@
 					"id" : "obj-12",
 					"maxclass" : "flonum",
 					"maximum" : 1.0,
-					"minimum" : 0.0,
+					"minimum" : -1.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -410,7 +410,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 51.0, 711.0, 241.0 ],
-					"text" : "Cet objet permet de modifier la colorimétrie d'une image/vidéo openGL\nModification composante rouge : en ajoutant un offset à la composante rouge ( de -1 à 1 d'offset) ou en compressant/étirant l'histogramme (1 histogramme initial / <1 compession d'histogramme / >1 étirement d'histogramme)\nil en est de même pour les autres composantes\nVous pouvez indiquer les valeurs de la correction colorimétrique en paramètres internes de l'objet.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (float) : Gain rouge (0.-1.)\nEntrée 3 (float) : Offset rouge (-1.-1.)\nEntrée 4 (float) : Gain vert (0.-1.)\nEntrée 5 (float) : Offset vert (-1.-1.)\nEntrée 6 (float) : Gain bleu (0.-1.)\nEntrée 7 (float) : Offset bleu (-1.-1.)\nSortie 1 (vidéo) : flux vidéo wet OpenGL"
+					"text" : "Cet objet permet de modifier la colorimétrie d'une image/vidéo openGL\nModification composante rouge : en ajoutant un offset à la composante rouge ( de -1 à 1 d'offset) ou en compressant/étirant l'histogramme (1 histogramme initial / <1 compession d'histogramme / >1 étirement d'histogramme)\nil en est de même pour les autres composantes\nVous pouvez indiquer les valeurs de la correction colorimétrique en paramètres internes de l'objet.\n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (float) : Gain rouge (0.-1.) : 0=>0 / 0.125=>1 (pas de modification) / 1. => 8.\nEntrée 3 (float) : Offset rouge (-1.-1.)\nEntrée 4 (float) : Gain vert (0.-1.) : 0=>0 / 0.125=>1 (pas de modification) / 1. => 8.\nEntrée 5 (float) : Offset vert (-1.-1.)\nEntrée 6 (float) : Gain bleu (0.-1.) : 0=>0 / 0.125=>1 (pas de modification) / 1. => 8.\nEntrée 7 (float) : Offset bleu (-1.-1.)\nSortie 1 (vidéo) : flux vidéo wet OpenGL"
 				}
 
 			}
@@ -491,7 +491,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -499,7 +499,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -616,42 +616,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-1::obj-147" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-1::obj-104" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-1::obj-6" : [ "range[1]", "range", 0 ],
-			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-1::obj-32" : [ "G_offset", "G_offset", 0 ],
+			"obj-1::obj-34" : [ "pictctrl[87]", "pictctrl[1]", 0 ],
+			"obj-1::obj-24" : [ "pictctrl[88]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-1::obj-21" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-25::obj-50" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-1::obj-34" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-1::obj-44" : [ "B_offset[1]", "B_offset", 0 ],
+			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-1::obj-147" : [ "pictctrl[91]", "pictctrl[1]", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-25::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-25::obj-50" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-1::obj-6" : [ "range[17]", "range", 0 ],
+			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-1::obj-148" : [ "pictctrl[90]", "pictctrl[1]", 0 ],
+			"obj-1::obj-142" : [ "B_gain", "B_gain", 0 ],
+			"obj-1::obj-119" : [ "R_gain", "R_gain", 0 ],
 			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
 			"obj-25::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-1::obj-32" : [ "G_offset[1]", "G_offset", 0 ],
-			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-1::obj-15" : [ "R_offset[1]", "R_offset", 0 ],
+			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-1::obj-15" : [ "R_offset", "R_offset", 0 ],
+			"obj-25::obj-41" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-1::obj-148" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-1::obj-127" : [ "G_gain", "G_gain", 0 ],
 			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-1::obj-104" : [ "pictctrl[92]", "pictctrl[1]", 0 ],
+			"obj-1::obj-21" : [ "pictctrl[89]", "pictctrl[1]", 0 ],
 			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-1::obj-119" : [ "R_gain[1]", "R_gain", 0 ],
-			"obj-1::obj-24" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
 			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-25::obj-41" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-1::obj-127" : [ "G_gain[1]", "G_gain", 0 ],
-			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
 			"obj-25::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-25::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-1::obj-142" : [ "B_gain[1]", "B_gain", 0 ],
+			"obj-1::obj-44" : [ "B_offset", "B_offset", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -660,8 +660,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.video.analyseVideoLRGB.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers/s4M.video.old",
+				"patcherrelativepath" : "../patchers/s4M.video.old",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -747,6 +747,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "data-handler-perso.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "video-handler.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -763,6 +770,12 @@
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/extras",
 				"patcherrelativepath" : "../extras",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler-L.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -954,8 +967,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
