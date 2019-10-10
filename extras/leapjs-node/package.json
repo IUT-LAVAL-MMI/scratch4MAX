@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "leapjs": "^0.6.4"
+    "leapjs": "^0.6.4",
+    "gl-matrix": "3.1.0"
   }
 }
