@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 348.0, 571.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 271.0, 571.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 197.0, 571.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 127.0, 570.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-12",
 					"maxclass" : "flonum",
@@ -84,55 +132,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 475.0, 567.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 388.0, 567.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 298.0, 567.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 208.0, 567.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 133.0, 567.0, 24.0, 24.0 ]
+					"patching_rect" : [ 458.0, 571.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -154,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 5,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
+					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 171.0, 459.0, 312.0, 22.0 ],
 					"text" : "s4M.divers.kinect.detectionMouvement"
 				}
@@ -176,12 +176,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 12,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 52.0, 749.0, 194.0 ],
-					"text" : "Cet objet permet de détecter les mouvements de la main suivants : monter la main, descendre la main, déplacer la main à gauche, déplacer la main à droite, tourner la main. \n\nEntrée 1 (toggle) : activation/désactivation leapmotion\nEntrée 2 (message) : données squelette envoyées par la kinect\nEntrée 3 (float) : seuil Z prise en compte des coord des mains (défaut 1.8)\nEntrée 4 (float) : tolerance vitesse (défaut 0.7)\nSortie 1 (bang) : détection déplacement gauche\nSortie 2 (bang) : détection déplacement droite\nSortie 3 (bang) : détection déplacement haut\nSortie 4 (bang) : détection déplacement bas\nSortie 5 (float) : angle de rotation entre les deux mains (quand il y a les deux mains)"
+					"patching_rect" : [ 14.0, 52.0, 749.0, 210.0 ],
+					"text" : "Cet objet permet de détecter les mouvements de la main suivants : monter la main, descendre la main, déplacer la main à gauche, déplacer la main à droite, tourner la main. \n\nEntrée 1 (toggle) : activation/désactivation leapmotion\nEntrée 2 (message) : données squelette envoyées par la kinect\nEntrée 3 (float) : seuil Z prise en compte des coord des mains (défaut 1.8)\nEntrée 4 (float) : tolerance vitesse (défaut 0.7)\nSortie 1 (toggle) : détection déplacement gauche\nSortie 2 (toggle) : détection déplacement droite\nSortie 3 (toggle) : détection déplacement haut\nSortie 4 (toggle) : détection déplacement bas\nSortie 5 (float) : angle de rotation entre les deux mains (quand il y a les deux mains), se remet à 0 quand main gauche enlevée"
 				}
 
 			}
@@ -236,15 +236,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-7", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-7", 3 ]
+					"source" : [ "obj-7", 2 ]
 				}
 
 			}
@@ -257,7 +250,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-7", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -307,13 +307,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kinect.txt",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/extras/kinectjs-node",
-				"patcherrelativepath" : "../extras/kinectjs-node",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
