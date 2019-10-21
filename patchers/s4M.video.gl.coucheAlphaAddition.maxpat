@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 234.0, 103.0, 896.0, 645.0 ],
+		"rect" : [ 34.0, 103.0, 1096.0, 845.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "Video : flux vidéo dry (4 plans)",
+					"comment" : "Video : flux vidéo dry (4 plans)",
+					"hint" : "Video : flux vidéo dry (4 plans)",
+					"id" : "obj-5",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 383.0, 172.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -58,23 +73,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 194.0, 251.0, 227.0, 21.0 ],
-					"text" : "jit.gl.slab @file op.alphaRemplacement.jxs"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "Vidéo : couche alpha (1 plan)",
-					"comment" : "Vidéo : couche alpha (1 plan)",
-					"hint" : "Vidéo : couche alpha (1 plan)",
-					"id" : "obj-7",
-					"index" : 2,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 162.0, 30.0, 30.0 ]
+					"patching_rect" : [ 194.0, 251.0, 190.0, 21.0 ],
+					"text" : "jit.gl.slab @file op.alphaAddition.jxs"
 				}
 
 			}
@@ -103,7 +103,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 194.0, 162.0, 30.0, 30.0 ]
+					"patching_rect" : [ 183.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -132,7 +132,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"source" : [ "obj-7", 0 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -239,8 +239,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -294,8 +294,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

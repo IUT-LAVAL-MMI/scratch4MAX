@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 126.0, 115.0, 1235.0, 836.0 ],
+		"rect" : [ 85.0, 79.0, 1323.0, 863.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 316.0, 773.25, 171.0, 20.0 ],
+					"text" : "mode debug (pas nécessaire)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 573.0, 681.0, 399.0, 20.0 ],
+					"text" : "il faut bien indiquer la taille de la vidéo en arguments de ce module"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 73.0, 518.0, 80.0, 35.0 ]
+					"patching_rect" : [ 71.0, 559.0, 80.0, 35.0 ]
 				}
 
 			}
@@ -58,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 374.0, 268.75, 94.0, 20.0 ],
+					"patching_rect" : [ 372.0, 309.75, 94.0, 20.0 ],
 					"text" : "lancez la vidéo"
 				}
 
@@ -66,12 +88,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.5, 568.0, 175.0, 74.0 ],
-					"text" : "le calcul des coordonnées du centre de gravité du blob se fait sur une image gérée par le CPU, d'où de faire passer le flux vidéo du GPU vers le CPU"
+					"patching_rect" : [ 84.5, 654.0, 250.0, 100.0 ],
+					"text" : "Le calcul des coordonnées du centre de gravité du blob se fait sur une image gérée par le CPU, il faut donc faire passer le flux vidéo du GPU vers le CPU, d'où le module s4M.video.gl.conversionGpuCpu, ensuite il faut y appliquer un effet niveau de gris pour que le tracking puisse se faire. "
 				}
 
 			}
@@ -83,7 +105,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 342.0, 659.0, 24.0, 24.0 ]
+					"patching_rect" : [ 290.0, 773.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -94,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 345.5, 608.0, 71.0, 22.0 ],
+					"patching_rect" : [ 340.5, 708.0, 71.0, 22.0 ],
 					"text" : "jit.rgb2luma"
 				}
 
@@ -106,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 345.5, 580.0, 229.0, 22.0 ],
+					"patching_rect" : [ 340.5, 680.0, 229.0, 22.0 ],
 					"text" : "s4M.video.gl.conversionGpuCpu 320 180"
 				}
 
@@ -118,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 818.0, 505.0, 70.0, 22.0 ],
+					"patching_rect" : [ 886.0, 559.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -130,7 +152,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 773.0, 548.0, 64.0, 22.0 ],
+					"patching_rect" : [ 841.0, 602.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
 
@@ -149,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 483.0, 633.5, 223.0, 245.0 ],
+					"patching_rect" : [ 604.0, 783.5, 223.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -168,7 +190,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 959.0, 633.5, 223.0, 245.0 ],
+					"patching_rect" : [ 1080.0, 783.5, 223.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -187,7 +209,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 710.5, 633.5, 223.0, 245.0 ],
+					"patching_rect" : [ 831.5, 783.5, 223.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -198,7 +220,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 992.5, 405.0, 125.0, 20.0 ],
+					"patching_rect" : [ 990.5, 464.0, 125.0, 20.0 ],
 					"text" : "Seuil haut Saturation"
 				}
 
@@ -209,7 +231,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 631.0, 405.0, 105.0, 20.0 ],
+					"patching_rect" : [ 629.0, 464.0, 105.0, 20.0 ],
 					"text" : " Seuil haut Teinte"
 				}
 
@@ -223,7 +245,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 992.5, 423.0, 170.0, 21.0 ],
+					"patching_rect" : [ 990.5, 482.0, 170.0, 21.0 ],
 					"size" : 1.0
 				}
 
@@ -237,7 +259,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 631.0, 424.0, 170.0, 21.0 ],
+					"patching_rect" : [ 629.0, 483.0, 170.0, 21.0 ],
 					"size" : 1.0
 				}
 
@@ -248,7 +270,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 812.5, 405.0, 125.0, 20.0 ],
+					"patching_rect" : [ 810.5, 464.0, 125.0, 20.0 ],
 					"text" : "Seuil bas Saturation"
 				}
 
@@ -259,7 +281,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 399.0, 100.0, 20.0 ],
+					"patching_rect" : [ 449.0, 458.0, 100.0, 20.0 ],
 					"text" : " Seuil bas Teinte"
 				}
 
@@ -273,7 +295,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 812.5, 423.0, 170.0, 21.0 ],
+					"patching_rect" : [ 810.5, 482.0, 170.0, 21.0 ],
 					"size" : 1.0
 				}
 
@@ -287,7 +309,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 451.0, 424.0, 170.0, 21.0 ],
+					"patching_rect" : [ 449.0, 483.0, 170.0, 21.0 ],
 					"size" : 1.0
 				}
 
@@ -299,7 +321,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 374.0, 290.75, 94.0, 22.0 ],
+					"patching_rect" : [ 372.0, 331.75, 94.0, 22.0 ],
 					"text" : "read ballon.mov"
 				}
 
@@ -319,7 +341,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 36.0, 325.0, 357.0, 160.0 ],
+					"patching_rect" : [ 34.0, 366.0, 357.0, 160.0 ],
 					"varname" : "vz.playr",
 					"viewvisibility" : 1
 				}
@@ -336,7 +358,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 650.5, 469.0, 50.0, 22.0 ]
+					"patching_rect" : [ 648.5, 528.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -351,7 +373,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 590.0, 469.0, 50.0, 22.0 ]
+					"patching_rect" : [ 588.0, 528.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -366,7 +388,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 520.0, 469.0, 50.0, 22.0 ]
+					"patching_rect" : [ 518.0, 528.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -381,7 +403,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 455.0, 469.0, 50.0, 22.0 ]
+					"patching_rect" : [ 453.0, 528.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -392,7 +414,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture" ],
-					"patching_rect" : [ 456.0, 531.0, 170.0, 22.0 ],
+					"patching_rect" : [ 454.0, 590.0, 170.0, 22.0 ],
 					"text" : "s4M.video.gl.detectionCouleur",
 					"varname" : "s4M.video.gl.detectionCouleur"
 				}
@@ -405,7 +427,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 746.0, 352.0, 214.0, 33.0 ],
+					"patching_rect" : [ 744.0, 411.0, 214.0, 33.0 ],
 					"text" : "régler la détection de la couleur orange"
 				}
 
@@ -418,7 +440,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.5, 773.0, 50.0, 22.0 ]
+					"patching_rect" : [ 202.5, 873.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -430,7 +452,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.5, 773.0, 50.0, 22.0 ]
+					"patching_rect" : [ 114.5, 873.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -441,7 +463,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 61.0, 809.0, 199.0, 131.0 ]
+					"patching_rect" : [ 58.0, 929.0, 199.0, 131.0 ]
 				}
 
 			}
@@ -449,12 +471,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
-					"linecount" : 12,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 50.0, 1079.0, 194.0 ],
-					"text" : "Cet objet permet de déterminer dans un flux vidéo les coordonnées (x;y) du centre de gravité d'un blob préalablement détecté. Un mode debug est proposé afin de bien vérifier que le tracking s'opère bien. Attention ce code ne peut fonctionner que s'il n'y a qu'un seul blob dans le flux vidéo. S'il y a des petits blobs parasites, ils peuvent être filtrés en définissant la taille minimum du blob à tracker. Il faut indiquer en paramètres internes de l'objet la largeur et la hauteur en pixels de la vidéo. On peut indiquer en paramètre interne la grosseur minimum du blob à tracker.  \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (vidéo) : masque de détection du blob\nEntrée 3 (integer) : taille du blob  \nEntrée 3 (toggle) : 0 -> pas de mode debug / 1-> mode debug\nSortie 1 (vidéo) : si mode debug, vidéo initiale avec un marqueur du centre de gravité du blob\nSortie 2 (integer) : x du centre de gravité du blob\nSortie 3 (integer) : y du centre de gravité du blob"
+					"patching_rect" : [ 8.0, 50.0, 1079.0, 257.0 ],
+					"text" : "Cet objet permet de déterminer dans un flux vidéo les coordonnées (x;y) du centre de gravité d'un blob préalablement détecté. Un mode debug est proposé afin de bien vérifier que le tracking s'opère bien. Attention ce code ne peut fonctionner que s'il n'y a qu'un seul blob dans le flux vidéo. S'il y a des petits blobs parasites, ils peuvent être filtrés en définissant la taille minimum du blob à tracker. Il faut indiquer en paramètres internes de l'objet la largeur et la hauteur en pixels de la vidéo. On peut indiquer en paramètre interne la grosseur minimum du blob à tracker.  \n\nEntrée 1 (vidéo) : flux vidéo dry (pas nécessaire, uniquement si on souhaite le mode debug)\nEntrée 2 (vidéo) : masque de détection du blob (doit être en niveau de gris 1 plan)\nEntrée 3 (integer) : taille du blob (utile si plusieurs blobs dans l'image, à ce moment le blob qu'on souhaiter tracker doit être le plus gros de tous les blob)  \nEntrée 3 (toggle) : 0 -> pas de mode debug / 1-> mode debug\nSortie 1 (vidéo) : si mode debug, vidéo initiale avec un marqueur du centre de gravité du blob\nSortie 2 (integer) : x du centre de gravité du blob\nSortie 3 (integer) : y du centre de gravité du blob\n\nArgument 1 (obligatoire) : largeur en pixels de la vidéo\nArgument 2 (obligatoire) : hauteur en pixels de la vidéo\nArgument 3 (obligatoire) : taille minimum du blob"
 				}
 
 			}
@@ -478,7 +500,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "float" ],
-					"patching_rect" : [ 61.0, 712.0, 253.0, 22.0 ],
+					"patching_rect" : [ 56.0, 812.0, 253.0, 22.0 ],
 					"text" : "s4M.video.gl.trackingBlob 320 180 100",
 					"varname" : "s4M.video.trackingBlob"
 				}
@@ -493,7 +515,21 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 52.5, 699.25, 282.0, 48.5 ],
+					"patching_rect" : [ 47.5, 799.25, 282.0, 48.5 ],
+					"proportion" : 0.39
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.55 ],
+					"id" : "obj-32",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.0, 649.25, 910.0, 107.75 ],
 					"proportion" : 0.39
 				}
 
@@ -511,7 +547,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 724.0, 358.5, 20.0, 20.0 ],
+					"patching_rect" : [ 722.0, 417.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -531,7 +567,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 353.5, 268.75, 20.0, 20.0 ],
+					"patching_rect" : [ 351.5, 309.75, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -715,39 +751,39 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-36::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-7::obj-10::obj-3" : [ "range[25]", "range", 0 ],
-			"obj-23::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-36::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-34::obj-18::obj-3" : [ "range[1]", "range", 0 ],
-			"obj-7::obj-10::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-36::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-36::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-38::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-39::obj-20" : [ "letterbox_menu[2]", "letterbox_menu", 0 ],
-			"obj-23::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-23::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-36::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-7::obj-10::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-36::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-36::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-34::obj-18::obj-39" : [ "umenu[2]", "umenu", 0 ],
-			"obj-36::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-36::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-36::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-36::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-34::obj-18::obj-51" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-23::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-36::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-23::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-7::obj-10::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-7::obj-10::obj-3" : [ "range[25]", "range", 0 ],
 			"obj-36::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-38::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-36::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-36::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-36::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-36::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-36::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-34::obj-18::obj-51" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-36::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-36::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"obj-39::obj-37" : [ "aspect_menu[2]", "aspect_menu", 0 ],
-			"obj-23::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-36::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-36::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-23::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-7::obj-10::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-36::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-36::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-34::obj-18::obj-3" : [ "range[1]", "range", 0 ],
+			"obj-38::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
+			"obj-36::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-36::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-36::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-34::obj-18::obj-39" : [ "umenu[2]", "umenu", 0 ],
+			"obj-39::obj-20" : [ "letterbox_menu[2]", "letterbox_menu", 0 ],
+			"obj-23::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-23::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-36::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -762,7 +798,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.oper8r.maxpat",
+				"name" : "s4M.video.vz.oper8r.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -1002,8 +1038,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
