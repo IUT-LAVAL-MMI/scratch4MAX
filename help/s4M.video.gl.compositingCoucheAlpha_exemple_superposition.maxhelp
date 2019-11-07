@@ -51,18 +51,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 20.0, 161.0, 47.0 ],
-					"text" : "Méthode 1 :  pour afficher plusieurs vidéos  en jouant sur la couche alpha"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -245,7 +233,7 @@
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 145.0, 649.5, 142.0, 22.0 ],
 					"text" : "s4M.video.gl.planVideo 1"
@@ -256,7 +244,7 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 835.5, 661.5, 142.0, 22.0 ],
 					"text" : "s4M.video.gl.planVideo 0"
@@ -560,42 +548,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-39::obj-28" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
+			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
 			"obj-50::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
 			"obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-39::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-39::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-39::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
 			"obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-39::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-39::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
 			"obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-50::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-39::obj-89" : [ "moviename[1]", "moviename", 0 ],
+			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-39::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-50::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
 			"obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-50::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-39::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-39::obj-112::obj-120" : [ "range[1]", "range", 0 ],
-			"obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-50::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-39::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-39::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-39::obj-64" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-39::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
-			"obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-39::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-39::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
 			"parameterbanks" : 			{
 
@@ -855,8 +843,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
