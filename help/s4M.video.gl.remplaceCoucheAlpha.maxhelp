@@ -168,7 +168,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 528.0, 316.0, 121.0, 76.0 ]
+					"patching_rect" : [ 589.0, 313.0, 121.0, 76.0 ]
 				}
 
 			}
@@ -179,7 +179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 553.0, 234.5, 214.0, 33.0 ],
+					"patching_rect" : [ 614.0, 231.5, 214.0, 33.0 ],
 					"text" : "pour remplacer la couche alpha de la vidéo"
 				}
 
@@ -192,7 +192,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 497.0, 239.0, 24.0, 24.0 ]
+					"patching_rect" : [ 558.0, 236.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -241,7 +241,44 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 678.0, 375.0, 392.5, 33.0 ],
+									"text" : "on génère le motif dans le plan rvb (identique sur les trois plans), puis on remplace la couche alpha par ce motif. "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 2,
+									"outlettype" : [ "jit_matrix", "" ],
+									"patching_rect" : [ 543.0, 433.0, 130.0, 22.0 ],
+									"text" : "jit.pack"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
+									"patching_rect" : [ 543.0, 349.0, 130.0, 22.0 ],
+									"text" : "jit.unpack"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
@@ -251,18 +288,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 826.0, 36.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 473.0, 355.0, 73.0, 22.0 ],
-									"text" : "jit.rgb2luma"
 								}
 
 							}
@@ -381,7 +406,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 473.0, 444.0, 30.0, 30.0 ]
+									"patching_rect" : [ 543.0, 520.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -564,8 +589,31 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-11", 0 ]
+									"destination" : [ "obj-25", 3 ],
+									"source" : [ "obj-11", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 2 ],
+									"source" : [ "obj-11", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 1 ],
+									"order" : 0,
+									"source" : [ "obj-11", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"order" : 1,
+									"source" : [ "obj-11", 1 ]
 								}
 
 							}
@@ -580,6 +628,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-25", 0 ]
 								}
 
 							}
@@ -781,7 +836,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 497.0, 274.5, 50.0, 22.0 ],
+					"patching_rect" : [ 558.0, 271.5, 50.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -908,7 +963,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 528.0, 241.0, 20.0, 20.0 ],
+					"patching_rect" : [ 589.0, 238.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1044,28 +1099,28 @@
  ],
 		"parameters" : 		{
 			"obj-7::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-7::obj-28" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-7::obj-112::obj-120" : [ "range[1]", "range", 0 ],
-			"obj-7::obj-83" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-7::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-14::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-14::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-7::obj-60" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-7::obj-40" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
 			"obj-7::obj-81" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
 			"obj-37::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-14::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-7::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-14::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-7::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-14::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-7::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
 			"obj-7::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-7::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-7::obj-40" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-7::obj-60" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
+			"obj-7::obj-83" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
 			"obj-14::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-14::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-7::obj-28" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-7::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-37::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-14::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-7::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-7::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
