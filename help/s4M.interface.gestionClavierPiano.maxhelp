@@ -737,6 +737,19 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontsize" : 14.0,
+									"id" : "obj-48",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 6.0, 53.0, 824.0, 69.0 ],
+									"text" : "En relation avec s4M.interface.ecouteurClavier, cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il gère  jusqu'à quatre touches appuyées simultanément. \n\na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
@@ -940,19 +953,6 @@
 									"outlettype" : [ "", "bang", "bang", "", "bang", "bang", "", "bang", "bang", "", "bang", "bang" ],
 									"patching_rect" : [ 270.5, 233.0, 326.0, 22.0 ],
 									"text" : "s4M.interface.gestionClavierPiano"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontsize" : 14.0,
-									"id" : "obj-48",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 6.0, 53.0, 824.0, 53.0 ],
-									"text" : "Cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il détecte quand une touche a été appuyée puis relâchée et ce pour quatre touches simultanément. \na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
 								}
 
 							}

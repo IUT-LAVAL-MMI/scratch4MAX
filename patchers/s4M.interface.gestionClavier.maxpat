@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 359.0, 206.0, 826.0, 480.0 ],
+		"rect" : [ 235.0, 165.0, 907.0, 537.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,97 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "Bang : sixième touche relâchée",
+					"comment" : "Bang : sixième touche relâchée",
+					"hint" : "Bang : sixième touche relâchée",
+					"id" : "obj-8",
+					"index" : 12,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 713.25, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Bang : sixième touche appuyée",
+					"comment" : "Bang : sixième touche appuyée",
+					"hint" : "Bang : sixième touche appuyée",
+					"id" : "obj-9",
+					"index" : 11,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 645.0, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Bang : cinquième touche relâchée",
+					"comment" : "Bang : cinquième touche relâchée",
+					"hint" : "Bang : cinquième touche relâchée",
+					"id" : "obj-6",
+					"index" : 10,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 590.25, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Bang : cinquième touche appuyée",
+					"comment" : "Bang : cinquième touche appuyée",
+					"hint" : "Bang : cinquième touche appuyée",
+					"id" : "obj-7",
+					"index" : 9,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 522.0, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Bang : quatrième touche relâchée",
+					"comment" : "Bang : quatrième touche relâchée",
+					"hint" : "Bang : quatrième touche relâchée",
+					"id" : "obj-4",
+					"index" : 8,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 471.25, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Bang : quatrième touche appuyée",
+					"comment" : "Bang : quatrième touche appuyée",
+					"hint" : "Bang : quatrième touche appuyée",
+					"id" : "obj-5",
+					"index" : 7,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 403.0, 267.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
 					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 297.0, 27.0, 30.0, 30.0 ]
 				}
 
@@ -58,80 +142,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 38.0, 27.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 310.25, 195.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 258.0, 195.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 214.0, 195.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 166.0, 195.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 117.0, 195.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 79.0, 195.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -149,9 +161,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> Y appuyée / 0 -> Y relâchée",
-					"comment" : "Booléen : 1 -> Y appuyée / 0 -> Y relâchée",
-					"hint" : "Booléen : 1 -> Y appuyée / 0 -> Y relâchée",
+					"annotation" : "Bang : troisième touche relâchée",
+					"comment" : "Bang : troisième touche relâchée",
+					"hint" : "Bang : troisième touche relâchée",
 					"id" : "obj-20",
 					"index" : 6,
 					"maxclass" : "outlet",
@@ -163,9 +175,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> T appuyée / 0 -> T relâchée",
-					"comment" : "Booléen : 1 -> T appuyée / 0 -> T relâchée",
-					"hint" : "Booléen : 1 -> T appuyée / 0 -> T relâchée",
+					"annotation" : "Bang : troisième touche appuyée",
+					"comment" : "Bang : troisième touche appuyée",
+					"hint" : "Bang : troisième touche appuyée",
 					"id" : "obj-19",
 					"index" : 5,
 					"maxclass" : "outlet",
@@ -177,9 +189,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> R appuyée / 0 -> R relâchée",
-					"comment" : "Booléen : 1 -> R appuyée / 0 -> R relâchée",
-					"hint" : "Booléen : 1 -> R appuyée / 0 -> R relâchée",
+					"annotation" : "Bang : deuxième touche relâchée",
+					"comment" : "Bang : deuxième touche relâchée",
+					"hint" : "Bang : deuxième touche relâchée",
 					"id" : "obj-18",
 					"index" : 4,
 					"maxclass" : "outlet",
@@ -191,9 +203,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> E appuyée / 0 -> E relâchée",
-					"comment" : "Booléen : 1 -> E appuyée / 0 -> E relâchée",
-					"hint" : "Booléen : 1 -> E appuyée / 0 -> E relâchée",
+					"annotation" : "Bang : deuxième touche appuyée",
+					"comment" : "Bang : deuxième touche appuyée",
+					"hint" : "Bang : deuxième touche appuyée",
 					"id" : "obj-17",
 					"index" : 3,
 					"maxclass" : "outlet",
@@ -205,9 +217,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> Z appuyée / 0 -> Z relâchée",
-					"comment" : "Booléen : 1 -> Z appuyée / 0 -> Z relâchée",
-					"hint" : "Booléen : 1 -> Z appuyée / 0 -> Z relâchée",
+					"annotation" : "Bang : première touche relâchée",
+					"comment" : "Bang : première touche relâchée",
+					"hint" : "Bang : première touche relâchée",
 					"id" : "obj-16",
 					"index" : 2,
 					"maxclass" : "outlet",
@@ -219,15 +231,15 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Booléen : 1 -> A appuyée / 0 -> A relâchée",
-					"comment" : "Booléen : 1 -> A appuyée / 0 -> A relâchée",
-					"hint" : "Booléen : 1 -> A appuyée / 0 -> A relâchée",
+					"annotation" : "Bang : première touche appuyée",
+					"comment" : "Bang : première touche appuyée",
+					"hint" : "Bang : première touche appuyée",
 					"id" : "obj-15",
 					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 52.75, 267.0, 30.0, 30.0 ]
+					"patching_rect" : [ 37.75, 267.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -260,42 +272,42 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-21", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-21", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-21", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-21", 5 ]
 				}
 
@@ -303,84 +315,42 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-3", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-3", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-3", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-3", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-32", 0 ]
 				}
 
 			}
