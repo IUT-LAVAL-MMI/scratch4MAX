@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -89,11 +89,10 @@
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.0, 331.0, 167.0, 22.0 ],
-					"text" : "jit.gl.spoutsender @drawto #1"
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 283.0, 331.0, 99.0, 22.0 ],
+					"text" : "jit.gl.spoutsender"
 				}
 
 			}
@@ -103,7 +102,7 @@
 					"comment" : "Message : nom du canal d'export",
 					"hint" : "Message : nom du canal d'export",
 					"id" : "obj-26",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -156,11 +155,13 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontsize" : [ 13.0 ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+					"fontsize" : [ 13.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
