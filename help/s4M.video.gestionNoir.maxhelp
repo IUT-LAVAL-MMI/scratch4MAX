@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 400.5, 518.0, 325.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Regardez la différence d'affichage avec et sans cet objet"
 				}
 
@@ -153,8 +152,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 42.0, 602.0, 64.0, 22.0 ],
 					"text" : "vz.projectr"
 				}
@@ -345,32 +344,43 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-15::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
-			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-3::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-15::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-1::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-1::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-1::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-1::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-1::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-1::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-3::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-1::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-15::obj-37" : [ "aspect_menu[1]", "aspect_menu", 0 ],
+			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-1::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-15::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-1::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-15::obj-37" : 				{
+					"parameter_longname" : "aspect_menu[1]"
+				}
+,
+				"obj-15::obj-20" : 				{
+					"parameter_longname" : "letterbox_menu[1]"
+				}
 
 			}
 
@@ -378,91 +388,91 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "vz.playr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diminit.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dinit.js",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.projectr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-context.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.viewr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "snapshot_UI.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "windowresize.js",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -577,8 +587,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -632,8 +642,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

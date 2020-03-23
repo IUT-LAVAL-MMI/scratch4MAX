@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 104.0, 132.0, 1114.0, 776.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 104.0, 132.0, 882.0, 776.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,25 +44,22 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 906.816284, 125.0, 97.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 906.816283999999996, 125.0, 97.0, 22.0 ],
 					"text" : "zmap 0. 1 0. 0.5"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Audio : flux audio wet",
-					"comment" : "Audio : flux audio wet",
-					"hint" : "Audio : flux audio wet",
+					"annotation" : "Audio : enveloppe audio wet",
+					"comment" : "Audio : enveloppe audio wet",
+					"hint" : "Audio : enveloppe audio wet",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.795929, 705.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 479.795929, 710.0, 0.0, 0.0 ],
-					"style" : ""
+					"patching_rect" : [ 492.795929000000001, 705.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -72,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 291.0, 730.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "signal wet"
 				}
 
@@ -84,7 +81,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 284.0, 153.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "signal dry"
 				}
 
@@ -96,8 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 906.816284, 5.5, 67.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 906.816283999999996, 5.5, 67.0, 33.0 ],
 					"text" : "depth\ntremolo"
 				}
 
@@ -108,13 +103,12 @@
 					"comment" : "Float : profondeur de l'effet",
 					"hint" : "Float : profondeur de l'effet",
 					"id" : "obj-6",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 906.816284, 60.5, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 906.816283999999996, 60.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -124,8 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.836365, 30.0, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 560.836365000000001, 30.0, 150.0, 20.0 ],
 					"text" : "signal modulant"
 				}
 
@@ -136,13 +129,12 @@
 					"comment" : "Audio : signal modulant",
 					"hint" : "Audio : signal modulant",
 					"id" : "obj-27",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 583.836365, 56.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 583.836365000000001, 56.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -152,12 +144,11 @@
 					"comment" : "Audio : flux audio wet",
 					"hint" : "Audio : flux audio wet",
 					"id" : "obj-53",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 354.795929, 705.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 354.795929000000001, 705.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -167,13 +158,12 @@
 					"comment" : "Audio : flux audio dry",
 					"hint" : "Audio : flux audio dry",
 					"id" : "obj-52",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 291.0, 178.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 291.0, 178.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -183,8 +173,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 852.89502, 398.3125, 133.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 852.895020000000045, 398.3125, 133.0, 20.0 ],
 					"text" : "DC offset of modulator"
 				}
 
@@ -196,8 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 784.411072, 471.645813, 229.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 784.41107199999999, 471.645812999999976, 229.0, 33.0 ],
 					"text" : "DC offset changes opposite to the depth of tremolo, to keep amplitude at 1."
 				}
 
@@ -214,8 +202,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 772.603516, 392.583313, 69.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 772.603516000000013, 392.583312999999976, 69.0, 22.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9
 				}
@@ -228,8 +215,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 354.795929, 565.916626, 34.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 354.795929000000001, 565.916625999999951, 34.0, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -241,8 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 772.603516, 447.583313, 38.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 772.603516000000013, 447.583312999999976, 38.0, 22.0 ],
 					"text" : "line~"
 				}
 
@@ -264,8 +249,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 772.603516, 422.375, 43.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 772.603516000000013, 422.375, 43.0, 22.0 ],
 					"text" : "$1 50"
 				}
 
@@ -287,8 +271,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.816284, 392.583313, 43.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 636.816283999999996, 392.583312999999976, 43.0, 22.0 ],
 					"text" : "$1 50"
 				}
 
@@ -300,8 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 636.816284, 420.083313, 38.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 636.816283999999996, 420.083312999999976, 38.0, 22.0 ],
 					"text" : "line~"
 				}
 
@@ -313,8 +295,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 496.306122, 483.104187, 35.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 496.306122000000016, 483.104187000000024, 35.0, 22.0 ],
 					"text" : "+~"
 				}
 
@@ -326,8 +307,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 772.603516, 363.9375, 34.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 772.603516000000013, 363.9375, 34.0, 22.0 ],
 					"text" : "!- 1."
 				}
 
@@ -339,8 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 496.306122, 447.583313, 34.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 496.306122000000016, 447.583312999999976, 34.0, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -356,7 +335,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 906.816284, 222.854156, 70.0, 22.0 ],
+					"patching_rect" : [ 906.816283999999996, 222.854155999999989, 70.0, 22.0 ],
 					"style" : "numberGold-1",
 					"triscale" : 0.9
 				}
@@ -368,8 +347,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.749268, 599.104187, 429.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 48.749268000000001, 599.104187000000024, 429.0, 20.0 ],
 					"text" : "modulate the amplitude of one oscillator by multiplying it with another oscillator"
 				}
 
@@ -381,8 +359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 635.635559, 445.291687, 126.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 635.635558999999944, 445.291687000000024, 126.0, 33.0 ],
 					"text" : "scale the level of the modulating oscillator"
 				}
 
@@ -398,7 +375,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
-					"midpoints" : [ 782.103516, 494.5625, 547.078735, 494.5625, 547.078735, 477.375, 521.806152, 477.375 ],
+					"midpoints" : [ 782.103516000000013, 494.5625, 547.078735000000052, 494.5625, 547.078735000000052, 477.375, 521.806121999999959, 477.375 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -420,7 +397,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"midpoints" : [ 646.316284, 443.0, 520.806152, 443.0 ],
+					"midpoints" : [ 646.316283999999996, 443.0, 520.806121999999959, 443.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -466,7 +443,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 916.316284, 359.354156, 782.103516, 359.354156 ],
+					"midpoints" : [ 916.316283999999996, 359.354155999999989, 782.103516000000013, 359.354155999999989 ],
 					"order" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -508,6 +485,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
