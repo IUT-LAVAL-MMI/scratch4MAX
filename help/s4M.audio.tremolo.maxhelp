@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 151.0, 131.0, 991.0, 778.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 151.0, 131.0, 903.0, 778.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +39,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 414.0, 604.5, 129.0, 20.0 ],
+					"text" : "Activer l'effet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 389.0, 597.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 424.0, 199.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 221.600006000000008, 493.0, 199.0, 33.0 ],
 					"text" : "Modifier le paramètre de Profondeur. Écouter le résultat. "
 				}
 
@@ -58,8 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.5, 605.0, 150.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 387.5, 717.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -72,8 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 364.5, 573.0, 150.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 365.5, 685.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -84,8 +105,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 681.0, 194.0, 130.0 ],
-					"style" : ""
+					"patching_rect" : [ 336.0, 793.0, 194.0, 130.0 ]
 				}
 
 			}
@@ -96,8 +116,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 67.5, 681.0, 208.0, 131.0 ],
-					"style" : ""
+					"patching_rect" : [ 68.5, 793.0, 208.0, 131.0 ]
 				}
 
 			}
@@ -108,8 +127,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 119.5, 231.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 120.5, 300.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -117,13 +136,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 7,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 49.0, 795.0, 116.0 ],
-					"style" : "",
-					"text" : "Cet objet permet d'appliquer un tremolo à un flux audio. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (audio) : signal modulant\nEntrée 3 (float) : profondeur de l'effet (compris entre 0 et 1)\nSortie 1 (audio) : flux audio wet \nSortie 2 (audio) : enveloppe appliquée au signal audio dry"
+					"patching_rect" : [ 8.0, 49.0, 795.0, 163.0 ],
+					"text" : "Cet objet permet d'appliquer un tremolo à un flux audio. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (audio) : signal modulant\nEntrée 3 (float) : profondeur de l'effet (compris entre 0 et 1)\nEntrée 4 (0/1) : activation (1) / désactivation (0) de l'effet tremolo (par défaut l'effet est désactivé)\nSortie 1 (audio) : flux audio wet \nSortie 2 (audio) : enveloppe appliquée au signal audio dry\n\nArgument 1 (facultatif) : 1 pour activer par défaut l'effet"
 				}
 
 			}
@@ -136,7 +154,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 3.0, 780.0, 40.0 ],
-					"style" : "",
 					"text" : "Scratch4MAX - Audio - Tremolo"
 				}
 
@@ -150,8 +167,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 241.600006, 459.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 230.200012000000015, 528.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -166,8 +182,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 603.0, 402.5, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 604.0, 471.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -177,8 +192,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.791626, 256.0, 241.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 481.791626000000008, 325.0, 241.0, 20.0 ],
 					"text" : "Générateur signal périodique élémentaire"
 				}
 
@@ -190,8 +204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 574.0, 370.0, 72.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 575.0, 439.0, 72.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -203,8 +216,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 536.0, 282.5, 150.0, 74.0 ],
-					"style" : "",
+					"patching_rect" : [ 537.0, 351.5, 150.0, 74.0 ],
 					"text" : "0 : pas de signal\n1 : sinus\n2 : triangle\n3 : dent de scie\n4 : rectangle"
 				}
 
@@ -219,10 +231,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 511.5, 278.5, 22.0, 82.0 ],
+					"patching_rect" : [ 512.5, 347.5, 22.0, 82.0 ],
 					"size" : 5,
-					"style" : "",
-					"value" : 2
+					"value" : 1
 				}
 
 			}
@@ -233,8 +244,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 511.5, 441.0, 163.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 512.5, 510.0, 163.0, 22.0 ],
 					"text" : "s4M.audio.oscillateur 0.2 1 1"
 				}
 
@@ -245,8 +255,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 207.0, 192.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 63.0, 276.0, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier audio"
 				}
 
@@ -258,8 +267,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 263.0, 156.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 166.0, 332.0, 156.0, 33.0 ],
 					"text" : "Activation/Désactivation\nMode loop"
 				}
 
@@ -272,8 +280,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 220.600006, 301.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 221.600006000000008, 370.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -284,8 +291,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 121.0, 346.0, 186.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 122.0, 415.0, 186.0, 22.0 ],
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
 
@@ -297,8 +303,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.5, 333.5, 129.0, 60.0 ],
-					"style" : "",
+					"patching_rect" : [ 381.5, 402.5, 129.0, 60.0 ],
 					"text" : "Modifier les paramètres du signal modulant. Écouter le résultat. "
 				}
 
@@ -309,8 +314,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 143.0, 605.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 144.0, 717.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -318,12 +322,11 @@
 				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 156.0, 550.0, 109.0, 22.0 ],
-					"style" : "",
-					"text" : "s4M.audio.tremolo"
+					"patching_rect" : [ 157.0, 662.0, 117.0, 22.0 ],
+					"text" : "s4M.audio.tremolo 1"
 				}
 
 			}
@@ -336,9 +339,8 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 126.0, 532.75, 170.0, 56.5 ],
-					"proportion" : 0.39,
-					"style" : ""
+					"patching_rect" : [ 127.0, 644.75, 170.0, 56.5 ],
+					"proportion" : 0.39
 				}
 
 			}
@@ -355,10 +357,29 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 260.0, 400.0, 20.0, 20.0 ],
+					"patching_rect" : [ 248.600006000000008, 469.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
-					"text" : "3",
+					"text" : "4",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-11",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 463.0, 584.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -376,10 +397,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 429.5, 313.0, 20.0, 20.0 ],
+					"patching_rect" : [ 430.5, 382.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
-					"text" : "2",
+					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -397,9 +417,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 121.5, 180.0, 20.0, 20.0 ],
+					"patching_rect" : [ 122.5, 249.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -509,24 +528,38 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 3 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.tremolo.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.audio.switch.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.oscillateur.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
