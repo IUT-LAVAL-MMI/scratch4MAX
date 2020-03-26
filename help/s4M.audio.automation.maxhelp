@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 131.0, 131.0, 1050.0, 810.0 ],
+						"rect" : [ 0.0, 26.0, 1050.0, 836.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -92,7 +92,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 17.0, 330.0, 24.0, 24.0 ]
+									"patching_rect" : [ 20.0, 390.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -103,7 +103,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 777.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 780.5, 381.0, 29.5, 22.0 ],
 									"text" : "5"
 								}
 
@@ -115,7 +115,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 741.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 744.5, 381.0, 29.5, 22.0 ],
 									"text" : "4"
 								}
 
@@ -127,7 +127,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 707.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 710.5, 381.0, 29.5, 22.0 ],
 									"text" : "3"
 								}
 
@@ -139,7 +139,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 676.0, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 679.0, 381.0, 29.5, 22.0 ],
 									"text" : "2"
 								}
 
@@ -151,7 +151,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 644.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 647.5, 381.0, 29.5, 22.0 ],
 									"text" : "1"
 								}
 
@@ -162,7 +162,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 676.0, 294.5, 131.0, 20.0 ],
+									"patching_rect" : [ 679.0, 354.5, 131.0, 20.0 ],
 									"text" : "Charge le profil I"
 								}
 
@@ -174,7 +174,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 589.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 592.5, 381.0, 29.5, 22.0 ],
 									"text" : "5"
 								}
 
@@ -186,7 +186,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 553.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 556.5, 381.0, 29.5, 22.0 ],
 									"text" : "4"
 								}
 
@@ -198,7 +198,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 519.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 522.5, 381.0, 29.5, 22.0 ],
 									"text" : "3"
 								}
 
@@ -210,7 +210,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 488.0, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 491.0, 381.0, 29.5, 22.0 ],
 									"text" : "2"
 								}
 
@@ -222,7 +222,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 456.5, 321.0, 29.5, 22.0 ],
+									"patching_rect" : [ 459.5, 381.0, 29.5, 22.0 ],
 									"text" : "1"
 								}
 
@@ -243,7 +243,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "float", "signal" ],
-									"patching_rect" : [ 24.0, 403.0, 747.0, 120.0 ],
+									"patching_rect" : [ 27.0, 463.0, 747.0, 120.0 ],
 									"varname" : "s4M.audio.automation",
 									"viewvisibility" : 1
 								}
@@ -253,12 +253,12 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-1",
-									"linecount" : 10,
+									"linecount" : 16,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 63.0, 722.0, 163.0 ],
-									"text" : "Pour que le système de sauvegarde fonctionne, il faut travailler dans un projet MAX. \nVous copiez-collez l'objet automation dans un patch de votre projet. \nIl faut tout d'abord consolider votre projet (fenêtre projet icône manage project puis consolidate). Ainsi le module s4M.divers.automation.maxpat sera incorporé à votre projet. \nEnsuite vous devez créer un dossier data dans l'arborescence de votre projet (à la racine). \nSi vous avez plusieurs objets automation utilisés dans votre projet, il faut donner un numéro unique à chaque objet automation. Pour ce faire, cliquez sur l'objet automation, puis cliquez sur le menu inspector (menu i dans le menu de droite). Tout en bas de la liste des paramètres de l'objet dans la section patcher, vous pouvez indiquer le numéro unique de l'objet dans la section arguments. \nQuand vous sauvegardez le profil, le profil s'enregistre dans un fichier appelé sauvDataNuméroObjet.json. "
+									"patching_rect" : [ 7.0, 52.0, 722.0, 257.0 ],
+									"text" : "Pour que le système de sauvegarde fonctionne, il faut travailler dans un projet MAX. \nVous copiez-collez l'objet automation dans un patch de votre projet. \nEnsuite vous devez créer un dossier data dans l'arborescence de votre projet (à la racine). Les fichiers json de sauvegarde des profils seront stockés dans ce dossier. \nSi vous avez plusieurs objets automation utilisés dans votre projet, il faut donner un numéro unique à chaque objet automation. Pour ce faire, cliquez sur l'objet automation, puis cliquez sur le menu inspector (menu i dans le menu de droite). Tout en bas de la liste des paramètres de l'objet dans la section patcher, vous pouvez indiquer le numéro unique de l'objet dans la section arguments. Mettez comme numéro 0, 10, 20, 30, 40, 50,...\nPour obtenir le numéro du profil pour la sauvegarde, le code additionne le numéro unique de l'objet et le numéro du profil. \nQuand vous sauvegardez le profil, le profil s'enregistre dans un fichier appelé sauvDataNuméroProfil.json. \nOn aura donc les fichiers possibles suivants : \nsauvData1.json, sauvData2.json, sauvData3.json, sauvData4.json, sauvData5.json\nsauvData11.json, sauvData12.json, sauvData13.json, sauvData14.json, sauvData15.json\nsauvData21.json, sauvData22.json, sauvData23.json, sauvData24.json, sauvData25.json\n..."
 								}
 
 							}
@@ -271,7 +271,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 814.0, 463.5, 197.0, 32.0 ],
+									"patching_rect" : [ 817.0, 523.5, 197.0, 32.0 ],
 									"text" : "• Shift-clic sur un point pour le supprimer"
 								}
 
@@ -285,7 +285,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 814.0, 425.5, 165.0, 32.0 ],
+									"patching_rect" : [ 817.0, 485.5, 165.0, 32.0 ],
 									"text" : "• Cliquez sur un espace vide pour ajouter un point. "
 								}
 
@@ -299,7 +299,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 814.0, 347.0, 211.0, 71.0 ],
+									"patching_rect" : [ 817.0, 407.0, 211.0, 71.0 ],
 									"text" : "• En plaçant la souris au-dessus d'un point, ses coordonnées s'affichent. Pour déplacer un point cliquez dessus en maintenant le doigt appuyé sur le clic de la souris et déplacez le point. "
 								}
 
@@ -310,7 +310,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 488.0, 294.5, 131.0, 20.0 ],
+									"patching_rect" : [ 491.0, 354.5, 131.0, 20.0 ],
 									"text" : "Sauvegarde le profil I"
 								}
 
@@ -324,7 +324,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 77.0, 608.0, 50.0, 22.0 ]
+									"patching_rect" : [ 80.0, 668.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -354,7 +354,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 529.0, 270.5, 20.0, 20.0 ],
+									"patching_rect" : [ 532.0, 330.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -374,7 +374,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 787.0, 412.5, 20.0, 20.0 ],
+									"patching_rect" : [ 790.0, 472.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -394,7 +394,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 717.0, 270.5, 20.0, 20.0 ],
+									"patching_rect" : [ 720.0, 330.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -656,7 +656,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1050.0, 810.0 ],
+						"rect" : [ 131.0, 105.0, 1050.0, 836.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1294,6 +1294,13 @@
 			}
 , 			{
 				"name" : "sauvData1.json",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sauvData15.json",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
