@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 95.0, 1466.0, 806.0 ],
+		"rect" : [ 8.0, 79.0, 975.0, 907.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -48,8 +48,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -438,8 +438,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -828,8 +828,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1218,8 +1218,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1983,7 +1983,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "y offset control in (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : centre de rotation y (0.  à 1.)",
+					"comment" : "Float : centre de rotation y (0.  à 1.)",
+					"hint" : "Float : centre de rotation y (0.  à 1.)",
 					"id" : "obj-80",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -2046,7 +2048,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[58]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -2083,7 +2085,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[59]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -2112,7 +2114,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "bound mode select (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : mode pour gérer les bords (0. à 0.12:clear ; 0.13 à 0.37:wrap ; 0.38 à 0.62 :clip ; 0.63 à 1. :fold",
+					"comment" : "Float : mode pour gérer les bords (0. à 0.12:clear ; 0.13 à 0.37:wrap ; 0.38 à 0.62 :clip ; 0.63 à 1. :fold",
+					"hint" : "Float : mode pour gérer les bords (0. à 0.12:clear ; 0.13 à 0.37:wrap ; 0.38 à 0.62 :clip ; 0.63 à 1. :fold",
 					"id" : "obj-12",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -2181,7 +2185,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "x offset control in (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : centre de rotation x (0.  à 1.)",
+					"comment" : "Float : centre de rotation x (0.  à 1.)",
+					"hint" : "Float : centre de rotation x (0.  à 1.)",
 					"id" : "obj-29",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -2194,7 +2200,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "angle control in (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : angle de rotation (0.  à 1.)",
+					"comment" : "Float : angle de rotation (0.  à 1.)",
+					"hint" : "Float : angle de rotation (0.  à 1.)",
 					"id" : "obj-30",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -2207,7 +2215,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "video in. 0/1 (integer) bypasses/enables processing. 'off' disables input and outputs black frames, 'on' enables input.",
+					"annotation" : "Vidéo : flux vidéo dry / Toggle : activation/désactivation effet",
+					"comment" : "Vidéo : flux vidéo dry / Toggle : activation/désactivation effet",
+					"hint" : "Vidéo : flux vidéo dry / Toggle : activation/désactivation effet",
 					"id" : "obj-33",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -2220,7 +2230,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "video out",
+					"annotation" : "Vidéo : flux vidéo wet",
+					"comment" : "Vidéo : flux vidéo wet",
+					"hint" : "Vidéo : flux vidéo wet",
 					"id" : "obj-9",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -2352,7 +2364,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[60]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -2389,7 +2401,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[57]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -2420,13 +2432,13 @@
 					"presentation_rect" : [ 124.474807739257812, 47.0, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_unitstyle" : 5,
 							"parameter_longname" : "y offset[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "y offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 5
+							"parameter_type" : 0
 						}
 
 					}
@@ -2453,13 +2465,13 @@
 					"presentation_rect" : [ 64.474807739257812, 47.0, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_unitstyle" : 5,
 							"parameter_longname" : "x offset[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "x offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 5
+							"parameter_type" : 0
 						}
 
 					}
@@ -2486,13 +2498,13 @@
 					"presentation_rect" : [ 3.474807977676392, 47.0, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_unitstyle" : 0,
 							"parameter_longname" : "rotation",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 360.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "rotation",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_type" : 0
 						}
 
 					}
@@ -2519,6 +2531,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "umenu[12]",
 							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 3,
 							"parameter_initial" : [ 1.0 ],
 							"parameter_shortname" : "umenu",
 							"parameter_enum" : [ "clear", "wrap", "clip", "fold" ],
@@ -3382,15 +3395,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-78" : [ "x offset[1]", "x offset", 0 ],
 			"obj-19" : [ "range[4]", "range", 0 ],
-			"obj-48" : [ "rotation", "rotation", 0 ],
-			"obj-26" : [ "pictctrl[60]", "pictctrl[1]", 0 ],
+			"obj-78" : [ "x offset[1]", "x offset", 0 ],
+			"obj-75" : [ "pictctrl[59]", "pictctrl[1]", 0 ],
 			"obj-51" : [ "umenu[12]", "umenu", 0 ],
+			"obj-48" : [ "rotation", "rotation", 0 ],
+			"obj-28" : [ "pictctrl[57]", "pictctrl[1]", 0 ],
+			"obj-26" : [ "pictctrl[60]", "pictctrl[1]", 0 ],
 			"obj-74" : [ "pictctrl[58]", "pictctrl[1]", 0 ],
 			"obj-77" : [ "y offset[1]", "y offset", 0 ],
-			"obj-75" : [ "pictctrl[59]", "pictctrl[1]", 0 ],
-			"obj-28" : [ "pictctrl[57]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3399,37 +3412,37 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-routemat.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

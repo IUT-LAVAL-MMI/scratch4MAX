@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 585.0, 126.0, 982.0, 714.0 ],
+		"rect" : [ 686.0, 127.0, 941.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,56 +39,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 0,
-					"patching_rect" : [ 208.6666259765625, 678.0, 195.0, 22.0 ],
-					"text" : "s4M.video.gl2.planVideo my-ctx-10"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
+					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 553.5, 193.5, 192.0, 20.0 ],
-					"text" : "Lancement lecture fichier vidéo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 516.0, 400.0, 116.0, 20.0 ],
+					"patching_rect" : [ 50.0, 517.0, 100.0, 20.0 ],
 					"text" : "objet jit.pwindow"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "comment",
+					"id" : "obj-24",
+					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 304.0, 364.0, 90.0, 20.0 ],
-					"text" : "objet jit.fpsgui"
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 50.0, 424.0, 132.0, 91.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "jit.pwindow",
+					"id" : "obj-21",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 508.0, 305.0, 132.0, 91.0 ]
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.0, 459.5, 100.0, 20.0 ],
+					"text" : "objet jit.pwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 299.0, 419.5, 88.0, 20.0 ],
+					"text" : "objet jit.fpsgui"
 				}
 
 			}
@@ -97,49 +86,97 @@
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-7",
+					"id" : "obj-16",
 					"maxclass" : "jit.fpsgui",
 					"mode" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 309.0, 322.0, 80.0, 35.0 ]
+					"patching_rect" : [ 307.0, 382.5, 80.0, 35.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-20",
+					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 570.0, 220.0, 107.0, 22.0 ],
+					"patching_rect" : [ 460.0, 288.0, 107.0, 22.0 ],
 					"text" : "read aeroport.mp4"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
+					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 447.0, 262.0, 142.0, 22.0 ],
+					"patching_rect" : [ 371.0, 323.0, 108.0, 22.0 ],
 					"text" : "s4M.video.vz.playr",
-					"varname" : "vz.playr"
+					"varname" : "s4M.video.vz.playr"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
+					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 205.5, 192.0, 20.0 ],
-					"text" : "Activation rendu contexte 3D"
+					"patching_rect" : [ 460.0, 262.5, 165.0, 20.0 ],
+					"text" : "lancer cette vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.433374023437523, 265.5, 165.0, 20.0 ],
+					"text" : "activer le contexte 3D"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-2",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 71.0, 1000.0, 163.0 ],
+					"text" : "Objet qui crée un contexte 3D afin d'y afficher des éléments graphiques, comme par exemple un plan Vidéo. \n\n\nEntrée 1 (toggle) : activation/désactivation rendu du contexte 3D\nSortie 1 (vidéo) : flux vidéo du rendu du contexte 3D\n\n\nArgument 1 (obligatoire) : nom du contexte 3D dans lequel rendre les différents éléments envoyés (il doit être unique)\nArgument 2 (obligatoire) : largeur en pixels du contexte 3D\nArgument 2 (obligatoire) : hauteur en pixels du contexte 3D"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 30.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 23.0, 950.0, 40.0 ],
+					"text" : "Scratch4MAX - Vidéo - gl2.world"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 448.0, 366.5, 132.0, 91.0 ]
 				}
 
 			}
@@ -151,157 +188,31 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 24.0, 235.0, 24.0, 24.0 ]
+					"patching_rect" : [ 49.0, 293.5, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-16",
+					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 281.0, 217.0, 22.0 ],
-					"text" : "s4M.video.gl2.world my-ctx-10 640 360",
+					"patching_rect" : [ 50.0, 381.5, 213.0, 22.0 ],
+					"text" : "s4M.video.gl2.world my-ctx 1920 1080",
 					"varname" : "s4M.video.gl2.world"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 275.5, 436.0, 243.0, 20.0 ],
-					"text" : "pour modifier la définition du flux vidéo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 352.6666259765625, 517.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 267.6666259765625, 517.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "jit.fpsgui",
-					"mode" : 3,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 70.0, 630.0, 80.0, 35.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
+					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.6666259765625, 586.0, 109.0, 22.0 ],
-					"text" : "s4M.video.gl.redim"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "comment",
-					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.1666259765625, 462.0, 424.0, 20.0 ],
-					"text" : "valeurs pour initialiser les paramètres de cet objet au lancement du patch"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 352.6666259765625, 484.0, 77.0, 22.0 ],
-					"text" : "loadmess 60"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.6666259765625, 484.0, 83.0, 22.0 ],
-					"text" : "loadmess 107"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 14.0,
-					"id" : "obj-4",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 57.0, 920.0, 116.0 ],
-					"text" : "Cet objet permet de redimensionner un flux vidéo. Comme la dimension de l'affichage de change pas le flux vidéo de sortie aura un effet pixellisé si le redimensionnement est trop fort. \n\nEntrée 1 (vidéo) : flux vidéo\nEntrée 2 (float) : largeur (pixel)\nEntrée 3 (float) : hauteur (pixel)\nSortie 1 (vidéo) : flux vidéo wet"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 30.0,
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 11.0, 846.0, 40.0 ],
-					"text" : "Scratch4MAX - Vidéo - redim"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.55 ],
-					"id" : "obj-23",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 574.25, 158.0, 45.5 ],
-					"proportion" : 0.39
+					"patching_rect" : [ 371.0, 487.0, 228.0, 22.0 ],
+					"text" : "s4M.video.gl2.planVideo my-ctx 0 0 0 0.5"
 				}
 
 			}
@@ -310,7 +221,7 @@
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 					"hint" : "",
-					"id" : "obj-19",
+					"id" : "obj-35",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
@@ -318,27 +229,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 251.1666259765625, 436.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "3",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-24",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 24.0, 205.5, 20.0, 20.0 ],
+					"patching_rect" : [ 31.100000000000023, 265.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -350,7 +241,7 @@
 					"background" : 1,
 					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 					"hint" : "",
-					"id" : "obj-27",
+					"id" : "obj-6",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
@@ -358,7 +249,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 526.0, 193.5, 20.0, 20.0 ],
+					"patching_rect" : [ 435.6666259765625, 262.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -368,104 +259,67 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"source" : [ "obj-13", 0 ]
+					"destination" : [ "obj-8", 4 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 2 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 4 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"order" : 0,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"order" : 1,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-6", 0 ]
+					"destination" : [ "obj-16", 0 ],
+					"order" : 2,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-21::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-21::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-21::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-21::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-21::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-21::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-21::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-21::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-21::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-21::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-21::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-21::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-21::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-21::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-21::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-8::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-8::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-8::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-8::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-8::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-8::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-8::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-8::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-8::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-8::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-8::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-8::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-8::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-8::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-8::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-8::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -473,22 +327,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "s4M.video.gl.redim.maxpat",
+				"name" : "s4M.video.gl2.planVideo.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -509,6 +351,18 @@
 				"name" : "data-handler.maxpat",
 				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -544,13 +398,6 @@
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
 				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s4M.video.gl2.planVideo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

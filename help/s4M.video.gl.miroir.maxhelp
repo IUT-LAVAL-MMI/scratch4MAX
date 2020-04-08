@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 447.0, 114.0, 692.0, 821.0 ],
+		"rect" : [ 500.0, 117.0, 771.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,143 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.0, 652.0, 195.0, 22.0 ],
+					"text" : "s4M.video.gl2.planVideo my-ctx-13"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 503.5, 228.5, 192.0, 20.0 ],
+					"text" : "Lancement lecture fichier vidéo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 466.0, 435.0, 116.0, 20.0 ],
+					"text" : "objet jit.pwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 266.0, 390.0, 90.0, 20.0 ],
+					"text" : "objet jit.fpsgui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 458.0, 340.0, 132.0, 91.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "jit.fpsgui",
+					"mode" : 3,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 276.0, 349.0, 80.0, 35.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 520.0, 255.0, 107.0, 22.0 ],
+					"text" : "read aeroport.mp4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 397.0, 297.0, 142.0, 22.0 ],
+					"text" : "s4M.video.vz.playr",
+					"varname" : "vz.playr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 54.0, 239.5, 192.0, 20.0 ],
+					"text" : "Activation rendu contexte 3D"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 34.0, 269.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 34.0, 315.0, 217.0, 22.0 ],
+					"text" : "s4M.video.gl2.world my-ctx-13 640 360",
+					"varname" : "s4M.video.gl2.world"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 446.0, 83.0, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 353.0, 485.0, 85.0, 33.0 ],
 					"text" : "orientation de l'effet"
 				}
 
@@ -56,19 +186,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 459.0, 83.0, 20.0 ],
+					"patching_rect" : [ 482.0, 498.0, 83.0, 20.0 ],
 					"text" : "activez l'effet"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 479.5, 217.0, 214.0, 20.0 ],
-					"text" : "lancez la vidéo"
 				}
 
 			}
@@ -80,71 +199,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 308.5, 481.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-3",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.viewr.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 123.0, 604.0, 236.0, 214.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 8.0, 574.0, 64.0, 22.0 ],
-					"text" : "vz.projectr"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.0, 239.0, 107.0, 22.0 ],
-					"text" : "read aeroport.mp4"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.playr.maxpat",
-					"numinlets" : 5,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 123.0, 275.0, 389.0, 163.0 ],
-					"varname" : "vz.playr",
-					"viewvisibility" : 1
+					"patching_rect" : [ 492.5, 520.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -156,7 +211,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 178.0, 481.0, 24.0, 24.0 ]
+					"patching_rect" : [ 362.0, 520.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -169,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 57.0, 803.0, 147.0 ],
-					"text" : "Cet objet permet d'appliquer un effet miroir à un flux vidéo. Par défaut l'effet n'est pas activé et le sens est vertical. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (toggle) : orientation de l'effet : 0->axe symétrie vertical et 1-> axe symétrie horizontal\nEntrée 3 (toggle) : activer/désactiver l'effet\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (facultatif) : activation automatique de l'effet (1)\nArgument 2 (facultatif) : orientation de l'effet"
+					"text" : "Cet objet permet d'appliquer un effet miroir à un flux vidéo. Par défaut l'effet n'est pas activé et le sens est vertical. \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (toggle) : orientation de l'effet : 0->axe symétrie vertical et 1-> axe symétrie horizontal\nEntrée 3 (toggle) : activer/désactiver l'effet\nSortie 1 (vidéo) : flux vidéo wet\n\nArgument 1 (facultatif) : orientation de l'effet\nArgument 2 (facultatif) : activation automatique de l'effet (1)"
 				}
 
 			}
@@ -193,7 +248,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.0, 554.0, 129.0, 22.0 ],
+					"patching_rect" : [ 307.0, 593.0, 129.0, 22.0 ],
 					"text" : "s4M.video.gl.miroir 0 0",
 					"varname" : "s4M.video.gl.miroir"
 				}
@@ -208,28 +263,8 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 542.25, 208.0, 44.5 ],
+					"patching_rect" : [ 285.0, 581.25, 208.0, 44.5 ],
 					"proportion" : 0.39
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
-					"hint" : "",
-					"id" : "obj-11",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 454.5, 217.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "1",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -246,9 +281,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.0, 446.0, 20.0, 20.0 ],
+					"patching_rect" : [ 328.0, 485.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"text" : "3",
+					"text" : "4",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -266,7 +301,47 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 273.0, 459.0, 20.0, 20.0 ],
+					"patching_rect" : [ 457.0, 498.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-24",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 34.0, 239.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-27",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 476.0, 228.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -276,15 +351,39 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-7", 2 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 2 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-21", 4 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 2,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -297,74 +396,58 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 4 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-104", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
-					"source" : [ "obj-7", 0 ]
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-4::obj-121" : [ "brightness[3]", "brightness", 0 ],
-			"obj-7::obj-4::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-1::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-7::obj-4::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
-			"obj-7::obj-39::obj-3" : [ "range[25]", "range", 0 ],
-			"obj-2::obj-12" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-1::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-7::obj-4::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
-			"obj-7::obj-39::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-1::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-1::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-7::obj-4::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
-			"obj-7::obj-4::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
-			"obj-2::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-21::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-7::obj-4::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
 			"obj-7::obj-4::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-8" : [ "range[5]", "range", 0 ],
-			"obj-1::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-3::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
-			"obj-1::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-7::obj-4::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-7::obj-4::obj-128" : [ "range[24]", "range", 0 ],
-			"obj-7::obj-4::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-3::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-1::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-1::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-1::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-1::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
-			"obj-1::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-1::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-1::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-7::obj-4::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-2::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-7::obj-4::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
-			"obj-7::obj-39::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-21::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-7::obj-4::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
+			"obj-21::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-21::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-8" : [ "range[5]", "range", 0 ],
+			"obj-7::obj-39::obj-39" : [ "umenu[1]", "umenu", 0 ],
+			"obj-21::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-21::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-21::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-21::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-21::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-121" : [ "brightness[3]", "brightness", 0 ],
+			"obj-21::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
+			"obj-7::obj-4::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
+			"obj-21::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-21::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-7::obj-4::obj-128" : [ "range[24]", "range", 0 ],
+			"obj-7::obj-4::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
+			"obj-21::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-21::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-21::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-7::obj-39::obj-3" : [ "range[25]", "range", 0 ],
+			"obj-7::obj-4::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
+			"obj-21::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-7::obj-4::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-7::obj-39::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
+			"obj-7::obj-4::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
+			"obj-7::obj-4::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -379,7 +462,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.croppr.maxpat",
+				"name" : "s4M.video.vz.croppr.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -387,31 +470,31 @@
 			}
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -430,7 +513,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s4M.video.gl.oper8r.maxpat",
+				"name" : "s4M.video.vz.oper8r.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -438,80 +521,65 @@
 			}
 , 			{
 				"name" : "vzgl-routemat.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-routegl.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.playr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"name" : "s4M.video.gl2.world.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.vz.playr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diminit.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dinit.js",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.projectr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"name" : "s4M.video.gl2.planVideo.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-context.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vz.viewr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snapshot_UI.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "windowresize.js",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 79.0, 1308.0, 708.0 ],
+		"rect" : [ 338.0, 104.0, 891.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -112,9 +112,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
-					"comment" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
-					"hint" : "Entier : cadence en ms entre deux flashs (en mode automatique)",
+					"annotation" : "Toggle : activation/désactivation effet",
+					"comment" : "Toggle : activation/désactivation effet",
+					"hint" : "Toggle : activation/désactivation effet",
 					"id" : "obj-9",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -354,7 +354,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 389.0, 286.0, 63.0, 22.0 ],
+					"patching_rect" : [ 367.0, 290.0, 63.0, 22.0 ],
 					"text" : "delay 100"
 				}
 
@@ -741,9 +741,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-5::obj-2" : [ "range[4]", "range", 0 ],
 			"obj-5::obj-6" : [ "crossfade", "crossfade", 0 ],
 			"obj-5::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-5::obj-2" : [ "range[4]", "range", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -759,25 +759,25 @@
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

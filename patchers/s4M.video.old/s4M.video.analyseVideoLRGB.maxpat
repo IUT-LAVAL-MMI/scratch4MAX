@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 637.0, 79.0, 1027.0, 872.0 ],
+		"rect" : [ 175.0, 79.0, 996.0, 859.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,9 +39,11 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Entier Entier : pour indiquer la dimension de la vidéo à analyser (uniquement pour vidéo openGL)",
+					"comment" : "Entier Entier : pour indiquer la dimension de la vidéo à analyser (uniquement pour vidéo openGL)",
+					"hint" : "Entier Entier : pour indiquer la dimension de la vidéo à analyser (uniquement pour vidéo openGL)",
 					"id" : "obj-48",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -126,9 +128,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Entier : type du graphique (0:Composantes, 1:Histogramme, 2:Forme d'onde, 3:Vecteurscope)",
+					"comment" : "Entier : type du graphique (0:Composantes, 1:Histogramme, 2:Forme d'onde, 3:Vecteurscope)",
+					"hint" : "Entier : type du graphique (0:Composantes, 1:Histogramme, 2:Forme d'onde, 3:Vecteurscope)",
 					"id" : "obj-7",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -315,7 +319,7 @@
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 650.0, 663.0, 200.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 616.0, 58.0, 200.0, 140.0 ],
@@ -329,7 +333,7 @@
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 445.0, 663.0, 200.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 415.0, 58.0, 200.0, 140.0 ],
@@ -343,7 +347,7 @@
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 240.0, 663.0, 200.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 214.0, 58.0, 200.0, 140.0 ],
@@ -357,7 +361,7 @@
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 36.0, 663.0, 200.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.5, 58.0, 200.0, 140.0 ],
@@ -450,7 +454,7 @@
 					"comment" : "Video : flux vidéo dry",
 					"hint" : "Video : flux vidéo dry",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -661,6 +665,34 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "s4M.video.analyseVideoLRGB.js",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/extras",
+				"patcherrelativepath" : "../../extras",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.routeurVideo_1_2.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 116.0, 79.0, 1359.0, 872.0 ],
+		"rect" : [ 123.0, 79.0, 1352.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -78,7 +78,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -155,7 +155,7 @@
 							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ]
 						}
 
@@ -183,7 +183,7 @@
 				"box" : 				{
 					"comment" : "toggle PROJECTR window display (0. - .49 = off, .5 - 1.0 = on). off/on messages disable/enable the data inlet.",
 					"id" : "obj-53",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -348,7 +348,7 @@
 				"box" : 				{
 					"comment" : "current drawto",
 					"id" : "obj-28",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -397,7 +397,7 @@
 							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ]
 						}
 
@@ -447,7 +447,7 @@
 							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ]
 						}
 
@@ -553,7 +553,7 @@
 							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[7]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ]
 						}
 
@@ -581,7 +581,7 @@
 				"box" : 				{
 					"comment" : "toggle fullscreen display (0. - .49 = off, .5 - 1.0 = on). off/on messages disable/enable the data inlet.",
 					"id" : "obj-37",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -754,8 +754,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 229.5, 780.0, 768.0, 23.0 ],
-					"text" : "jit.world @windowposition 640 160 @enable 1 @erase_color 0 0 0 1 @shared 1 @esc_fullscreen 0 @output_texture 1 @dim @fsaa 1 #1 #2"
+					"patching_rect" : [ 229.5, 780.0, 754.0, 23.0 ],
+					"text" : "jit.world @windowposition 640 160 @enable 1 @erase_color 0 0 0 1 @shared 1 @esc_fullscreen 0 @output_texture 1 @dim #1 #2 @fsaa 1"
 				}
 
 			}
@@ -777,7 +777,7 @@
 				"box" : 				{
 					"comment" : "Video input.",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1403,6 +1403,50 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-12" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-context.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 0.86, 0.86, 0.86, 1.0 ]
 	}
 

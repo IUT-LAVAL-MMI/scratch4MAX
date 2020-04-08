@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 515.0, 102.0, 1131.0, 799.0 ],
+		"rect" : [ 352.0, 102.0, 764.0, 799.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -280,13 +280,15 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Toggle : orientation de l'effet 0-> axe vertical et 1 -> axe horizaontal",
+					"comment" : "Toggle : orientation de l'effet 0-> axe vertical et 1 -> axe horizaontal",
+					"hint" : "Toggle : orientation de l'effet 0-> axe vertical et 1 -> axe horizaontal",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 452.0, 80.0, 30.0, 30.0 ]
 				}
 
@@ -322,11 +324,11 @@
 					"comment" : "Toogle : activation/désactivation effet",
 					"hint" : "Toggle : activation/désactivation effet",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 609.0, 80.0, 30.0, 30.0 ]
 				}
 
@@ -334,7 +336,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -362,7 +363,7 @@
 					"comment" : "Video : flux vidéo wet",
 					"hint" : "Video : flux vidéo wet",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -376,7 +377,7 @@
 					"comment" : "Video : flux vidéo dry (4 plans)",
 					"hint" : "Video : flux vidéo dry (4 plans)",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -736,113 +737,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-4::obj-151" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-4::obj-121" : [ "brightness[3]", "brightness", 0 ],
-			"obj-39::obj-51" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-4::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
-			"obj-39::obj-3" : [ "range[25]", "range", 0 ],
-			"obj-4::obj-206" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-39::obj-39" : [ "umenu[1]", "umenu", 0 ],
-			"obj-4::obj-204" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
-			"obj-4::obj-8" : [ "range[5]", "range", 0 ],
-			"obj-4::obj-49" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
-			"obj-4::obj-7" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-4::obj-111" : [ "textbutton[5]", "textbutton[4]", 0 ],
-			"obj-4::obj-209" : [ "pictctrl[38]", "pictctrl[1]", 0 ],
-			"obj-4::obj-113" : [ "textbutton[6]", "textbutton[3]", 0 ],
-			"obj-4::obj-150" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
-			"obj-4::obj-200" : [ "pictctrl[39]", "pictctrl[1]", 0 ],
-			"obj-4::obj-190" : [ "rslider[4]", "rslider[3]", 0 ],
-			"obj-4::obj-128" : [ "range[24]", "range", 0 ],
-			"obj-4::obj-189" : [ "rslider[5]", "rslider[2]", 0 ],
-			"obj-4::obj-77" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-4::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-4::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "s4M.video.vz.croppr.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "srcdimcrop.genjit",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dstdimcrop.genjit",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s4M.video.vz.oper8r.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-routemat.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-routegl.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

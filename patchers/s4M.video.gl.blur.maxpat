@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 569.0, 183.0, 975.0, 740.0 ],
+		"rect" : [ 569.0, 183.0, 617.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -123,13 +123,15 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Toggle : activation/désactivation effet",
+					"comment" : "Toggle : activation/désactivation effet",
+					"hint" : "Toggle : activation/désactivation effet",
 					"id" : "obj-4",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 688.0, 132.0, 30.0, 30.0 ]
 				}
 
@@ -152,7 +154,7 @@
 					"comment" : "Video GL : flux vidéo openGL wet",
 					"hint" : "Video GL : flux vidéo openGL wet",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -235,7 +237,7 @@
 					"comment" : "Float : force du flou",
 					"hint" : "Float : force du flou",
 					"id" : "obj-21",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -250,7 +252,7 @@
 					"comment" : "Video GL : flux vidéo openGL dry",
 					"hint" : "Video GL : flux vidéo openGL dry",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -422,7 +424,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 836.0, 269.0, 640.0, 480.0 ],
+		"rect" : [ 308.0, 191.0, 729.0, 592.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,9 +51,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Vidéo : flux dry",
+					"comment" : "Vidéo : flux dry",
+					"hint" : "Vidéo : flux dry",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -76,9 +78,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Vidéo : vidéo wet avec noir lorsque pause",
+					"comment" : "Vidéo : vidéo wet avec noir lorsque pause",
+					"hint" : "Vidéo : vidéo wet avec noir lorsque pause",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -88,13 +92,15 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Toggle : information état vidéo 0-> pause 1-> play",
+					"comment" : "Toggle : information état vidéo 0-> pause 1-> play",
+					"hint" : "Toggle : information état vidéo 0-> pause 1-> play",
 					"id" : "obj-1",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 186.0, 19.0, 30.0, 30.0 ]
 				}
 
@@ -233,6 +239,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

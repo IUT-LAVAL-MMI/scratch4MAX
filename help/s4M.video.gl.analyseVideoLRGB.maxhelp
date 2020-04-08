@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 150.0, 160.0, 1341.0, 735.0 ],
+		"rect" : [ 34.0, 160.0, 1288.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,11 +39,131 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1238.0, 650.0, 181.0, 20.0 ],
+					"text" : "version classique de l'objet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1179.0, 585.0, 181.0, 24.0 ],
+					"text" : "version graphique de l'objet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1238.0, 672.0, 171.0, 22.0 ],
+					"text" : "s4M.video.analyseVideoLRGB",
+					"varname" : "s4M.video.vz.playr[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1362.0, 354.0, 181.0, 20.0 ],
+					"text" : "version classique de l'objet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 110.0, 686.0, 103.0, 20.0 ],
+					"text" : "objet jit.pwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 377.0, 450.0, 202.0, 47.0 ],
+					"text" : "utile juste pour l'exemple pour pouvoir choisir trois types de vidéos à analyser."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 98.0, 366.5, 93.0, 20.0 ],
+					"text" : "objet jit.fpsgui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-32",
+					"maxclass" : "jit.fpsgui",
+					"mode" : 3,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 98.0, 326.0, 80.0, 35.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-31",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1308.0, 291.0, 181.0, 24.0 ],
+					"text" : "version graphique de l'objet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1391.0, 378.0, 108.0, 22.0 ],
+					"text" : "s4M.video.vz.playr",
+					"varname" : "s4M.video.vz.playr"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1276.0, 103.0, 214.0, 20.0 ],
+					"patching_rect" : [ 1275.0, 150.0, 214.0, 20.0 ],
 					"text" : "lancer la lecture de la vidéo"
 				}
 
@@ -55,7 +175,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 718.0, 360.0, 192.0, 47.0 ],
+					"patching_rect" : [ 718.0, 446.0, 192.0, 47.0 ],
 					"text" : "Pour l'analyse des flux vidéo opengl il faut fournir en plus les dimensions de la vidéo"
 				}
 
@@ -67,7 +187,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 757.5, 407.0, 52.0, 22.0 ],
+					"patching_rect" : [ 757.5, 493.0, 52.0, 22.0 ],
 					"text" : "320 240"
 				}
 
@@ -78,7 +198,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 812.5, 178.0, 51.5, 20.0 ],
+					"patching_rect" : [ 812.5, 233.0, 51.5, 20.0 ],
 					"text" : "vidéo 3"
 				}
 
@@ -91,7 +211,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 311.5, 79.0, 19.0 ],
+					"patching_rect" : [ 537.0, 366.5, 79.0, 19.0 ],
 					"text" : "vidéo 3",
 					"textcolor" : [ 0.80392199754715, 0.898038983345032, 0.909803986549377, 1.0 ]
 				}
@@ -112,7 +232,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 866.0, 173.0, 444.0, 168.0 ],
+					"patching_rect" : [ 866.0, 228.0, 444.0, 168.0 ],
 					"varname" : "vz.playr",
 					"viewvisibility" : 1
 				}
@@ -125,7 +245,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1291.0, 131.0, 89.0, 22.0 ],
+					"patching_rect" : [ 1290.0, 178.0, 89.0, 22.0 ],
 					"text" : "read exo3.mp4"
 				}
 
@@ -138,7 +258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.0, 229.0, 72.0, 22.0 ],
+					"patching_rect" : [ 522.0, 284.0, 72.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -149,7 +269,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.0, 184.0, 54.0, 20.0 ],
+					"patching_rect" : [ 596.0, 239.0, 54.0, 20.0 ],
 					"text" : "vidéo 2"
 				}
 
@@ -160,7 +280,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 126.5, 208.0, 51.5, 20.0 ],
+					"patching_rect" : [ 126.5, 263.0, 51.5, 20.0 ],
 					"text" : "vidéo 1"
 				}
 
@@ -171,7 +291,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 178.0, 214.0, 20.0 ],
+					"patching_rect" : [ 258.0, 233.0, 214.0, 20.0 ],
 					"text" : "lancer la lecture de la vidéo"
 				}
 
@@ -184,7 +304,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 295.5, 79.0, 19.0 ],
+					"patching_rect" : [ 537.0, 350.5, 79.0, 19.0 ],
 					"text" : "vidéo 2",
 					"textcolor" : [ 0.80392199754715, 0.898038983345032, 0.909803986549377, 1.0 ]
 				}
@@ -198,7 +318,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 279.0, 79.0, 19.0 ],
+					"patching_rect" : [ 537.0, 334.0, 79.0, 19.0 ],
 					"text" : "vidéo 1",
 					"textcolor" : [ 0.80392199754715, 0.898038983345032, 0.909803986549377, 1.0 ]
 				}
@@ -212,7 +332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 263.5, 79.0, 19.0 ],
+					"patching_rect" : [ 537.0, 318.5, 79.0, 19.0 ],
 					"text" : "pas de vidéo",
 					"textcolor" : [ 0.80392199754715, 0.898038983345032, 0.909803986549377, 1.0 ]
 				}
@@ -228,7 +348,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 499.0, 263.5, 87.0, 66.0 ],
+					"patching_rect" : [ 522.0, 318.5, 87.0, 66.0 ],
 					"size" : 4,
 					"value" : 0
 				}
@@ -240,7 +360,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 627.0, 277.5, 214.0, 20.0 ],
+					"patching_rect" : [ 650.0, 332.5, 187.0, 20.0 ],
 					"text" : "pour choisir quelle vidéo analyser"
 				}
 
@@ -252,7 +372,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.0, 369.5, 162.0, 22.0 ],
+					"patching_rect" : [ 354.0, 424.5, 162.0, 22.0 ],
 					"text" : "s4M.video.routeurVideo_3_1"
 				}
 
@@ -271,7 +391,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 354.0, 446.0, 826.0, 200.0 ],
+					"patching_rect" : [ 354.0, 532.0, 826.0, 200.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -287,8 +407,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -983,7 +1103,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 491.0, 184.0, 103.0, 22.0 ],
+					"patching_rect" : [ 491.0, 239.0, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1001,8 +1121,8 @@
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 43.0, 425.0, 265.0, 173.0 ]
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 43.0, 511.0, 265.0, 173.0 ]
 				}
 
 			}
@@ -1014,7 +1134,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 285.5, 242.0, 24.0, 24.0 ]
+					"patching_rect" : [ 285.5, 297.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1026,7 +1146,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 201.100006103515625, 178.0, 24.0, 24.0 ]
+					"patching_rect" : [ 201.100006103515625, 233.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1034,12 +1154,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 51.0, 1019.0, 116.0 ],
-					"text" : "Cet objet permet d'analyser un flux vidéo (JItter ou OpenGL) avec différents outils. Il permet d'afficher les composantes du flux vidéos, les histogrammes, les formes d'onde de la Luminance, de la composante Rouge, de la composante Verte et de la composante Bleue du flux vidéo, ainsi que le vecteurscope. Pour pouvoir utiliser cet objet il faut soit faire un copier-coller depuis ce fichier vers votre fichier de travail, soit ajouter sur votre patch l'objet suivant bpatcher s4M.video.analyseVideoLRGB.   \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (integer) : permet de changer par le code le mode d'analyse de la vidéo. 0 = Composantes ; 1 = Histogramme ; 2 = Forme d'onde 3 = Vecteurscope"
+					"patching_rect" : [ 8.0, 51.0, 1019.0, 147.0 ],
+					"text" : "Cet objet permet d'analyser un flux vidéo (Jitter ou OpenGL) avec différents outils. Il permet d'afficher les composantes du flux vidéos, les histogrammes, les formes d'onde de la Luminance, de la composante Rouge, de la composante Verte et de la composante Bleue du flux vidéo, ainsi que le vecteurscope. Pour pouvoir utiliser cet objet il faut soit faire un copier-coller depuis ce fichier vers votre fichier de travail, soit ajouter sur votre patch l'objet suivant bpatcher s4M.video.analyseVideoLRGB.   \n\nEntrée 1 (vidéo) : flux vidéo dry\nEntrée 2 (entier entier) : message qui indique la dimension (en pixels) de la vidéo openGL à analyser. Si vous souhaitez analyser une vidéo openGL il faut donc préciser les dimensions de la vidéo. \nEntrée 3 (integer) : permet de changer par le code le mode d'analyse de la vidéo. 0 = Composantes ; 1 = Histogramme ; 2 = Forme d'onde 3 = Vecteurscope"
 				}
 
 			}
@@ -1063,8 +1183,22 @@
 					"numinlets" : 11,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 180.0, 208.0, 230.0, 22.0 ],
+					"patching_rect" : [ 180.0, 263.0, 230.0, 22.0 ],
 					"text" : "s4M.video.lecteurVideo aeroport.mp4 0.1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.55 ],
+					"id" : "obj-38",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 343.600006103515625, 522.25, 848.0, 225.5 ],
+					"proportion" : 0.39
 				}
 
 			}
@@ -1081,7 +1215,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 603.0, 277.5, 20.0, 20.0 ],
+					"patching_rect" : [ 626.0, 332.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1101,7 +1235,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1252.0, 103.0, 20.0, 20.0 ],
+					"patching_rect" : [ 1251.0, 150.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1121,7 +1255,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 693.0, 373.5, 20.0, 20.0 ],
+					"patching_rect" : [ 693.0, 459.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1141,7 +1275,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 234.0, 178.0, 20.0, 20.0 ],
+					"patching_rect" : [ 234.0, 233.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -1159,6 +1293,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1231,23 +1374,82 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-23::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-23::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-23::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-4::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-4::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-4::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
 			"obj-4::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
 			"obj-4::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-23::obj-112::obj-89" : [ "FreqMode[14]", "FreqMode", 0 ],
 			"obj-4::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-23::obj-83" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-23::obj-112::obj-92" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-23::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-23::obj-112::obj-79" : [ "slider[1]", "slider[2]", 0 ],
+			"obj-23::obj-89" : [ "moviename[1]", "moviename", 0 ],
 			"obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-23::obj-81" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-23::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-23::obj-60" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-4::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-4::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-23::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-23::obj-28" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-23::obj-40" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-23::obj-64" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-23::obj-112::obj-89" : 				{
+					"parameter_longname" : "FreqMode[14]"
+				}
+,
+				"obj-23::obj-83" : 				{
+					"parameter_longname" : "pictctrl[1]"
+				}
+,
+				"obj-23::obj-112::obj-92" : 				{
+					"parameter_longname" : "FreqMode[1]"
+				}
+,
+				"obj-23::obj-112::obj-121" : 				{
+					"parameter_longname" : "speed[3]"
+				}
+,
+				"obj-23::obj-81" : 				{
+					"parameter_longname" : "pictctrl[3]"
+				}
+,
+				"obj-23::obj-60" : 				{
+					"parameter_longname" : "pictctrl[4]"
+				}
+,
+				"obj-23::obj-112::obj-119" : 				{
+					"parameter_longname" : "speed[2]"
+				}
+,
+				"obj-23::obj-28" : 				{
+					"parameter_longname" : "pictctrl[2]"
+				}
+,
+				"obj-23::obj-40" : 				{
+					"parameter_longname" : "pictctrl[5]"
+				}
+,
+				"obj-23::obj-64" : 				{
+					"parameter_longname" : "pictctrl[6]"
+				}
 
 			}
 
@@ -1283,13 +1485,13 @@
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -1302,49 +1504,56 @@
 			}
 , 			{
 				"name" : "vz.playr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diminit.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dinit.js",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.video.vz.playr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
