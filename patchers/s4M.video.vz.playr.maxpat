@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 80.0, 1157.0, 856.0 ],
+		"rect" : [ 34.0, 172.0, 1243.0, 714.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -3604,9 +3604,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "toggle low/high playback rate range (0. - .49 = low, .5 - 1.0 = high). off/on messages disable/enable the data inlet. The message \"read <optional movie filename>\" can be used to load a movie.",
+					"annotation" : "message : read nomFichier.extension message pour charger une vidéo",
+					"comment" : "message : read nomFichier.extension message pour charger une vidéo",
+					"hint" : "message : read nomFichier.extension message pour charger une vidéo",
 					"id" : "obj-33",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3645,9 +3647,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "sets the current scrub point. off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"hint" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
 					"id" : "obj-9",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3723,13 +3727,15 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Set playback rate (0. - 1.0). off/on messages disable/enable the data inlet., 0/1 (int) toggles playback",
+					"annotation" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
+					"comment" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
+					"hint" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
 					"id" : "obj-76",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.961853000000019, 40.0, 25.0, 25.0 ]
 				}
 
@@ -3820,9 +3826,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "loop end (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"hint" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
 					"id" : "obj-67",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3833,9 +3841,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "loop start (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"hint" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
 					"id" : "obj-68",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3846,9 +3856,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "movie playback position data (0. - 1.0). off/on messages disable/enable the data inlet.",
+					"annotation" : "Float : position de la tête de lecture",
+					"comment" : "Float : position de la tête de lecture",
+					"hint" : "Float : position de la tête de lecture",
 					"id" : "obj-17",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4580,9 +4592,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "video out",
+					"annotation" : "Vidéo : flux vidéo",
+					"comment" : "Vidéo : flux vidéo",
+					"hint" : "Vidéo : flux vidéo",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5626,6 +5640,85 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "playr-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "playr_controls.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "diminit.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dinit.js",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-pwindow.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 0.86, 0.86, 0.86, 1.0 ]
 	}
 
