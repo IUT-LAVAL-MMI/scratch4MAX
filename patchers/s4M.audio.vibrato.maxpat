@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 608.0, 226.0, 1037.0, 546.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 309.0, 155.0, 1037.0, 629.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +39,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 42.0, 423.0, 77.0, 22.0 ],
+					"text" : "loadmess #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 100.0, 494.0, 101.0, 22.0 ],
+					"text" : "s4M.audio.switch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Toggle : activation/désactivation effet",
+					"comment" : "Toggle : activation/désactivation effet",
+					"hint" : "Toggle : activation/désactivation effet",
+					"id" : "obj-10",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 766.0, 39.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 283.0, 284.5, 72.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess 1"
 				}
 
@@ -55,13 +94,12 @@
 					"comment" : "Float : paramètre A",
 					"hint" : "Float : paramètre A",
 					"id" : "obj-5",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 539.916748, 39.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 539.916747999999984, 39.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -72,8 +110,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 352.916748, 166.0, 35.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 352.916747999999984, 166.0, 35.0, 22.0 ],
 					"text" : "+~ 1"
 				}
 
@@ -84,13 +121,12 @@
 					"comment" : "Float : paramètre K",
 					"hint" : "Float : paramètre K",
 					"id" : "obj-4",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 468.916748, 39.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 468.916747999999984, 39.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -100,13 +136,12 @@
 					"comment" : "Audio : signal modulant",
 					"hint" : "Audio : signal modulant",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 352.916748, 39.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 352.916747999999984, 39.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -116,12 +151,11 @@
 					"comment" : "Audio : flux audio wet",
 					"hint" : "Audio : flux audio wet",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.916748, 485.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 124.916748000000013, 560.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -131,13 +165,12 @@
 					"comment" : "Audio : flux audio dry",
 					"hint" : "Audio : flux audio dry",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.916748, 39.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 100.0, 39.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -152,9 +185,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 314.916748, 348.5, 68.0, 22.0 ],
-					"sig" : 0.0,
-					"style" : ""
+					"patching_rect" : [ 314.916747999999984, 348.5, 68.0, 22.0 ],
+					"sig" : 0.0
 				}
 
 			}
@@ -166,8 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.916748, 257.0, 168.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 561.916747999999984, 257.0, 168.0, 22.0 ]
 				}
 
 			}
@@ -178,8 +209,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 352.916748, 107.5, 42.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 352.916747999999984, 107.5, 42.0, 22.0 ],
 					"text" : "*~ 0.5"
 				}
 
@@ -192,8 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 557.916748, 230.5, 150.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 557.916747999999984, 230.5, 150.0, 22.0 ]
 				}
 
 			}
@@ -205,8 +234,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 539.916748, 203.5, 150.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 539.916747999999984, 203.5, 150.0, 22.0 ]
 				}
 
 			}
@@ -217,9 +245,8 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.916748, 284.5, 150.0, 130.0 ],
-					"range" : [ 0.0, 2.0 ],
-					"style" : ""
+					"patching_rect" : [ 510.916747999999984, 284.5, 150.0, 130.0 ],
+					"range" : [ 0.0, 2.0 ]
 				}
 
 			}
@@ -227,11 +254,10 @@
 				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.916748, 327.5, 133.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.916748000000013, 327.5, 133.0, 22.0 ],
 					"text" : "s4M.audio.transposeur",
 					"varname" : "egaliseur_5b[2]"
 				}
@@ -240,8 +266,38 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-81", 0 ],
+					"destination" : [ "obj-11", 1 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -299,7 +355,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-11", 2 ],
 					"source" : [ "obj-81", 0 ]
 				}
 
@@ -333,6 +389,28 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "s4M.audio.transposeur.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gizmo_loadme.maxpat",
+				"bootpath" : "C74:/help/msp",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s4M.audio.switch.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -435,8 +513,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

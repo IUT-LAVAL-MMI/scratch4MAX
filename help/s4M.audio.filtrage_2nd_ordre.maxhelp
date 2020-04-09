@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 270.0, 79.0, 1136.0, 865.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 270.0, 79.0, 874.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,8 +44,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 236.5, 275.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 236.5, 293.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -54,8 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.5, 244.0, 192.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 214.5, 262.0, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier audio"
 				}
 
@@ -64,11 +64,10 @@
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 656.0, 632.0, 167.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 606.5, 654.0, 167.0, 22.0 ],
 					"text" : "s4M.audio.filtrage_2nd_ordre"
 				}
 
@@ -80,8 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 610.0, 570.0, 270.0, 60.0 ],
-					"style" : "",
+					"patching_rect" : [ 560.5, 592.0, 270.0, 60.0 ],
 					"text" : "Si vous voulez avoir l'affichage du graphique Gain en fonction de la fréquence , il faut faire un copier-coller de l'objet envadré en orange dans votre code, sinon cela apparaîtra comme ça : "
 				}
 
@@ -89,26 +87,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 657.05188, 104.0, 33.0 ],
-					"style" : "",
-					"text" : "0 : flux audio dry\n1 : flux audio wet"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 304.100006, 738.0, 178.0, 60.0 ],
-					"style" : "",
-					"text" : "Cet objet permet juste de basculer entre le flux audio dry et le flux audio wet pour bien entendre l'effet du filtrage "
+					"patching_rect" : [ 590.5, 494.0, 104.0, 20.0 ],
+					"text" : "Activer l'effet"
 				}
 
 			}
@@ -119,8 +102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 580.099976, 395.0, 118.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 530.59997599999997, 417.0, 118.0, 33.0 ],
 					"text" : "Régler les paramètres du filtre"
 				}
 
@@ -129,13 +111,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-6",
-					"linecount" : 10,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 59.0, 789.0, 163.0 ],
-					"style" : "",
-					"text" : "Cet objet permet de filtrer un flux audio avec un filtre de second ordre. \n\nEntrée 1 (audio) : flux audio à filtrer\nEntrée 2 (integer) : type du filtre. aucun filtre, filtre passe-bas, filtre passe-haut, filtre passe-bande, filtre coupe-bande,...\nEntrée 3 (float) : fréquence de coupure du filtre\nEntrée 4 (float) : gain du filtre\nEntrée 5 (float) : facteur de qualité du filtre \n\n\nSortie 1 (audio) : flux audio filtré"
+					"patching_rect" : [ 12.0, 59.0, 789.0, 179.0 ],
+					"text" : "Cet objet permet de filtrer un flux audio avec un filtre de second ordre. \n\nEntrée 1 (audio) : flux audio à filtrer\nEntrée 2 (integer) : type du filtre. aucun filtre, filtre passe-bas, filtre passe-haut, filtre passe-bande, filtre coupe-bande,...\nEntrée 3 (float) : fréquence de coupure du filtre\nEntrée 4 (float) : gain du filtre\nEntrée 5 (float) : facteur de qualité du filtre\nEntrée 5 (toggle) : activation/désactivation effet \n\n\nSortie 1 (audio) : flux audio filtré"
 				}
 
 			}
@@ -148,21 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 13.0, 728.0, 40.0 ],
-					"style" : "",
 					"text" : "Scratch4MAX - Audio - Filtre second ordre"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 197.0, 757.0, 103.0, 22.0 ],
-					"style" : "",
-					"text" : "s4M.audio.switch"
 				}
 
 			}
@@ -174,8 +141,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 153.0, 693.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 602.5, 516.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -185,8 +151,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 545.599976, 490.0, 39.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 496.09997599999997, 512.0, 39.0, 20.0 ],
 					"text" : "Q"
 				}
 
@@ -197,8 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.0, 468.0, 46.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 435.5, 490.0, 46.0, 20.0 ],
 					"text" : "Gain"
 				}
 
@@ -209,8 +173,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 421.0, 439.388885, 141.5, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 371.5, 461.388885000000016, 141.5, 20.0 ],
 					"text" : "fréquence de coupure"
 				}
 
@@ -224,8 +187,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.099976, 508.55188, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 490.59997599999997, 530.551879999999983, 50.0, 22.0 ]
 				}
 
 			}
@@ -238,8 +200,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 481.0, 490.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 431.5, 512.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -252,8 +213,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 421.0, 457.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 371.5, 479.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -263,8 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 363.100006, 386.5, 40.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 313.600006000000008, 408.5, 40.0, 20.0 ],
 					"text" : "type"
 				}
 
@@ -272,7 +231,7 @@
 , 			{
 				"box" : 				{
 					"allowdrag" : 0,
-					"fontsize" : 11.595187,
+					"fontsize" : 11.595186999999999,
 					"id" : "obj-102",
 					"items" : [ "aucun", ",", "lowpass", ",", "highpass", ",", "bandpass", ",", "bandstop", ",", "peaknotch", ",", "lowshelf", ",", "highshelf", ",", "resonant", ",", "allpass" ],
 					"maxclass" : "umenu",
@@ -280,8 +239,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 363.100006, 408.5, 92.0, 21.0 ],
-					"style" : ""
+					"patching_rect" : [ 313.600006000000008, 430.5, 92.0, 21.0 ]
 				}
 
 			}
@@ -296,11 +254,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "s4M.audio.filtrage_2nd_ordre.maxpat",
-					"numinlets" : 5,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 304.100006, 561.0, 255.0, 128.0 ],
+					"patching_rect" : [ 254.600006000000008, 583.0, 255.0, 128.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -312,8 +270,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.0, 275.0, 156.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 292.0, 293.0, 156.0, 33.0 ],
 					"text" : "Activation/Désactivation\nMode loop"
 				}
 
@@ -326,8 +283,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 347.600006, 313.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 347.600006000000008, 331.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -338,8 +294,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 248.0, 358.0, 186.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 248.0, 376.0, 186.0, 22.0 ],
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
 
@@ -350,8 +305,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 829.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 254.600006000000008, 799.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -364,9 +318,28 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 286.0, 542.55188, 312.0, 156.5 ],
-					"proportion" : 0.39,
-					"style" : ""
+					"patching_rect" : [ 236.5, 564.551879999999983, 312.0, 156.5 ],
+					"proportion" : 0.39
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+					"hint" : "",
+					"id" : "obj-10",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 508.59997599999997, 423.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -383,9 +356,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 192.5, 244.0, 20.0, 20.0 ],
+					"patching_rect" : [ 192.5, 262.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -404,9 +376,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 555.099976, 401.5, 20.0, 20.0 ],
+					"patching_rect" : [ 568.5, 494.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -436,22 +407,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 3 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -459,16 +414,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"order" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -482,14 +428,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 2 ],
+					"destination" : [ "obj-1", 1 ],
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 5 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -504,21 +459,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.filtrage_2nd_ordre.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.switch.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -627,8 +582,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

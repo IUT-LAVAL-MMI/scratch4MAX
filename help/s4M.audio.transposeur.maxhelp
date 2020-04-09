@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 331.0, 150.0, 1142.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -44,8 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 452.0, 72.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 318.0, 504.0, 72.0, 22.0 ],
 					"text" : "loadmess 4"
 				}
 
@@ -58,8 +58,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 321.25, 516.75, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 321.25, 568.75, 50.0, 22.0 ]
 				}
 
 			}
@@ -71,8 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 786.0, 492.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 541.0, 578.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -83,8 +81,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 210.0, 336.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 210.0, 388.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -95,8 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 519.0, 523.0, 201.0, 47.0 ],
-					"style" : "",
+					"patching_rect" : [ 509.0, 521.0, 201.0, 47.0 ],
 					"text" : "transposition qui varie sinusoïdalement de 0,8 à 1,2 avec une fréquence de 0,1 Hz. "
 				}
 
@@ -108,8 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 812.0, 487.5, 259.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 567.0, 573.5, 263.0, 33.0 ],
 					"text" : "Ce toggle pour choisir le mode de transposition 0=par demi-ton 1=continue"
 				}
 
@@ -120,8 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.0, 471.0, 256.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 454.0, 469.0, 256.0, 20.0 ],
 					"text" : "transposition continue à l'aide d'un flux audio"
 				}
 
@@ -132,8 +127,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 283.25, 493.0, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 283.25, 545.0, 150.0, 20.0 ],
 					"text" : "transposition par demi-ton"
 				}
 
@@ -141,13 +135,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.25, 510.25, 118.0, 47.0 ],
-					"style" : "",
-					"text" : "Choisir entre le flux audio dry et le flux audio wet"
+					"patching_rect" : [ 587.25, 624.25, 118.0, 20.0 ],
+					"text" : "Activer l'effet"
 				}
 
 			}
@@ -158,8 +150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 478.0, 520.0, 35.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 468.0, 518.0, 35.0, 22.0 ],
 					"text" : "+~ 1"
 				}
 
@@ -171,8 +162,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 478.0, 493.0, 173.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 468.0, 491.0, 173.0, 22.0 ],
 					"text" : "s4M.audio.oscillateur 0.1 0.2 1"
 				}
 
@@ -184,8 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 216.0, 271.0, 108.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 216.0, 323.0, 108.0, 33.0 ],
 					"text" : "Lancer le flux audio"
 				}
 
@@ -194,13 +183,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-6",
-					"linecount" : 11,
+					"linecount" : 15,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 49.0, 809.0, 179.0 ],
-					"style" : "",
-					"text" : "Cet objet permet de transposer un flux audio, c'est-à-dire de décaler son spectre soit vers les basses, soit vers les aigüs. Il y a deux manières d'indiquer la valeur de la transposition, soit grâce à des entiers, soit grâce à un flux audio. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (integer) : transposition par demi-ton. 0 = pas de transposition, +1 = décalage vers les aigüs d'un demi-ton, -1 = décalage vers les basses d'un demi-ton,...\nEntrée 3 (audio) : transposition à l'aide d'un flux audio, la valeur A de l'amplitude de ce flux audio détermine la valeur de la transposition. Dans ce cas, la fréquence audio wet = (fréquence audio dry)*A. 1 = pas de transposition. 0,5 = transposition d'une octave en-dessous. 2 = transposition d'une octave au-dessus. \nEntrée 4 (toggle) : choix du mode de transposition. 0=transposition par demi-ton ; 1=transposition continue\nSortie 1 (audio) : flux audio transposé "
+					"patching_rect" : [ 8.0, 49.0, 809.0, 241.0 ],
+					"text" : "Cet objet permet de transposer un flux audio, c'est-à-dire de décaler son spectre soit vers les basses, soit vers les aigüs. Il y a deux manières d'indiquer la valeur de la transposition, soit grâce à des entiers, soit grâce à un flux audio. \n\nEntrée 1 (audio) : flux audio dry\nEntrée 2 (integer) : transposition par demi-ton. 0 = pas de transposition, +1 = décalage vers les aigüs d'un demi-ton, -1 = décalage vers les basses d'un demi-ton,...\nEntrée 3 (audio) : transposition à l'aide d'un flux audio, la valeur A de l'amplitude de ce flux audio détermine la valeur de la transposition. Dans ce cas, la fréquence audio wet = (fréquence audio dry)*A. 1 = pas de transposition. 0,5 = transposition d'une octave en-dessous. 2 = transposition d'une octave au-dessus. \nEntrée 4 (toggle) : choix du mode de transposition. 0=transposition par demi-ton ; 1=transposition continue\nEntrée 5 (toggle) : activation/désactivation effet\n\nSortie 1 (audio) : flux audio transposé \n\nArgument 1 (facultatif) : 1 pour activer l'effet par défaut au démarrage de l'application"
 				}
 
 			}
@@ -213,7 +201,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 3.0, 780.0, 40.0 ],
-					"style" : "",
 					"text" : "Scratch4MAX - Audio - Transposeur"
 				}
 
@@ -222,25 +209,11 @@
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 283.25, 585.0, 163.0, 22.0 ],
-					"style" : "",
-					"text" : "s4M.audio.transposeur"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 159.25, 652.0, 103.0, 22.0 ],
-					"style" : "",
-					"text" : "s4M.audio.switch"
+					"patching_rect" : [ 274.0, 715.0, 208.0, 22.0 ],
+					"text" : "s4M.audio.transposeur 1"
 				}
 
 			}
@@ -252,8 +225,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.25, 558.25, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 587.25, 650.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -263,8 +235,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 311.0, 192.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 151.0, 363.0, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier audio"
 				}
 
@@ -276,8 +247,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 254.0, 336.0, 156.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 254.0, 388.0, 156.0, 33.0 ],
 					"text" : "Activation/Désactivation\nMode loop"
 				}
 
@@ -290,8 +260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 309.600006, 374.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 309.600006000000008, 426.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -302,8 +271,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 210.0, 419.0, 186.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 210.0, 471.0, 186.0, 22.0 ],
 					"text" : "s4M.audio.lecteurAudio social.aif"
 				}
 
@@ -314,8 +282,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 714.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 279.350006000000008, 813.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -328,9 +295,8 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.25, 563.25, 193.0, 67.5 ],
-					"proportion" : 0.39,
-					"style" : ""
+					"patching_rect" : [ 254.0, 693.25, 246.0, 67.5 ],
+					"proportion" : 0.39
 				}
 
 			}
@@ -347,9 +313,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 191.0, 277.5, 20.0, 20.0 ],
+					"patching_rect" : [ 191.0, 329.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -368,9 +333,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 759.0, 492.0, 20.0, 20.0 ],
+					"patching_rect" : [ 562.0, 624.25, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -389,9 +353,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.25, 516.75, 20.0, 20.0 ],
+					"patching_rect" : [ 513.25, 582.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -402,22 +365,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 2 ],
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -437,16 +384,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"order" : 1,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -475,14 +413,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 2 ],
+					"destination" : [ "obj-1", 1 ],
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 4 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -497,21 +444,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s4M.audio.switch.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.transposeur.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -523,8 +463,15 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "s4M.audio.switch.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "s4M.audio.oscillateur.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -633,8 +580,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
