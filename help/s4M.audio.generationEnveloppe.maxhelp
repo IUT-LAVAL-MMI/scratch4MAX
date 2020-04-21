@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1872.0, 185.0, 693.0, 612.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 100.0, 100.0, 693.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,8 +44,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 121.0, 183.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 124.0, 232.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -54,8 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.0, 158.0, 192.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 69.0, 207.0, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier audio"
 				}
 
@@ -67,8 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 413.0, 479.0, 108.0, 47.0 ],
-					"style" : "",
+					"patching_rect" : [ 416.0, 528.0, 108.0, 47.0 ],
 					"text" : "Observer l'enveloppe de ce flux audio"
 				}
 
@@ -80,8 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.0, 234.0, 108.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 425.0, 283.0, 108.0, 33.0 ],
 					"text" : "Envoyer un flux audio"
 				}
 
@@ -90,13 +88,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-7",
-					"linecount" : 4,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 53.0, 1007.0, 69.0 ],
-					"style" : "",
-					"text" : "Cet objet permet de générer l'enveloppe d'un flux audio. \n\nEntrée 1 (audio) : flux audio à analyser\nSortie 1 (audio) : enveloppe du flux audio"
+					"patching_rect" : [ 10.0, 53.0, 1007.0, 116.0 ],
+					"text" : "Cet objet permet de générer l'enveloppe d'un flux audio. \n\nEntrée 1 (audio) : flux audio à analyser\nSortie 1 (audio) : enveloppe du flux audio\n\nArgument 1 (obligatoire) : nombre échantillons montée\nArgument 2 (obligatoire) : nombre échantillons descente"
 				}
 
 			}
@@ -109,7 +106,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 7.0, 728.0, 40.0 ],
-					"style" : "",
 					"text" : "Scratch4MAX - Audio - Génération enveloppe"
 				}
 
@@ -121,8 +117,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.0, 453.0, 208.0, 131.0 ],
-					"style" : ""
+					"patching_rect" : [ 170.0, 502.0, 208.0, 131.0 ]
 				}
 
 			}
@@ -131,10 +126,9 @@
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 167.0, 392.0, 209.0, 22.0 ],
-					"style" : "",
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 170.0, 441.0, 209.0, 22.0 ],
 					"text" : "s4M.audio.generationEnveloppe 1 20"
 				}
 
@@ -145,8 +139,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.5, 323.5, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 203.5, 372.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -157,8 +150,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 158.0, 156.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 263.0, 207.0, 156.0, 33.0 ],
 					"text" : "Activation/Désactivation\nMode loop"
 				}
 
@@ -171,8 +163,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 315.600006, 196.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 318.600006000000008, 245.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -183,8 +174,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 167.0, 270.0, 200.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 170.0, 319.0, 200.0, 22.0 ],
 					"text" : "s4M.audio.lecteurAudio Kick01.wav"
 				}
 
@@ -198,9 +188,8 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 378.25, 241.0, 55.5 ],
-					"proportion" : 0.39,
-					"style" : ""
+					"patching_rect" : [ 158.0, 427.25, 241.0, 55.5 ],
+					"proportion" : 0.39
 				}
 
 			}
@@ -217,9 +206,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 397.0, 240.5, 20.0, 20.0 ],
+					"patching_rect" : [ 400.0, 289.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -238,9 +226,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 388.0, 485.5, 20.0, 20.0 ],
+					"patching_rect" : [ 391.0, 534.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -259,9 +246,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 44.0, 158.0, 20.0, 20.0 ],
+					"patching_rect" : [ 47.0, 207.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
-					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -316,19 +302,23 @@
  ],
 		"parameters" : 		{
 			"obj-5::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
+			"obj-5::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s4M.audio.generationEnveloppe.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -437,8 +427,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

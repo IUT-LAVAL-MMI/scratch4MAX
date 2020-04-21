@@ -51,7 +51,8 @@
 , 			{
 				"box" : 				{
 					"annotation" : "Toggle : activation/désactivation effet",
-					"comment" : "",
+					"comment" : "Toggle : activation/désactivation effet",
+					"hint" : "Toggle : activation/désactivation effet",
 					"id" : "obj-14",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -489,8 +490,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

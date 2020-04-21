@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 330.0, 90.0, 1291.0, 819.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 100.0, 90.0, 1350.0, 819.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,14 +48,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 6,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 2,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1291.0, 793.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 100.0, 116.0, 1350.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -84,12 +86,38 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgcolor" : [ 0.986246049404144, 0.007120788097382, 0.027434188872576, 1.0 ],
+									"fontsize" : 14.0,
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 745.0, 157.5, 495.0, 38.0 ],
+									"presentation_linecount" : 2,
+									"text" : "Du fait d'un correctif d'un bug du lecteurAudio, on ne peut plus lire en boucle un extrait du fichier audio... "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 75.0, 219.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 12.5, 186.0, 192.0, 20.0 ],
-									"style" : "",
 									"text" : "Lancement lecture fichier audio"
 								}
 
@@ -103,7 +131,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 14.0, 57.0, 495.0, 38.0 ],
-									"style" : "",
 									"text" : "Cet objet permet de lire un fichier audio mono ou stéréo au format WAVE. \nIl possède un argument le nom du fichier avec l'extension. "
 								}
 
@@ -117,7 +144,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 14.0, 10.0, 555.0, 40.0 ],
-									"style" : "",
 									"text" : "Scratch4MAX - Audio - Lecteur Audio "
 								}
 
@@ -129,8 +155,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 892.0, 210.0, 228.0, 33.0 ],
-									"style" : "",
+									"patching_rect" : [ 984.0, 205.5, 228.0, 33.0 ],
 									"text" : "Pris en compte que si mode loop activé\nfin loop (ms)"
 								}
 
@@ -142,8 +167,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 662.0, 210.0, 224.0, 33.0 ],
-									"style" : "",
+									"patching_rect" : [ 754.0, 205.5, 224.0, 33.0 ],
 									"text" : "Pris en compte que si mode loop activé\ndébut loop (ms)"
 								}
 
@@ -156,8 +180,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 952.0, 243.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 1044.0, 238.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -169,8 +192,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 693.0, 249.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 785.0, 244.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -182,7 +204,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 494.0, 169.0, 156.0, 33.0 ],
-									"style" : "",
 									"text" : "Activation/Désactivation\nMode loop"
 								}
 
@@ -195,7 +216,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 321.0, 174.5, 121.0, 33.0 ],
-									"style" : "",
 									"text" : "Rembobine début loop si loop activé"
 								}
 
@@ -207,7 +227,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 157.5, 219.0, 94.0, 20.0 ],
-									"style" : "",
 									"text" : "Pause/Reprise"
 								}
 
@@ -219,8 +238,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 365.0, 210.0, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 365.0, 210.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -232,8 +251,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 536.599976, 217.0, 24.0, 24.0 ],
-									"style" : ""
+									"patching_rect" : [ 536.59997599999997, 217.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -244,8 +262,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 188.5, 243.0, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 188.5, 243.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -256,8 +274,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 264.0, 392.0, 12.0, 58.0 ],
-									"style" : ""
+									"patching_rect" : [ 264.0, 392.0, 12.0, 58.0 ]
 								}
 
 							}
@@ -268,8 +285,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 132.0, 385.0, 12.0, 58.0 ],
-									"style" : ""
+									"patching_rect" : [ 132.0, 385.0, 12.0, 58.0 ]
 								}
 
 							}
@@ -281,21 +297,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 264.0, 517.0, 150.0, 33.0 ],
-									"style" : "",
 									"text" : "Activer le son en cliquant sur cet objet"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "toggle",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 71.5, 217.0, 24.0, 24.0 ],
-									"style" : ""
 								}
 
 							}
@@ -305,8 +307,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 185.0, 511.0, 45.0, 45.0 ],
-									"style" : ""
+									"patching_rect" : [ 185.0, 511.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -318,7 +319,6 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
 									"patching_rect" : [ 139.0, 348.0, 229.0, 22.0 ],
-									"style" : "",
 									"text" : "s4M.audio.lecteurAudio audioStereo.wav"
 								}
 
@@ -338,7 +338,6 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 239.0, 523.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"style" : "",
 									"text" : "1",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -415,7 +414,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-4", 0 ]
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -564,11 +563,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p \"mode loop\""
 				}
 
@@ -582,14 +579,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 6,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 2,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 330.0, 116.0, 1291.0, 793.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 0.0, 26.0, 1350.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -624,7 +622,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 480.0, 554.5, 98.0, 20.0 ],
-									"style" : "",
 									"text" : "tête de lecture"
 								}
 
@@ -637,7 +634,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 633.0, 637.5, 427.0, 60.0 ],
-									"style" : "",
 									"text" : "La tête de lecture est un signal audio qui varie de 0 à 1. \n0 = début du fichier\n1 = fin du fichier\ncette information permet de se synchroniser sur la lecture du fichier audio"
 								}
 
@@ -648,8 +644,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 549.0, 635.0, 77.0, 65.0 ],
-									"style" : ""
+									"patching_rect" : [ 549.0, 635.0, 77.0, 65.0 ]
 								}
 
 							}
@@ -660,8 +655,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 129.0, 457.0, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 129.0, 457.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -673,7 +668,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 872.0, 329.0, 150.0, 33.0 ],
-									"style" : "",
 									"text" : "Tester le rembobinage du fichier audio"
 								}
 
@@ -686,7 +680,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 486.0, 329.0, 150.0, 33.0 ],
-									"style" : "",
 									"text" : "Tester la lecture du fichier audio"
 								}
 
@@ -699,7 +692,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 72.5, 317.0, 150.0, 33.0 ],
-									"style" : "",
 									"text" : "Tester la lecture du fichier audio"
 								}
 
@@ -711,7 +703,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 371.0, 561.0, 56.0, 20.0 ],
-									"style" : "",
 									"text" : "canal R"
 								}
 
@@ -724,7 +715,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 183.0, 554.5, 68.0, 33.0 ],
-									"style" : "",
 									"text" : "mono ou canal L"
 								}
 
@@ -737,7 +727,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 643.0, 511.0, 367.0, 60.0 ],
-									"style" : "",
 									"text" : "Si le fichier audio est mono, alors le signal sort par la première sortie à gauche.\nSi le fichier audio est stéréo, alors le canal gauche sort par la première sortie et le canal droit par la deuxième sortie"
 								}
 
@@ -750,7 +739,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 358.0, 408.5, 390.0, 33.0 ],
-									"style" : "",
 									"text" : "Si la lecture du fichier audio est en en cours, bang -> va mettre la lecture du fichier audio en pause"
 								}
 
@@ -763,7 +751,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 11.0, 377.5, 333.0, 74.0 ],
-									"style" : "",
 									"text" : "bang -> place la tête de lecture au début du fichier audio et lance la lecture du fichier audio\nSi le mode loop n'est pas activé, à la fin du fichier audio, la lecture s'arrête et la tête de lecture reste positionné à la fin du fichier audio"
 								}
 
@@ -776,7 +763,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 772.0, 372.0, 307.0, 33.0 ],
-									"style" : "",
 									"text" : "Quel que soit l'état de lecture, bang -> va positionner la tête de lecture au début du fichier audio"
 								}
 
@@ -789,7 +775,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 358.0, 371.0, 366.0, 33.0 ],
-									"style" : "",
 									"text" : "Si la lecture du fichier audio est en pause, bang -> va mettre en pause la lecture"
 								}
 
@@ -801,7 +786,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 11.0, 355.5, 192.0, 20.0 ],
-									"style" : "",
 									"text" : "Lancement lecture fichier audio"
 								}
 
@@ -813,8 +797,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 831.0, 417.5, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 831.0, 417.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -825,8 +809,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 423.0, 447.0, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 423.0, 447.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -837,8 +821,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 366.0, 615.0, 12.0, 58.0 ],
-									"style" : ""
+									"patching_rect" : [ 366.0, 615.0, 12.0, 58.0 ]
 								}
 
 							}
@@ -849,8 +832,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 239.0, 611.0, 12.0, 58.0 ],
-									"style" : ""
+									"patching_rect" : [ 239.0, 611.0, 12.0, 58.0 ]
 								}
 
 							}
@@ -862,9 +844,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 14.0, 56.0, 495.0, 225.0 ],
-									"style" : "",
-									"text" : "Cet objet permet de lire un fichier audio mono ou stéréo au format WAVE. \nIl possède un paramètre interne : le nom du fichier avec l'extension. \n\nEntrée 1 (bang) : lance la lecture du fichier audio\nEntrée 2 (bang) : mode play/pause,\nEntrée 3 (bang) : replace la tête de lecture au début du fichieur audio\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (float) : début de boucle en ms\nEntrée 6 (float) : fin de boucle en ms\nSortie 1 (audio) : flux audio canal Gauche\nSortie 2 (audio) : flux audio canal Droit (si fichier stéréo)\nSortie 3 (audio) : position de la tête de lecture\n\nArgument 1 (obligatoire) : nom du fichier à charger (avec extension) "
+									"patching_rect" : [ 14.0, 56.0, 656.0, 225.0 ],
+									"text" : "Cet objet permet de lire un fichier audio mono ou stéréo au format WAVE. \nIl possède un paramètre interne : le nom du fichier avec l'extension. \n\nEntrée 1 (bang) : lance la lecture du fichier audio\nEntrée 2 (bang) : mode play/pause,\nEntrée 3 (bang) : replace la tête de lecture au début du fichieur audio\nEntrée 4 (booléen) : activation/désactivation mode loop\nEntrée 5 (float) : début de boucle en ms\nEntrée 6 (float) : fin de boucle en ms\nSortie 1 (audio) : flux audio canal Gauche\nSortie 2 (audio) : flux audio canal Droit (si fichier stéréo)\nSortie 3 (audio) : position de la tête de lecture\n\nArgument 1 (obligatoire sinon plantage de MAX) : nom du fichier à charger (avec extension) "
 								}
 
 							}
@@ -877,7 +858,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 14.0, 10.0, 555.0, 40.0 ],
-									"style" : "",
 									"text" : "Scratch4MAX - Audio - Lecteur Audio "
 								}
 
@@ -890,7 +870,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 358.0, 731.0, 150.0, 33.0 ],
-									"style" : "",
 									"text" : "Activer le son en cliquant sur cet objet"
 								}
 
@@ -901,8 +880,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 279.0, 725.0, 45.0, 45.0 ],
-									"style" : ""
+									"patching_rect" : [ 279.0, 725.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -914,7 +892,6 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
 									"patching_rect" : [ 249.0, 530.0, 229.0, 22.0 ],
-									"style" : "",
 									"text" : "s4M.audio.lecteurAudio audioStereo.wav"
 								}
 
@@ -934,7 +911,6 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 333.0, 737.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"style" : "",
 									"text" : "1",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -955,7 +931,6 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 847.0, 335.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"style" : "",
 									"text" : "4",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -976,7 +951,6 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 461.0, 335.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"style" : "",
 									"text" : "3",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -997,7 +971,6 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 47.5, 323.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"style" : "",
 									"text" : "2",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -1209,11 +1182,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p basic"
 				}
 
@@ -1222,7 +1193,7 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "s4M.audio.lecteurAudio.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/scratch4MAX/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
