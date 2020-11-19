@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 153.0, 130.0, 1410.0, 799.0 ],
+		"rect" : [ 100.0, 100.0, 1410.0, 799.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 153.0, 156.0, 1410.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 1410.0, 773.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -388,11 +388,11 @@
 								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 25,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "int" ],
-									"patching_rect" : [ 310.5, 486.0, 791.0, 22.0 ],
-									"text" : "s4M.interface.ecouteurClavier 97 122 101 114 116 121"
+									"patching_rect" : [ 310.5, 486.0, 497.0, 22.0 ],
+									"text" : "s4M.interface.ecouteurTouchesClavier @t1 97 @t2 122 @t3 101 @t4 114 @t5 116 @t6 121"
 								}
 
 							}
@@ -400,12 +400,12 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-48",
-									"linecount" : 23,
+									"linecount" : 24,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 6.0, 53.0, 945.0, 366.0 ],
-									"text" : "Cet objet permet de transformer un clavier d'ordinateur en launchpad. \n\nOn peut programmer l'écoute de n'importe quelle touche du clavier il faut juste connaître son code ascii et le préciser dans la liste des touches écoutées\n\nSortie 1 (bang) : bang lorsque la première touche est appuyée\nSortie 2 (bang) : bang lorsque la première touche est relâchée\nSortie 3 (bang) : bang lorsque la duxième touche est appuyée\nSortie 4 (bang) : bang lorsque la deuxième touche est relâchée\nSortie 5 (bang) : bang lorsque la troisième touche est appuyée\nSortie 6 (bang) : bang lorsque la troisième touche est relâchée\n...\nSortie 23 (bang) : bang lorsque la douzième touche est appuyée\nSortie 24 (bang) : bang lorsque la dousième touche est relâchée\nSortie 25 (integer) : code ascii de la touche appuyée\n\nArgument 1 (obligatoire) : code ascii de la première touche écoutée\nArgument 2 (obligatoire) : code ascii de la deuxièm touche écoutée\n...\nArgument 12 (obligatoire) : code ascii de la douzièm touche écoutée\n\n\nDans l'exemple, on écoute les touches : a, z, e, r, t et y. "
+									"patching_rect" : [ 6.0, 53.0, 945.0, 382.0 ],
+									"text" : "Cet objet permet de transformer un clavier d'ordinateur en launchpad. \n\nOn peut programmer l'écoute de n'importe quelle touche du clavier il faut juste connaître son code ascii et le préciser dans la liste des touches écoutées\n\nEntrée 1 (attributs) : peermet de modifier les attributs de l'objet\nSortie 1 (bang) : bang lorsque la première touche est appuyée\nSortie 2 (bang) : bang lorsque la première touche est relâchée\nSortie 3 (bang) : bang lorsque la duxième touche est appuyée\nSortie 4 (bang) : bang lorsque la deuxième touche est relâchée\nSortie 5 (bang) : bang lorsque la troisième touche est appuyée\nSortie 6 (bang) : bang lorsque la troisième touche est relâchée\n...\nSortie 23 (bang) : bang lorsque la douzième touche est appuyée\nSortie 24 (bang) : bang lorsque la dousième touche est relâchée\nSortie 25 (integer) : code ascii de la touche appuyée\n\nAttribut 1 - nom @t1 : code ascii de la première touche écoutée\nAttribut 2 - nom @t2 : code ascii de la deuxièm touche écoutée\n...\nAttribut - nom @t12 : code ascii de la douzièm touche écoutée\n\n\nDans l'exemple, on écoute les touches : a, z, e, r, t et y. "
 								}
 
 							}
@@ -683,7 +683,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1410.0, 773.0 ],
+						"rect" : [ 100.0, 126.0, 1410.0, 773.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -718,8 +718,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 698.5, 202.0, 151.0, 154.0 ],
-									"presentation_linecount" : 11,
+									"patching_rect" : [ 698.5, 202.0, 152.0, 154.0 ],
 									"text" : "on lance l'audio quand on appuie sur la troisième touche (e). \non met en pause l'audio quand on appuie à nouveau sur cette touche. Quand on est à la fin de la piste audio il faut remettre la tête de lecture au début manuellement à l'aide du bang"
 								}
 
@@ -731,8 +730,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 338.0, 256.0, 151.0, 100.0 ],
-									"presentation_linecount" : 7,
+									"patching_rect" : [ 338.0, 256.0, 152.0, 100.0 ],
 									"text" : "on lance l'audio quand on appuie sur la deuxième touche (z).\npas de pause possible. \ndès qu'on appuie sur cette touche on relance le son depuis le début"
 								}
 
@@ -740,11 +738,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-22",
-									"linecount" : 6,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 100.5, 274.5, 150.0, 87.0 ],
+									"patching_rect" : [ 100.5, 274.5, 151.0, 74.0 ],
 									"text" : "on lance l'audio quand on appuie sur la première touche (a). \non arrête l'audio quand on relâche la première touche"
 								}
 
@@ -849,11 +847,11 @@
 								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 25,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "int" ],
-									"patching_rect" : [ 190.5, 142.0, 683.0, 22.0 ],
-									"text" : "s4M.interface.ecouteurClavier 97 122 101 114 116 121"
+									"patching_rect" : [ 190.5, 142.0, 497.0, 22.0 ],
+									"text" : "s4M.interface.ecouteurTouchesClavier @t1 97 @t2 122 @t3 101 @t4 114 @t5 116 @t6 121"
 								}
 
 							}
@@ -1138,7 +1136,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "s4M.interface.ecouteurClavier.maxpat",
+				"name" : "s4M.interface.ecouteurTouchesClavier.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

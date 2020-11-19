@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 187.0, 79.0, 1079.0, 819.0 ],
+		"rect" : [ 382.0, 79.0, 1193.0, 819.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1079.0, 793.0 ],
+						"rect" : [ 382.0, 105.0, 1193.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -292,11 +292,11 @@
 								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 12,
 									"outlettype" : [ "", "bang", "bang", "", "bang", "bang", "", "bang", "bang", "", "bang", "bang" ],
-									"patching_rect" : [ 190.5, 142.0, 480.0, 22.0 ],
-									"text" : "s4M.interface.ecouteurClavierPiano 97 233 122 34 101 114 40 116 167 121 232 117 105"
+									"patching_rect" : [ 190.5, 142.0, 882.0, 22.0 ],
+									"text" : "s4M.interface.ecouteurTouchesClavierPiano @t1 97 @t2 233 @t3 122 @t4 34 @t5 101 @t6 114 @t7 40 @t8 116 @t9 167 @t10 121 @t11 232 @t12 117 @t13 105"
 								}
 
 							}
@@ -679,7 +679,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 187.0, 105.0, 1079.0, 793.0 ],
+						"rect" : [ 0.0, 26.0, 1193.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -716,8 +716,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 6.0, 53.0, 975.0, 382.0 ],
-									"presentation_linecount" : 24,
-									"text" : "Cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il gère  jusqu'à quatre touches appuyées simultanément. On peut définir en arguments la relation entre le code ascii d'une touche et sa note correspondante. \n\nSortie 1 (message) : nom de la première note de musique jouée\nSortie 2 (bang) : bang lorsque la touche est appuyée\nSortie 3 (bang) : bang lorsque la touche est relâchée\nSortie 4 (message) : nom de la deuxième note de musique jouée\nSortie 5 (bang) : bang lorsque la touche est appuyée\nSortie 6 (bang) : bang lorsque la touche est relâchée\nSortie 7 (message) : nom de la troisième note de musique jouée\nSortie 8 (bang) : bang lorsque la touche est appuyée\nSortie 9 (bang) : bang lorsque la touche est relâchée\nSortie 10 (message) : nom de la quatrième note de musique jouée\nSortie 11 (bang) : bang lorsque la touche est appuyée\nSortie 12 (bang) : bang lorsque la touche est relâchée\n\nArgument 1 (obligatoire) : code ascii de la touche correspondant au DO3\nArgument 2 (obligatoire) : code ascii de la touche correspondant au DO3#\n...\nArgument 13 (obligatoire) : code ascii de la touche correspondant au DO4\n\nDans l'exemple suivant on a défini la relation suivante entre touches du clavier et notes : \n\na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
+									"text" : "Cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il gère  jusqu'à quatre touches appuyées simultanément. On peut définir en arguments la relation entre le code ascii d'une touche et sa note correspondante. \n\nSortie 1 (message) : nom de la première note de musique jouée\nSortie 2 (bang) : bang lorsque la touche est appuyée\nSortie 3 (bang) : bang lorsque la touche est relâchée\nSortie 4 (message) : nom de la deuxième note de musique jouée\nSortie 5 (bang) : bang lorsque la touche est appuyée\nSortie 6 (bang) : bang lorsque la touche est relâchée\nSortie 7 (message) : nom de la troisième note de musique jouée\nSortie 8 (bang) : bang lorsque la touche est appuyée\nSortie 9 (bang) : bang lorsque la touche est relâchée\nSortie 10 (message) : nom de la quatrième note de musique jouée\nSortie 11 (bang) : bang lorsque la touche est appuyée\nSortie 12 (bang) : bang lorsque la touche est relâchée\n\nAttribut @t1 : code ascii de la touche correspondant au DO3\nAttribut @t2: code ascii de la touche correspondant au DO3#\n...\nAttribut @t3 : code ascii de la touche correspondant au DO4\n\nDans l'exemple suivant on a défini la relation suivante entre touches du clavier et notes : \n\na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
 								}
 
 							}
@@ -909,11 +908,11 @@
 								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 12,
 									"outlettype" : [ "", "bang", "bang", "", "bang", "bang", "", "bang", "bang", "", "bang", "bang" ],
-									"patching_rect" : [ 213.0, 490.0, 528.0, 22.0 ],
-									"text" : "s4M.interface.ecouteurClavierPiano 97 233 122 34 101 114 40 116 167 121 232 117 105"
+									"patching_rect" : [ 213.0, 490.0, 882.0, 22.0 ],
+									"text" : "s4M.interface.ecouteurTouchesClavierPiano @t1 97 @t2 233 @t3 122 @t4 34 @t5 101 @t6 114 @t7 40 @t8 116 @t9 167 @t10 121 @t11 232 @t12 117 @t13 105"
 								}
 
 							}
@@ -1170,7 +1169,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "s4M.interface.ecouteurClavierPiano.maxpat",
+				"name" : "s4M.interface.ecouteurTouchesClavierPiano.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
