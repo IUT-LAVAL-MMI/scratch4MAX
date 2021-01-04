@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 382.0, 105.0, 1193.0, 793.0 ],
+						"rect" : [ 0.0, 26.0, 1193.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -679,7 +679,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1193.0, 793.0 ],
+						"rect" : [ 382.0, 105.0, 1193.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -711,12 +711,12 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-48",
-									"linecount" : 24,
+									"linecount" : 25,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 6.0, 53.0, 975.0, 382.0 ],
-									"text" : "Cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il gère  jusqu'à quatre touches appuyées simultanément. On peut définir en arguments la relation entre le code ascii d'une touche et sa note correspondante. \n\nSortie 1 (message) : nom de la première note de musique jouée\nSortie 2 (bang) : bang lorsque la touche est appuyée\nSortie 3 (bang) : bang lorsque la touche est relâchée\nSortie 4 (message) : nom de la deuxième note de musique jouée\nSortie 5 (bang) : bang lorsque la touche est appuyée\nSortie 6 (bang) : bang lorsque la touche est relâchée\nSortie 7 (message) : nom de la troisième note de musique jouée\nSortie 8 (bang) : bang lorsque la touche est appuyée\nSortie 9 (bang) : bang lorsque la touche est relâchée\nSortie 10 (message) : nom de la quatrième note de musique jouée\nSortie 11 (bang) : bang lorsque la touche est appuyée\nSortie 12 (bang) : bang lorsque la touche est relâchée\n\nAttribut @t1 : code ascii de la touche correspondant au DO3\nAttribut @t2: code ascii de la touche correspondant au DO3#\n...\nAttribut @t3 : code ascii de la touche correspondant au DO4\n\nDans l'exemple suivant on a défini la relation suivante entre touches du clavier et notes : \n\na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
+									"patching_rect" : [ 6.0, 53.0, 975.0, 398.0 ],
+									"text" : "Cet objet permet de transformer un clavier d'ordinateur en clavier de piano. Il gère  jusqu'à quatre touches appuyées simultanément. On peut définir en arguments la relation entre le code ascii d'une touche et sa note correspondante. \n\nEntrée 1 (attributs) : permet de modifier les attributs de l'objet\nSortie 1 (message) : nom de la première note de musique jouée\nSortie 2 (bang) : bang lorsque la touche est appuyée\nSortie 3 (bang) : bang lorsque la touche est relâchée\nSortie 4 (message) : nom de la deuxième note de musique jouée\nSortie 5 (bang) : bang lorsque la touche est appuyée\nSortie 6 (bang) : bang lorsque la touche est relâchée\nSortie 7 (message) : nom de la troisième note de musique jouée\nSortie 8 (bang) : bang lorsque la touche est appuyée\nSortie 9 (bang) : bang lorsque la touche est relâchée\nSortie 10 (message) : nom de la quatrième note de musique jouée\nSortie 11 (bang) : bang lorsque la touche est appuyée\nSortie 12 (bang) : bang lorsque la touche est relâchée\n\nAttribut @t1 : code ascii de la touche correspondant au DO3\nAttribut @t2: code ascii de la touche correspondant au DO3#\n...\nAttribut @t13 : code ascii de la touche correspondant au DO4\n\nDans l'exemple suivant on a défini la relation suivante entre touches du clavier et notes : \n\na=DO3 / 2-é=DO3# / z=RE3 / 3-\"=RE3# / e=MI3 / r=FA3 / 5-(=FA3# / t=SOL3 / 6-§=SOL3# / y=LA3 / 7-è=LA3# / u=SI3 / i=DO4"
 								}
 
 							}
@@ -728,7 +728,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 790.0, 711.0, 24.0, 24.0 ]
+									"patching_rect" : [ 838.0, 716.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -740,7 +740,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 579.0, 677.0, 24.0, 24.0 ]
+									"patching_rect" : [ 627.0, 682.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -752,7 +752,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 369.5, 637.0, 24.0, 24.0 ]
+									"patching_rect" : [ 417.5, 642.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -764,7 +764,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 167.0, 602.0, 24.0, 24.0 ]
+									"patching_rect" : [ 215.0, 607.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -774,7 +774,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 721.0, 741.0, 162.0, 20.0 ],
+									"patching_rect" : [ 769.0, 746.0, 162.0, 20.0 ],
 									"text" : "Quatrième touche appuyée"
 								}
 
@@ -785,7 +785,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 510.0, 706.0, 150.0, 20.0 ],
+									"patching_rect" : [ 558.0, 711.0, 150.0, 20.0 ],
 									"text" : "Troisième touche appuyée"
 								}
 
@@ -796,7 +796,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 285.0, 665.0, 160.0, 20.0 ],
+									"patching_rect" : [ 333.0, 670.0, 160.0, 20.0 ],
 									"text" : "Deuxième touche appuyée"
 								}
 
@@ -807,7 +807,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 87.0, 632.0, 150.0, 20.0 ],
+									"patching_rect" : [ 135.0, 637.0, 150.0, 20.0 ],
 									"text" : "Première touche appuyée"
 								}
 
@@ -818,7 +818,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 717.0, 677.0, 93.0, 22.0 ],
+									"patching_rect" : [ 765.0, 682.0, 93.0, 22.0 ],
 									"text" : "print @popup 1"
 								}
 
@@ -829,7 +829,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 516.0, 645.0, 93.0, 22.0 ],
+									"patching_rect" : [ 564.0, 650.0, 93.0, 22.0 ],
 									"text" : "print @popup 1"
 								}
 
@@ -840,7 +840,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 285.0, 608.0, 93.0, 22.0 ],
+									"patching_rect" : [ 333.0, 613.0, 93.0, 22.0 ],
 									"text" : "print @popup 1"
 								}
 
@@ -851,7 +851,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 72.0, 570.0, 93.0, 22.0 ],
+									"patching_rect" : [ 120.0, 575.0, 93.0, 22.0 ],
 									"text" : "print @popup 1"
 								}
 
@@ -864,7 +864,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 836.0, 711.0, 24.0, 24.0 ]
+									"patching_rect" : [ 884.0, 716.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -876,7 +876,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 626.0, 677.0, 24.0, 24.0 ]
+									"patching_rect" : [ 674.0, 682.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -888,7 +888,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 404.5, 637.0, 24.0, 24.0 ]
+									"patching_rect" : [ 452.5, 642.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -900,7 +900,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 213.0, 602.0, 24.0, 24.0 ]
+									"patching_rect" : [ 261.0, 607.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -911,7 +911,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 12,
 									"outlettype" : [ "", "bang", "bang", "", "bang", "bang", "", "bang", "bang", "", "bang", "bang" ],
-									"patching_rect" : [ 213.0, 490.0, 882.0, 22.0 ],
+									"patching_rect" : [ 188.0, 490.0, 882.0, 22.0 ],
 									"text" : "s4M.interface.ecouteurTouchesClavierPiano @t1 97 @t2 233 @t3 122 @t4 34 @t5 101 @t6 114 @t7 40 @t8 116 @t9 167 @t10 121 @t11 232 @t12 117 @t13 105"
 								}
 
@@ -1184,8 +1184,8 @@
 			}
 , 			{
 				"name" : "noteFrequence.txt",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/misc",
+				"patcherrelativepath" : "../misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

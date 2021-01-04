@@ -116,12 +116,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 14,
+					"linecount" : 15,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 49.0, 795.0, 225.0 ],
-					"text" : "Cet objet permet d'appliquer un noise gate à un flux audio mono ou stéréo \n\nEntrée 1 (audio) : flux audio dry (L) ou flux audio dry mono\nEntrée 2 (float) : threshold en dBFS (par défaut -50 dBFS)\nEntrée 3 (integer) : durée Attack en ms (par défaut 20 ms)\nEntrée 4 (integer) : durée Release en ms (par défaut 20 ms)\nEntrée 5 (toggle) : activation/désactivation effet (par défaut 0)\nSortie 1 (audio) : flux audio wet (L) ou flux audio wet mono\nSortie 2 (audio) : flux audio wet (R)\n\nArgument 1 (facultatif) : threshold\nArgument 2 (facultatif) : durée Attack\nArgument 3 (faculttatif) : durée Release\nArgument 4 (faculttatif) : activation/désactivation"
+					"patching_rect" : [ 8.0, 49.0, 795.0, 241.0 ],
+					"text" : "Cet objet permet d'appliquer un noise gate à un flux audio mono ou stéréo \n\nEntrée 1 (audio) : flux audio dry (L) ou flux audio dry mono\nEntrée 2 (audio) : flux audio dry (R)\nEntrée 3 (float) : threshold en dBFS (par défaut -50 dBFS)\nEntrée 4 (integer) : durée Attack en ms (par défaut 20 ms)\nEntrée 5 (integer) : durée Release en ms (par défaut 20 ms)\nEntrée 6 (toggle) : activation/désactivation effet (par défaut 0)\nSortie 1 (audio) : flux audio wet (L) ou flux audio wet mono\nSortie 2 (audio) : flux audio wet (R)\n\nArgument 1 (facultatif) : threshold\nArgument 2 (facultatif) : durée Attack\nArgument 3 (faculttatif) : durée Release\nArgument 4 (faculttatif) : activation/désactivation"
 				}
 
 			}
@@ -404,8 +404,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

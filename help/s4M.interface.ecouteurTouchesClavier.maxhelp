@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1410.0, 773.0 ],
+						"rect" : [ 100.0, 126.0, 1410.0, 773.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -405,7 +405,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 6.0, 53.0, 945.0, 382.0 ],
-									"text" : "Cet objet permet de transformer un clavier d'ordinateur en launchpad. \n\nOn peut programmer l'écoute de n'importe quelle touche du clavier il faut juste connaître son code ascii et le préciser dans la liste des touches écoutées\n\nEntrée 1 (attributs) : peermet de modifier les attributs de l'objet\nSortie 1 (bang) : bang lorsque la première touche est appuyée\nSortie 2 (bang) : bang lorsque la première touche est relâchée\nSortie 3 (bang) : bang lorsque la duxième touche est appuyée\nSortie 4 (bang) : bang lorsque la deuxième touche est relâchée\nSortie 5 (bang) : bang lorsque la troisième touche est appuyée\nSortie 6 (bang) : bang lorsque la troisième touche est relâchée\n...\nSortie 23 (bang) : bang lorsque la douzième touche est appuyée\nSortie 24 (bang) : bang lorsque la dousième touche est relâchée\nSortie 25 (integer) : code ascii de la touche appuyée\n\nAttribut 1 - nom @t1 : code ascii de la première touche écoutée\nAttribut 2 - nom @t2 : code ascii de la deuxièm touche écoutée\n...\nAttribut - nom @t12 : code ascii de la douzièm touche écoutée\n\n\nDans l'exemple, on écoute les touches : a, z, e, r, t et y. "
+									"text" : "Cet objet permet de transformer un clavier d'ordinateur en launchpad. \n\nOn peut programmer l'écoute de n'importe quelle touche du clavier il faut juste connaître son code ascii et le préciser dans la liste des touches écoutées\n\nEntrée 1 (attributs) : permet de modifier les attributs de l'objet\nSortie 1 (bang) : bang lorsque la première touche est appuyée\nSortie 2 (bang) : bang lorsque la première touche est relâchée\nSortie 3 (bang) : bang lorsque la duxième touche est appuyée\nSortie 4 (bang) : bang lorsque la deuxième touche est relâchée\nSortie 5 (bang) : bang lorsque la troisième touche est appuyée\nSortie 6 (bang) : bang lorsque la troisième touche est relâchée\n...\nSortie 23 (bang) : bang lorsque la douzième touche est appuyée\nSortie 24 (bang) : bang lorsque la dousième touche est relâchée\nSortie 25 (integer) : code ascii de la touche appuyée\n\nAttribut 1 - nom @t1 : code ascii de la première touche écoutée\nAttribut 2 - nom @t2 : code ascii de la deuxièm touche écoutée\n...\nAttribut - nom @t12 : code ascii de la douzième touche écoutée\n\n\nDans l'exemple, on écoute les touches : a, z, e, r, t et y. "
 								}
 
 							}
@@ -683,7 +683,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 1410.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 1410.0, 773.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
