@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
+			"minor" : 0,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 172.0, 1243.0, 714.0 ],
+		"rect" : [ 34.0, 80.0, 360.0, 160.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -248,7 +248,6 @@
 
 					}
 ,
-					"text" : "un.png",
 					"varname" : "moviename"
 				}
 
@@ -264,7 +263,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 0,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -854,7 +853,6 @@
 
 					}
 ,
-					"text" : "un.png",
 					"varname" : "moviepath"
 				}
 
@@ -1053,7 +1051,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 248.0, 825.0, 132.36248779296875, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 39.0, 170.0, 96.0 ],
+					"presentation_rect" : [ 5.0, 39.0, 128.0, 96.0 ],
 					"varname" : "pwinbpatcher",
 					"viewvisibility" : 1
 				}
@@ -1316,7 +1314,7 @@
 					"outlettype" : [ "", "stop", "int" ],
 					"patching_rect" : [ 221.0, 200.0, 871.5, 82.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 40.0, 220.0, 104.0 ],
+					"presentation_rect" : [ 138.0, 40.0, 220.0, 104.0 ],
 					"varname" : "playercontrols",
 					"viewvisibility" : 1
 				}
@@ -1335,7 +1333,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 0,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1658,8 +1656,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 131.749985000000009, 165.0, 82.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 1,
-										"precision" : 6
+										"embed" : 1
 									}
 ,
 									"text" : "coll videosize"
@@ -1891,7 +1888,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 0,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -3344,7 +3341,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[279]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3381,7 +3378,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[280]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3418,7 +3415,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[281]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3455,7 +3452,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[282]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3492,7 +3489,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[283]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3529,7 +3526,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "pictctrl[284]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_enum" : [ "off", "on" ],
@@ -3551,9 +3548,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 402.0, 797.0, 170.0, 96.0 ],
+					"patching_rect" : [ 402.0, 797.0, 128.0, 96.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 39.0, 170.0, 96.0 ]
+					"presentation_rect" : [ 5.0, 39.0, 128.0, 96.0 ]
 				}
 
 			}
@@ -3604,9 +3601,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "message : read nomFichier.extension message pour charger une vidéo",
-					"comment" : "message : read nomFichier.extension message pour charger une vidéo",
-					"hint" : "message : read nomFichier.extension message pour charger une vidéo",
+					"comment" : "toggle low/high playback rate range (0. - .49 = low, .5 - 1.0 = high). off/on messages disable/enable the data inlet. The message \"read <optional movie filename>\" can be used to load a movie.",
 					"id" : "obj-33",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -3647,9 +3642,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"comment" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"hint" : "Float : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "sets the current scrub point. off/on messages disable/enable the data inlet.",
 					"id" : "obj-9",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -3727,9 +3720,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
-					"comment" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
-					"hint" : "Toggle : play/pause vidéo - Float vitesse de lecture de la vidéo",
+					"comment" : "Set playback rate (0. - 1.0). off/on messages disable/enable the data inlet., 0/1 (int) toggles playback",
 					"id" : "obj-76",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -3826,9 +3817,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"comment" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"hint" : "Float : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "loop end (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-67",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -3841,9 +3830,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"comment" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
-					"hint" : "Float : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo",
+					"comment" : "loop start (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-68",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -3856,9 +3843,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Float : position de la tête de lecture",
-					"comment" : "Float : position de la tête de lecture",
-					"hint" : "Float : position de la tête de lecture",
+					"comment" : "movie playback position data (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-17",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -3881,7 +3866,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 0,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -3983,7 +3968,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 578.0, 259.0, 82.0, 22.0 ],
-									"text" : "nan"
+									"text" : "12.066667"
 								}
 
 							}
@@ -3995,7 +3980,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 519.0, 68.0, 82.0, 22.0 ],
-									"text" : "100"
+									"text" : "30"
 								}
 
 							}
@@ -4007,7 +3992,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 401.0, 259.0, 82.0, 22.0 ],
-									"text" : "0"
+									"text" : "7240"
 								}
 
 							}
@@ -4592,9 +4577,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Vidéo : flux vidéo",
-					"comment" : "Vidéo : flux vidéo",
-					"hint" : "Vidéo : flux vidéo",
+					"comment" : "video out",
 					"id" : "obj-14",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -5642,21 +5625,21 @@
  ],
 		"parameters" : 		{
 			"obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
 			"obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-112::obj-79" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
 			"obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5665,55 +5648,63 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
+				"bootpath" : "C74:/packages/vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diminit.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dinit.js",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "/Volumes/Underdog/MaxSource/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
