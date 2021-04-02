@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 224.0, 92.0, 1255.0, 756.0 ],
+		"rect" : [ 100.0, 92.0, 1255.0, 756.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-14",
@@ -89,9 +90,9 @@
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
+					"numinlets" : 7,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 1003.0, 418.0, 108.0, 22.0 ],
 					"text" : "s4M.video.vz.playr",
 					"varname" : "s4M.video.vz.playr[1]"
@@ -109,10 +110,10 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "s4M.video.vz.playr.maxpat",
-					"numinlets" : 5,
+					"numinlets" : 7,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 395.0, 364.25, 355.0, 161.75 ],
 					"varname" : "vz.playr[1]",
 					"viewvisibility" : 1
@@ -137,7 +138,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 714.5, 292.5, 192.0, 20.0 ],
+					"patching_rect" : [ 729.5, 242.5, 192.0, 20.0 ],
 					"text" : "Lancement lecture fichier vidéo"
 				}
 
@@ -197,7 +198,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 731.0, 319.0, 107.0, 22.0 ],
+					"patching_rect" : [ 746.0, 269.0, 107.0, 22.0 ],
 					"text" : "read aeroport.mp4"
 				}
 
@@ -231,7 +232,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 28.0, 418.0, 217.0, 22.0 ],
 					"text" : "s4M.video.gl2.world my-ctx-20 640 360",
 					"varname" : "s4M.video.gl2.world"
@@ -242,12 +243,12 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-8",
-					"linecount" : 9,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 50.0, 1079.0, 163.0 ],
-					"text" : "Ce module permet de lire un fichier image/vidéo et de générer le flux vidéo. Pour être affiché dans un contexte 3D, il faut l'incorporer dans un plan vidéo. \n\nEntrée 1 (toggle) : play/pause vidéo / Float : vitesse de lecture de la vidéo\nEntrée 2 (float) : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 3 (float) : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 4 (float) : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 5 (message) : read nomFichier.extension message pour charger une vidéo\nSortie 1 (vidéo) : flux vidéo\nSortie 2 (float) : position de la tête de lecture\n"
+					"patching_rect" : [ 8.0, 50.0, 1079.0, 194.0 ],
+					"text" : "Ce module permet de lire un fichier image/vidéo et de générer le flux vidéo. Pour être affiché dans un contexte 3D, il faut l'incorporer dans un plan vidéo. \n\nEntrée 1 (toggle) : play/pause vidéo / Float : vitesse de lecture de la vidéo\nEntrée 2 (float) : début loop (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 3 (float) : fin loop (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 4 (float) : placement de la tête de lecture (0. 1.) valeur relative par rapport à la durée de la vidéo\nEntrée 5 (bang) : lecture à partir du début à la vitesse normale\nEntrée 5 (bang) : sélection entière de la vidéo chargée en mémoire\nEntrée 7 (message) : read nomFichier.extension message pour charger une vidéo\nSortie 1 (vidéo) : flux vidéo\nSortie 2 (float) : position de la tête de lecture\n"
 				}
 
 			}
@@ -317,7 +318,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 687.0, 292.5, 20.0, 20.0 ],
+					"patching_rect" : [ 702.0, 242.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -341,7 +342,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 4 ],
+					"destination" : [ "obj-9", 6 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -372,53 +373,73 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-9::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
-			"obj-9::obj-64" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-37::obj-10" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
 			"obj-37::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"obj-37::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-9::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-9::obj-112::obj-120" : [ "range[1]", "range", 0 ],
-			"obj-37::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-37::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-37::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-37::obj-112::obj-40" : [ "Playback controls[1]", "Playback controls", 0 ],
+			"obj-37::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-37::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-37::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-37::obj-20" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-37::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
 			"obj-37::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-37::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
+			"obj-37::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-37::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-37::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-37::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-37::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
+			"obj-9::obj-10" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-9::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-9::obj-112::obj-120" : [ "range[1]", "range", 0 ],
+			"obj-9::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
+			"obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-9::obj-112::obj-40" : [ "Playback controls", "Playback controls", 0 ],
+			"obj-9::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
 			"obj-9::obj-112::obj-89" : [ "FreqMode[2]", "FreqMode", 0 ],
 			"obj-9::obj-112::obj-92" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-37::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-37::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-37::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-37::obj-28" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-9::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-9::obj-28" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-37::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-9::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
-			"obj-9::obj-60" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-37::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-9::obj-83" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-9::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-9::obj-89" : [ "moviename[1]", "moviename", 0 ],
-			"obj-37::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-9::obj-20" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-9::obj-28" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-9::obj-40" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-37::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-37::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-37::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-37::obj-89" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
-			"obj-37::obj-51" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
-			"obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-9::obj-81" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-9::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-9::obj-60" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-9::obj-64" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-9::obj-81" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-9::obj-83" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-9::obj-89" : [ "moviename[1]", "moviename", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-9::obj-64" : 				{
-					"parameter_longname" : "pictctrl[5]"
+				"obj-37::obj-10" : 				{
+					"parameter_longname" : "pictctrl[9]"
 				}
 ,
-				"obj-9::obj-112::obj-89" : 				{
-					"parameter_longname" : "FreqMode[2]"
+				"obj-37::obj-112::obj-119" : 				{
+					"parameter_longname" : "speed[1]",
+					"parameter_shortname" : "speed"
 				}
 ,
-				"obj-9::obj-112::obj-92" : 				{
-					"parameter_longname" : "FreqMode[1]"
+				"obj-37::obj-112::obj-121" : 				{
+					"parameter_longname" : "speed",
+					"parameter_shortname" : "speed"
+				}
+,
+				"obj-37::obj-112::obj-89" : 				{
+					"parameter_longname" : "FreqMode[12]",
+					"parameter_shortname" : "FreqMode"
+				}
+,
+				"obj-37::obj-112::obj-92" : 				{
+					"parameter_longname" : "FreqMode[13]",
+					"parameter_shortname" : "FreqMode"
+				}
+,
+				"obj-37::obj-20" : 				{
+					"parameter_longname" : "pictctrl[10]"
 				}
 ,
 				"obj-37::obj-28" : 				{
@@ -426,35 +447,52 @@
 				}
 ,
 				"obj-9::obj-112::obj-119" : 				{
-					"parameter_longname" : "speed[2]"
-				}
-,
-				"obj-9::obj-28" : 				{
-					"parameter_longname" : "pictctrl[2]"
+					"parameter_longname" : "speed[2]",
+					"parameter_shortname" : "speed"
 				}
 ,
 				"obj-9::obj-112::obj-121" : 				{
-					"parameter_longname" : "speed[3]"
+					"parameter_longname" : "speed[3]",
+					"parameter_shortname" : "speed"
 				}
 ,
-				"obj-9::obj-60" : 				{
-					"parameter_longname" : "pictctrl[1]"
+				"obj-9::obj-112::obj-89" : 				{
+					"parameter_longname" : "FreqMode[2]",
+					"parameter_shortname" : "FreqMode"
 				}
 ,
-				"obj-9::obj-83" : 				{
-					"parameter_longname" : "pictctrl[4]"
+				"obj-9::obj-112::obj-92" : 				{
+					"parameter_longname" : "FreqMode[1]",
+					"parameter_shortname" : "FreqMode"
+				}
+,
+				"obj-9::obj-28" : 				{
+					"parameter_longname" : "pictctrl[3]"
 				}
 ,
 				"obj-9::obj-40" : 				{
 					"parameter_longname" : "pictctrl[6]"
 				}
 ,
+				"obj-9::obj-60" : 				{
+					"parameter_longname" : "pictctrl[7]"
+				}
+,
+				"obj-9::obj-64" : 				{
+					"parameter_longname" : "pictctrl[8]"
+				}
+,
 				"obj-9::obj-81" : 				{
-					"parameter_longname" : "pictctrl[3]"
+					"parameter_longname" : "pictctrl[5]"
+				}
+,
+				"obj-9::obj-83" : 				{
+					"parameter_longname" : "pictctrl[4]"
 				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -480,13 +518,13 @@
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -497,38 +535,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "playr-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "diminit.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dinit.js",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"name" : "lo_hi_UI_control.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-blackframe.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -691,8 +717,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
