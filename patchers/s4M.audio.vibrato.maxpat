@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
@@ -67,11 +68,11 @@
 					"comment" : "Toggle : activation/désactivation effet",
 					"hint" : "Toggle : activation/désactivation effet",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 766.0, 39.0, 30.0, 30.0 ]
 				}
 
@@ -94,7 +95,7 @@
 					"comment" : "Float : paramètre A",
 					"hint" : "Float : paramètre A",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -121,7 +122,7 @@
 					"comment" : "Float : paramètre K",
 					"hint" : "Float : paramètre K",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -136,11 +137,11 @@
 					"comment" : "Audio : signal modulant",
 					"hint" : "Audio : signal modulant",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 352.916747999999984, 39.0, 30.0, 30.0 ]
 				}
 
@@ -151,7 +152,7 @@
 					"comment" : "Audio : flux audio wet",
 					"hint" : "Audio : flux audio wet",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -165,11 +166,11 @@
 					"comment" : "Audio : flux audio dry",
 					"hint" : "Audio : flux audio dry",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 100.0, 39.0, 30.0, 30.0 ]
 				}
 
@@ -257,8 +258,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.916748000000013, 327.5, 133.0, 22.0 ],
-					"text" : "s4M.audio.transposeur",
+					"patching_rect" : [ 146.916748000000013, 327.5, 141.0, 22.0 ],
+					"text" : "s4M.audio.transposeur 1",
 					"varname" : "egaliseur_5b[2]"
 				}
 
@@ -389,28 +390,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "s4M.audio.transposeur.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gizmo_loadme.maxpat",
-				"bootpath" : "C74:/help/msp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s4M.audio.switch.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/scratch4MAX/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
