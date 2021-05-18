@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,7 @@
 		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-7",
@@ -49,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -84,6 +85,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
@@ -565,14 +567,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 178.0, 175.0, 1322.0, 739.0 ],
+						"rect" : [ 178.0, 201.0, 1322.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -600,6 +602,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -688,7 +691,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 7.0, 58.0, 809.0, 194.0 ],
-									"text" : "Nouveau nom : remplace l'objet s4M.audio.divers.gainEnveloppe. Cet objet permet d'appliquer une enveloppe ADSR sur un flux audio mono ou stéréo.\n\nEntrée 1 (audio) : flux audio dry canal gauche\nEntrée 2 (audio) : flux audio dry canal droit\nEntrée 3 (bang) : déclenchement du profil ADSR\n...\nEntrée 5 (entier) : indique le profil souhaité (1=ADSR ; 2=ADS ; 3=R ; 4=Custom)\n...\nSortie 1 (audio) : flux audio wet canal gauche\nSortie 2 (audio) : flux audio wet canal droit\n"
+									"text" : "Nouveau nom : remplace l'objet s4M.audio.divers.gainEnveloppe. Cet objet permet d'appliquer une enveloppe ADSR sur un flux audio mono ou stéréo.\n\nEntrée 1 (audio) : flux audio dry canal gauche\nEntrée 2 (audio) : flux audio dry canal droit\nEntrée 3 (bang) : déclenchement du profil ADSR\n...\nEntrée 5 (entier) : indique le profil souhaité (0=ADSR ; 1=ADS ; 2=R ; 3=Custom)\n...\nSortie 1 (audio) : flux audio wet canal gauche\nSortie 2 (audio) : flux audio wet canal droit\n"
 								}
 
 							}
@@ -988,13 +991,14 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-6::obj-19::obj-212" : [ "r[2]", "r", 0 ],
 			"obj-6::obj-3::obj-212" : [ "r", "r", 0 ],
 			"obj-7::obj-3::obj-212" : [ "r[3]", "r", 0 ],
-			"obj-6::obj-19::obj-212" : [ "r[2]", "r", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
